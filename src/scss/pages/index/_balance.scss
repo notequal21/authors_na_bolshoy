@@ -1,0 +1,84 @@
+.balance {
+  padding: 156px 0 133px;
+
+  background-image: url(../img/balance/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (max-width: 1200px) {
+    padding: 130px 0 140px;
+    background-image: url(../img/balance/bg-tablet.jpg);
+  }
+  @media (max-width: 767px) {
+    padding: 60px 0;
+  }
+  @media (max-width: 400px) {
+    background-image: url(../img/balance/bg-mobile.jpg);
+  }
+
+  .container {
+    max-width: 1242px;
+  }
+
+  &-body {
+    display: flex;
+    flex-direction: column;
+
+    &__title {
+      font-size: 72px;
+      line-height: 72px;
+      color: #ffffff;
+
+      @media (max-width: 1200px) {
+        font-size: 52px;
+        line-height: 60px;
+        max-width: 600px;
+      }
+
+      @media (max-width: 767px) {
+        font-size: 32px;
+        line-height: 36px;
+      }
+    }
+
+    &__btn {
+      margin: 70px 0 0;
+      color: #ffffff;
+
+      @media (max-width: 1200px) {
+        margin: 130px 0 0;
+      }
+
+      @media (max-width: 767px) {
+        margin: 170px 0 0;
+        justify-content: flex-start;
+      }
+      @media (max-width: 340px) {
+        font-size: 20px;
+        line-height: 26px;
+      }
+
+      svg {
+        path {
+          stroke: #ffffff;
+        }
+      }
+
+      br {
+        display: none;
+
+        @media (max-width: 520px) {
+          display: block;
+        }
+      }
+
+      &:nth-child(3) {
+        margin: 20px 0 0;
+
+        @media (max-width: 767px) {
+          margin: 24px 0 0;
+        }
+      }
+    }
+  }
+}

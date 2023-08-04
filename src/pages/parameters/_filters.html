@@ -1,0 +1,171 @@
+<div class="filters">
+  <div class="container">
+    <div class="filters-body">
+      <div class="filters-row">
+        <div class="filters-body__select">
+          <select>
+            <option value="1">Дом 62</option>
+            <option value="2">Дом 62</option>
+            <option value="3">Дом 62</option>
+          </select>
+        </div>
+      </div>
+      <div class="filters-row">
+        <div class="filters-item">
+          <div class="filters-item__name">
+            Количество спален:
+          </div>
+          <div class="filters-item__slider">
+            <div id="filter-slider-bedrooms"></div>
+          </div>
+        </div>
+        <div class="filters-item">
+          <div class="filters-item__name">
+            Уровень комфорта:
+          </div>
+          <div class="filters-item__slider">
+            <div class="filters-item__to">
+              до <input class="input-content-width" type="number" id="inputNumberComfort"> м2
+              <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_604_858)">
+                  <path
+                    d="M14.56 9.02L15.48 9.94L6.42 19H5.5V18.08L14.56 9.02ZM18.16 3C17.91 3 17.65 3.1 17.46 3.29L15.63 5.12L19.38 8.87L21.21 7.04C21.6 6.65 21.6 6.02 21.21 5.63L18.87 3.29C18.67 3.09 18.42 3 18.16 3ZM14.56 6.19L3.5 17.25V21H7.25L18.31 9.94L14.56 6.19Z"
+                    fill="#323232" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_604_858">
+                    <rect width="24" height="24" fill="white" transform="translate(0.5)" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+            <div id="filter-slider-comfort"></div>
+          </div>
+        </div>
+        <div class="filters-item">
+          <div class="filters-item__name">
+            Этаж:
+          </div>
+          <div class="filters-item__slider filters-item__slider_fromTo">
+            <div class="filters-item__fromTo">
+              <div class="filters-item__fromTo-col">
+                с
+                <span id="spanNumberFloorFrom">3</span>
+                <!-- <input type="number" value="3"> -->
+              </div>
+              <div class="filters-item__fromTo-col">
+                по
+                <span id="spanNumberFloorTo">9</span>
+              </div>
+            </div>
+            <div id="filter-slider-floor"></div>
+          </div>
+        </div>
+        <div class="filters-item">
+          <div class="filters-item__name">
+            Стоимость:
+          </div>
+          <div class="filters-item__slider filters-item__cost">
+            <div class="filters-item__to">
+              до <input class="input-content-width" type="text" id="inputNumberCost">
+              <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_604_858)">
+                  <path
+                    d="M14.56 9.02L15.48 9.94L6.42 19H5.5V18.08L14.56 9.02ZM18.16 3C17.91 3 17.65 3.1 17.46 3.29L15.63 5.12L19.38 8.87L21.21 7.04C21.6 6.65 21.6 6.02 21.21 5.63L18.87 3.29C18.67 3.09 18.42 3 18.16 3ZM14.56 6.19L3.5 17.25V21H7.25L18.31 9.94L14.56 6.19Z"
+                    fill="#323232" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_604_858">
+                    <rect width="24" height="24" fill="white" transform="translate(0.5)" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+            <div id="filter-slider-cost"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="filters-others">
+  <div class="container">
+    <div class="filters-others-title">
+      Дополнительные параметры
+      <span>1</span>
+      <svg width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M15.2187 8.45815L8.07107 1.46447L1 8.53554" stroke="#131411" />
+      </svg>
+    </div>
+    <div class="filters-others-body">
+      <label class="filters-others-body__btn _disabled">
+        <input disabled type="checkbox">
+        <span>Параметр из четырех слов
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_701_288)">
+              <path
+                d="M9.99984 1.66666C5.3915 1.66666 1.6665 5.39166 1.6665 10C1.6665 14.6083 5.3915 18.3333 9.99984 18.3333C14.6082 18.3333 18.3332 14.6083 18.3332 10C18.3332 5.39166 14.6082 1.66666 9.99984 1.66666ZM14.1665 12.9917L12.9915 14.1667L9.99984 11.175L7.00817 14.1667L5.83317 12.9917L8.82484 10L5.83317 7.00833L7.00817 5.83333L9.99984 8.825L12.9915 5.83333L14.1665 7.00833L11.1748 10L14.1665 12.9917Z"
+                fill="white" />
+            </g>
+            <defs>
+              <clipPath id="clip0_701_288">
+                <rect width="20" height="20" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+        </span>
+      </label>
+      <label class="filters-others-body__btn _disabled">
+        <input type="checkbox">
+        <span>Параметр
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_701_288)">
+              <path
+                d="M9.99984 1.66666C5.3915 1.66666 1.6665 5.39166 1.6665 10C1.6665 14.6083 5.3915 18.3333 9.99984 18.3333C14.6082 18.3333 18.3332 14.6083 18.3332 10C18.3332 5.39166 14.6082 1.66666 9.99984 1.66666ZM14.1665 12.9917L12.9915 14.1667L9.99984 11.175L7.00817 14.1667L5.83317 12.9917L8.82484 10L5.83317 7.00833L7.00817 5.83333L9.99984 8.825L12.9915 5.83333L14.1665 7.00833L11.1748 10L14.1665 12.9917Z"
+                fill="white" />
+            </g>
+            <defs>
+              <clipPath id="clip0_701_288">
+                <rect width="20" height="20" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+        </span>
+      </label>
+      <label class="filters-others-body__btn _disabled">
+        <input type="checkbox">
+        <span>Параметр трех слов
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_701_288)">
+              <path
+                d="M9.99984 1.66666C5.3915 1.66666 1.6665 5.39166 1.6665 10C1.6665 14.6083 5.3915 18.3333 9.99984 18.3333C14.6082 18.3333 18.3332 14.6083 18.3332 10C18.3332 5.39166 14.6082 1.66666 9.99984 1.66666ZM14.1665 12.9917L12.9915 14.1667L9.99984 11.175L7.00817 14.1667L5.83317 12.9917L8.82484 10L5.83317 7.00833L7.00817 5.83333L9.99984 8.825L12.9915 5.83333L14.1665 7.00833L11.1748 10L14.1665 12.9917Z"
+                fill="white" />
+            </g>
+            <defs>
+              <clipPath id="clip0_701_288">
+                <rect width="20" height="20" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+        </span>
+      </label>
+      <label class="filters-others-body__btn _disabled">
+        <input type="checkbox">
+        <span>Параметр
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_701_288)">
+              <path
+                d="M9.99984 1.66666C5.3915 1.66666 1.6665 5.39166 1.6665 10C1.6665 14.6083 5.3915 18.3333 9.99984 18.3333C14.6082 18.3333 18.3332 14.6083 18.3332 10C18.3332 5.39166 14.6082 1.66666 9.99984 1.66666ZM14.1665 12.9917L12.9915 14.1667L9.99984 11.175L7.00817 14.1667L5.83317 12.9917L8.82484 10L5.83317 7.00833L7.00817 5.83333L9.99984 8.825L12.9915 5.83333L14.1665 7.00833L11.1748 10L14.1665 12.9917Z"
+                fill="white" />
+            </g>
+            <defs>
+              <clipPath id="clip0_701_288">
+                <rect width="20" height="20" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+        </span>
+      </label>
+    </div>
+  </div>
+</div>

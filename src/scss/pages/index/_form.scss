@@ -1,0 +1,257 @@
+.form {
+  margin: 32px 0 0;
+
+  @media (max-width: 1200px) {
+    margin: 0;
+  }
+
+  .container {
+    max-width: 1260px;
+  }
+
+  &__title {
+    text-align: center;
+    margin: 0 0 60px;
+    flex: 1 1 100%;
+
+    @media (max-width: 1260px) {
+      font-size: 40px;
+      line-height: 48px;
+      text-align: left;
+    }
+
+    @media (max-width: 767px) {
+      font-size: 32px;
+      line-height: 36px;
+      letter-spacing: 1px;
+    }
+
+    @media (max-width: 767px) {
+      margin: 0 0 30px;
+    }
+  }
+
+  &-body {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-top: 1px solid #d8d8d8;
+    padding: 120px 0 0;
+
+    @media (max-width: 1260px) {
+      padding: 0;
+      margin: 60px auto 0;
+      width: 100%;
+      max-width: 700px;
+      border: none;
+    }
+
+    &__item {
+      &:not(:first-child) {
+        margin: 0 0 0 24px;
+
+        @media (max-width: 1260px) {
+          margin: 0 0 0 15px;
+        }
+        @media (max-width: 767px) {
+          margin: 30px 0 0 !important;
+        }
+      }
+
+      @media (max-width: 767px) {
+        flex: 1 1 100% !important;
+
+        &:nth-child(2) {
+          margin: 0 !important;
+        }
+      }
+
+      &_phone {
+        flex: 0 0 220px;
+
+        @media (max-width: 1260px) {
+          flex: 0 0 180px;
+          margin: 0 !important;
+        }
+      }
+
+      &_name {
+        flex: 0 1 306px;
+
+        @media (max-width: 1260px) {
+          flex: 0 0 216px;
+        }
+      }
+
+      &_text {
+        display: none;
+      }
+
+      &-name {
+        color: #888;
+        font-feature-settings: 'calt' off;
+        font-family: TT Norms;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22px;
+        margin: 0 0 12px;
+      }
+
+      &-input {
+        height: 54px;
+        border-bottom: 2px solid #d8d8d8;
+
+        input {
+          width: 100%;
+          height: 100%;
+          background-color: transparent;
+
+          font-family: TT Norms;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 24px;
+          letter-spacing: 0.36px;
+          color: #131411;
+
+          @media (max-width: 767px) {
+            font-size: 16px;
+            line-height: 22px;
+            letter-spacing: 0.32px;
+          }
+
+          &:placeholder {
+            color: #888;
+          }
+        }
+      }
+
+      &_select {
+        display: flex;
+        flex-wrap: wrap;
+
+        @media (max-width: 1260px) {
+          flex: 0 0 250px;
+          margin: 0 0 0 34px !important;
+        }
+
+        .form-body__item-name {
+          flex: 1 1 100%;
+        }
+        .form-body__item-select {
+          flex: 0 0 calc(50% - 13px);
+
+          @media (max-width: 1260px) {
+            flex: 0 0 calc(50% - 5px);
+          }
+
+          @media (max-width: 767px) {
+            flex: 0 0 calc(50% - 8px);
+          }
+
+          &:last-child {
+            margin: 0 0 0 26px;
+
+            @media (max-width: 1260px) {
+              margin: 0 0 0 10px;
+            }
+            @media (max-width: 767px) {
+              margin: 0 0 0 16px;
+            }
+          }
+        }
+      }
+
+      &-select {
+        height: 54px;
+        border-bottom: 2px solid #d8d8d8;
+
+        select {
+          width: 100%;
+          height: 100%;
+          background-color: transparent;
+
+          font-family: TT Norms;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 24px;
+          letter-spacing: 0.36px;
+          color: #131411;
+
+          @media (max-width: 767px) {
+            font-size: 16px;
+            line-height: 22px;
+            letter-spacing: 0.32px;
+          }
+
+          &:placeholder {
+            color: #888;
+          }
+        }
+      }
+
+      &-text {
+      }
+
+      &_btn {
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+
+        @media (max-width: 1260px) {
+          order: 9;
+          margin: 34px 0 0 auto;
+        }
+
+        @media (max-width: 767px) {
+          &:not(:first-child) {
+            margin: 40px auto 0 0 !important;
+          }
+          order: unset;
+        }
+      }
+
+      &-btn {
+        background-color: transparent;
+        font-weight: 500;
+        letter-spacing: 1px;
+        font-family: TT Norms;
+
+        ._arrow {
+          width: 48px;
+          height: 48px;
+        }
+      }
+    }
+
+    &__text {
+      margin: 50px 0 0;
+
+      color: #888;
+      text-align: center;
+      font-family: TT Norms;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 20px;
+
+      @media (max-width: 1260px) {
+        max-width: 306px;
+        text-align: left;
+        margin: 34px auto 0 0;
+      }
+
+      @media (max-width: 767px) {
+        margin: 25px auto 0 !important;
+        text-align: center;
+      }
+
+      a {
+        color: #888;
+        text-decoration-line: underline;
+      }
+    }
+  }
+}

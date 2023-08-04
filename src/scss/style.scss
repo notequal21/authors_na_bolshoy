@@ -1,0 +1,120 @@
+// -------- imports --------
+@import '../../node_modules/swiper/swiper.scss';
+@import '../../node_modules/swiper/modules/pagination.scss';
+@import '../../node_modules/swiper/modules/navigation.scss';
+@import './components/_nouislider.scss';
+// @import '../../node_modules/swiper/modules/grid.scss';
+
+@import 'fonts';
+@import 'components/_fonts';
+@import 'components/_normalize.scss';
+@import 'components/_mixins.scss';
+@import 'components/_variables.scss';
+@import 'components/_variables.scss';
+@import 'components/_header.scss';
+@import 'components/_footer.scss';
+@import 'components/_ui.scss';
+@import 'pages/index/_main.scss';
+@import 'pages/index/_two.scss';
+@import 'pages/index/_callback.scss';
+@import 'pages/index/_position.scss';
+@import 'pages/index/_balance.scss';
+@import 'pages/index/_parking.scss';
+@import 'pages/index/_layout.scss';
+@import 'pages/index/_layouts.scss';
+@import 'pages/index/_about.scss';
+@import 'pages/index/_architecture.scss';
+@import 'pages/index/_yards.scss';
+@import 'pages/index/_lobby.scss';
+@import 'pages/index/_progress.scss';
+@import 'pages/index/_accent.scss';
+@import 'pages/index/_building.scss';
+@import 'pages/index/_residences.scss';
+@import 'pages/index/_view.scss';
+@import 'pages/index/_form.scss';
+@import 'pages/index/_form.scss';
+@import 'pages/parameters/_info.scss';
+@import 'pages/parameters/_filters.scss';
+
+@import 'components/_aos.scss';
+
+// old | remove later
+@import 'pages/notfound.scss';
+@import 'components/_preloader.scss';
+
+// fonts --------- &display=swap || &subset=cyrillic-ext
+// throught plugin
+
+::selection {
+}
+
+body {
+  background: #f6f6f6;
+}
+
+.container {
+  max-width: 1368px;
+  margin: 0 auto;
+  padding: 0 36px;
+
+  @media (max-width: 767px) {
+    padding: 0 20px;
+  }
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1 1 auto;
+}
+
+._sitemap {
+  height: 100vh;
+  padding: 50px 0;
+  background-color: rgb(58, 58, 58);
+
+  &-con {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+    @media (max-width: 767px) {
+      padding: 0 50px;
+    }
+  }
+  &-body {
+    ol {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      li {
+        font-size: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #fff;
+
+        @media (max-width: 767px) {
+          font-size: 22px;
+        }
+
+        &:not(:first-child) {
+          margin: 15px 0 0;
+        }
+      }
+    }
+
+    &__item {
+      color: #fff;
+      transition: all 0.3s;
+
+      &:hover {
+        color: rgb(179, 203, 255);
+      }
+    }
+  }
+}
