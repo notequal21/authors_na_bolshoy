@@ -407,3 +407,19 @@ export const filterSliders = () => {
     }
   }
 };
+
+export const otherFilters = () => {
+  if (document.querySelector('.filters-others')) {
+    const otherFilters = document.querySelector('.filters-others');
+    const btn = otherFilters.querySelector('.filters-others-title');
+    const content = otherFilters.querySelector('.filters-others-body');
+
+    btn.addEventListener('click', () => {
+      if (otherFilters.classList.contains('_open')) {
+        otherFilters.classList.remove('_open');
+      } else {
+        otherFilters.classList.add('_open');
+      }
+    });
+  }
+};

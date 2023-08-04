@@ -7,6 +7,7 @@ functions.buildingTooltip();
 functions.AOSanim();
 functions.preloader();
 functions.filterSliders();
+functions.otherFilters();
 
 sliders.parkingSlider();
 sliders.yardsSlider();
