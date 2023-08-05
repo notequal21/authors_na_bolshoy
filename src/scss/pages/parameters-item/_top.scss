@@ -1,6 +1,10 @@
 .flat-page-top {
   margin: 30px 0 0;
 
+  @media (max-width: 1200px) {
+    margin: 20px 0 0;
+  }
+
   &__body {
     display: flex;
     align-items: center;
@@ -8,11 +12,39 @@
 
   &__back {
     flex: 0 0 640px;
+
+    @media (max-width: 1200px) {
+      flex: 1 1 auto;
+    }
   }
 
   &__breadcrumbs {
     display: flex;
     align-items: center;
+
+    span {
+      display: inline-flex;
+
+      &::before {
+        content: '';
+        display: block;
+        width: 15px;
+        height: 15px;
+        background-image: url(../img/parameters/arrow.svg);
+        background-position: center;
+        background-size: 100%;
+        margin: 0 6px;
+      }
+
+      @media (max-width: 767px) {
+        a {
+          display: none;
+        }
+        &::after {
+          content: '...';
+        }
+      }
+    }
 
     a {
       display: inline-flex;

@@ -2,9 +2,33 @@
   margin: 34px 0 0;
   &-body {
     display: flex;
+
+    @media (max-width: 1200px) {
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 767px) {
+      flex-direction: column;
+    }
   }
   &__img {
     flex: 0 0 550px;
+
+    @media (max-width: 1200px) {
+      padding: 35px 0 0;
+      flex: 0 0 360px;
+      display: flex;
+      align-self: flex-start;
+      flex-direction: column-reverse;
+    }
+
+    @media (max-width: 767px) {
+      flex: 1 1 auto;
+      align-self: unset;
+      margin: 20px 0 0;
+      padding: 20px 0 0;
+      border-top: 1px solid rgba($color: #131411, $alpha: 0.1);
+    }
 
     &-item {
       position: relative;
@@ -14,6 +38,17 @@
       background: #fff;
       padding: 50px;
       height: 550px;
+
+      @media (max-width: 1200px) {
+        height: 346px;
+        padding: 20px;
+        margin: 36px 0 0;
+      }
+
+      @media (max-width: 767px) {
+        margin: 0;
+        height: 306px;
+      }
 
       img {
         width: 100%;
@@ -31,10 +66,30 @@
       position: absolute;
       bottom: 10px;
       right: 10px;
+
+      @media (max-width: 1200px) {
+        right: 5px;
+        bottom: 5px;
+        width: 96px;
+        height: 96px;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
     }
     &-tabs {
       display: flex;
       margin: 20px 0 0;
+
+      @media (max-width: 1200px) {
+        margin: 0;
+      }
+
+      @media (max-width: 767px) {
+        display: none;
+      }
 
       &__item {
         cursor: pointer;
@@ -71,6 +126,16 @@
     flex: 1 1 auto;
     margin: 0 0 0 90px;
 
+    @media (max-width: 1200px) {
+      margin: 0 0 0 36px;
+      flex: 0 0 calc(100% - 396px);
+    }
+
+    @media (max-width: 767px) {
+      margin: 20px 0 0;
+      flex: 1 1 auto;
+    }
+
     &-name {
       color: #b3b4b4;
       font-family: TT Norms;
@@ -79,6 +144,22 @@
       font-weight: 500;
       line-height: 140%;
       text-transform: uppercase;
+
+      &._mobile {
+        display: none;
+      }
+
+      @media (max-width: 1200px) {
+        font-size: 20px;
+        line-height: 26px;
+      }
+
+      @media (max-width: 767px) {
+        display: none;
+        &._mobile {
+          display: block;
+        }
+      }
     }
     &-type {
       margin: 8px 0 0;
@@ -90,6 +171,24 @@
       line-height: 48px;
       letter-spacing: 2px;
       text-transform: uppercase;
+
+      &._mobile {
+        display: none;
+      }
+
+      @media (max-width: 1200px) {
+        margin: 12px 0 0;
+
+        font-size: 32px;
+        line-height: 36px;
+      }
+
+      @media (max-width: 767px) {
+        display: none;
+        &._mobile {
+          display: block;
+        }
+      }
     }
     &-content {
       width: 100%;
@@ -101,6 +200,17 @@
       flex-wrap: wrap;
       gap: 16px;
 
+      @media (max-width: 1200px) {
+        padding: 20px 0 24px;
+        gap: 12px;
+      }
+
+      @media (max-width: 767px) {
+        padding: 0 0 24px;
+        margin: 0;
+        border-top: none;
+      }
+
       &__item {
         display: flex;
         align-items: center;
@@ -108,6 +218,12 @@
         padding: 0 20px;
         flex: 0 0 calc(50% - 8px);
         background: #fff;
+
+        @media (max-width: 1200px) {
+          flex: 1 1 100%;
+          height: 52px;
+          padding: 0 16px;
+        }
 
         ._name {
           color: #131411;
@@ -136,10 +252,27 @@
     }
     &-params {
       display: flex;
+      flex-wrap: wrap;
       gap: 16px;
       margin: 24px 0 0;
       padding: 24px 0 0;
       border-top: 1px solid rgba($color: #131411, $alpha: 0.1);
+
+      &._mobile {
+        display: none;
+      }
+
+      @media (max-width: 1200px) {
+        flex: 1 1 100%;
+        display: none;
+        &._mobile {
+          display: flex;
+        }
+      }
+
+      @media (max-width: 767px) {
+        gap: 8px;
+      }
 
       span {
         display: inline-flex;
@@ -148,6 +281,7 @@
         height: 46px;
         background: #fff;
         padding: 0 16px;
+        white-space: nowrap;
 
         color: #131411;
         font-family: TT Norms;
@@ -155,6 +289,13 @@
         font-style: normal;
         font-weight: 500;
         line-height: 22px;
+
+        @media (max-width: 767px) {
+          height: 32px;
+          padding: 0 12px;
+          font-size: 12px;
+          line-height: 16px;
+        }
       }
     }
   }
@@ -163,9 +304,22 @@
 .flat-page-similar {
   margin: 78px 0 0;
 
+  @media (max-width: 767px) {
+    margin: 50px 0 0;
+  }
+
   &__title {
     border-top: 1px solid rgba($color: #131411, $alpha: 0.1);
     padding: 55px 0 0;
+
+    font-size: 40px;
+    line-height: 48px;
+
+    @media (max-width: 767px) {
+      padding: 30px 0 0;
+      font-size: 32px;
+      line-height: 36px;
+    }
   }
   &-body {
     margin: 40px 0 0;
