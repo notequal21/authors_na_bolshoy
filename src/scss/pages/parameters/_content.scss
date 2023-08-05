@@ -59,12 +59,16 @@
     }
   }
   &-body {
+    margin: 40px 0 0;
     display: flex;
     flex-wrap: wrap;
-    padding: 24px;
+    gap: 24px;
 
     &__card {
+      display: flex;
+      flex-direction: column;
       background: #fff;
+      width: calc(25% - 18px);
       flex: 0 0 calc(25% - 18px);
 
       &-img {
@@ -74,11 +78,14 @@
       &-content {
         display: flex;
         flex-direction: column;
-        padding: 20px;
+        height: 100%;
+        padding: 0 20px 20px;
       }
       &-info {
+        padding: 20px 0 0;
         width: 100%;
         display: flex;
+        border-top: 1px solid rgba($color: #131411, $alpha: 0.1);
 
         span {
           display: inline-flex;
@@ -138,38 +145,136 @@
         margin: 20px 0 0;
         padding: 20px 0 0;
         overflow: hidden;
+        display: flex;
+        position: relative;
 
-        &_more {
-          display: flex;
-          position: relative;
+        border-top: 1px solid rgba($color: #131411, $alpha: 0.1);
 
-          ._more {
-            position: absolute;
-            right: 0;
-            top: 0;
-          }
-          ._item {
-            display: inline-flex;
+        &._empty {
+          margin: auto 0 0;
+          padding: 0;
+        }
+
+        ._more {
+          display: none;
+          position: absolute;
+          z-index: 1;
+          right: 0;
+          bottom: 0;
+
+          span {
+            display: flex;
             justify-content: center;
             align-items: center;
-            height: 26px;
-            flex: 1 1 auto;
-            padding: 0 4px;
-            background: #f6f6f6;
 
-            color: #131411;
+            width: 26px;
+            height: 26px;
+            background: #131411;
+
+            color: #fff;
             text-align: center;
             font-family: TT Norms;
             font-size: 12px;
             font-style: normal;
             font-weight: 400;
             line-height: 14px;
-            white-space: nowrap;
-
-            &:not(:first-child) {
-              margin: 0 0 0 12px;
-            }
           }
+
+          &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            z-index: -1;
+            right: 0;
+            bottom: 0;
+            width: 84px;
+            height: 100%;
+            background: linear-gradient(
+              270deg,
+              #fff 0%,
+              rgba(255, 255, 255, 0) 100%
+            );
+          }
+        }
+        ._item {
+          display: inline-flex;
+          justify-content: center;
+          align-items: center;
+          height: 26px;
+          // flex: 1 1 auto;
+          padding: 0 4px;
+          background: #f6f6f6;
+
+          color: #131411;
+          text-align: center;
+          font-family: TT Norms;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 14px;
+          white-space: nowrap;
+
+          &:not(:first-child) {
+            margin: 0 0 0 12px;
+          }
+        }
+
+        &_more {
+          ._more {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+
+  &-pagination {
+    margin: 46px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__arrow {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      background-color: #ffffff;
+
+      &:last-child {
+        svg {
+          transform: scale(-1, 1);
+        }
+      }
+    }
+
+    &__nums {
+      margin: 0 25px;
+
+      span {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        color: #131411;
+        text-align: center;
+        font-family: TT Norms;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.36px;
+        min-width: 32px;
+        height: 32px;
+
+        &:not(:first-child) {
+          margin: 0 0 0 14px;
+        }
+
+        &._active {
+          background: #131411;
+          color: #fff;
         }
       }
     }
