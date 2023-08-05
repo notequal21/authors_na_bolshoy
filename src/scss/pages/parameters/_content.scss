@@ -1,0 +1,177 @@
+.parameters-content {
+  margin: 66px 0 0;
+
+  &-sort {
+    display: flex;
+    justify-content: flex-end;
+
+    label {
+      &:not(:first-child) {
+        margin: 0 0 0 12px;
+      }
+
+      input {
+        display: none;
+
+        &:checked + span {
+          background: #131411;
+          color: #fff;
+
+          svg {
+            transform: scale(1, -1);
+            path {
+              stroke: #fff;
+            }
+          }
+        }
+      }
+
+      span {
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 32px;
+        padding: 0 4px;
+
+        color: #131411;
+        font-family: TT Norms;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+
+        transition: all 0.4s ease;
+
+        svg {
+          flex: 0 0 auto;
+          width: 20px;
+          height: 20px;
+          margin: 0 4px 0 0;
+          transition: all 0.4s ease;
+
+          path {
+            stroke: #131411;
+            transition: all 0.4s ease;
+          }
+        }
+      }
+    }
+  }
+  &-body {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 24px;
+
+    &__card {
+      background: #fff;
+      flex: 0 0 calc(25% - 18px);
+
+      &-img {
+        padding: 24px;
+      }
+
+      &-content {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+      }
+      &-info {
+        width: 100%;
+        display: flex;
+
+        span {
+          display: inline-flex;
+          justify-content: center;
+          align-items: center;
+          height: 26px;
+          flex: 1 1 auto;
+          padding: 0 4px;
+          background: #f6f6f6;
+
+          color: #131411;
+          text-align: center;
+          font-family: TT Norms;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 14px;
+
+          &:not(:first-child) {
+            margin: 0 0 0 12px;
+          }
+        }
+      }
+      &-street {
+        margin: 20px 0 0;
+        color: #888;
+        font-feature-settings: 'calt' off;
+        font-family: TT Norms;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+      }
+      &-type {
+        margin: 4px 0 0;
+        color: #131411;
+        font-family: TT Norms;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 28px;
+      }
+      &-price {
+        margin: 4px 0 0;
+        color: #131411;
+        font-feature-settings: 'calt' off;
+        font-family: TT Norms;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22px;
+      }
+      &-btn {
+        margin: 20px 0 0;
+      }
+      &-params {
+        margin: 20px 0 0;
+        padding: 20px 0 0;
+        overflow: hidden;
+
+        &_more {
+          display: flex;
+          position: relative;
+
+          ._more {
+            position: absolute;
+            right: 0;
+            top: 0;
+          }
+          ._item {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            height: 26px;
+            flex: 1 1 auto;
+            padding: 0 4px;
+            background: #f6f6f6;
+
+            color: #131411;
+            text-align: center;
+            font-family: TT Norms;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 14px;
+            white-space: nowrap;
+
+            &:not(:first-child) {
+              margin: 0 0 0 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
