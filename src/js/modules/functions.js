@@ -417,8 +417,10 @@ export const otherFilters = () => {
     btn.addEventListener('click', () => {
       if (otherFilters.classList.contains('_open')) {
         otherFilters.classList.remove('_open');
+        content.style.height = 0;
       } else {
         otherFilters.classList.add('_open');
+        content.style.height = `${content.scrollHeight}px`;
       }
     });
   }

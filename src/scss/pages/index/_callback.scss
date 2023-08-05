@@ -5,6 +5,53 @@
     max-width: 1400px;
   }
 
+  &_parameters {
+    .callback-body {
+      border-bottom: none;
+      padding: 82px 0 0;
+
+      @media (max-width: 1200px) {
+        padding: 60px 0 0;
+      }
+      @media (max-width: 767px) {
+        padding: 54px 0 0;
+      }
+    }
+
+    .callback-body__btn {
+      @media (max-width: 767px) {
+        flex-direction: column;
+        align-items: flex-start;
+
+        ._arrow {
+          margin: 16px 0 0 14px;
+        }
+      }
+
+      br {
+        display: none;
+
+        @media (max-width: 1200px) {
+          display: block;
+        }
+      }
+    }
+  }
+
+  &_parameters-item {
+    .callback-body {
+      border-bottom: none;
+      padding: 82px 0 0;
+
+      @media (max-width: 1200px) {
+        padding: 60px 0 0;
+      }
+      @media (max-width: 767px) {
+        padding: 54px 0 0;
+      }
+    }
+  }
+
   &-body {
     display: flex;
 

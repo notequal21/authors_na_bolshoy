@@ -1,9 +1,21 @@
 .parameters-content {
   margin: 66px 0 0;
 
+  @media (max-width: 767px) {
+    margin: 30px 0 0;
+  }
+
   &-sort {
     display: flex;
     justify-content: flex-end;
+
+    @media (max-width: 767px) {
+      justify-content: unset;
+    }
+
+    @media (max-width: 350px) {
+      overflow-x: auto;
+    }
 
     label {
       &:not(:first-child) {
@@ -43,6 +55,13 @@
 
         transition: all 0.4s ease;
 
+        @media (max-width: 767px) {
+          font-size: 12px;
+          padding: 0 8px 0 4px;
+
+          line-height: 18px;
+        }
+
         svg {
           flex: 0 0 auto;
           width: 20px;
@@ -64,6 +83,10 @@
     flex-wrap: wrap;
     gap: 24px;
 
+    @media (max-width: 767px) {
+      margin: 30px 0 0;
+    }
+
     &__card {
       display: flex;
       flex-direction: column;
@@ -71,8 +94,27 @@
       width: calc(25% - 18px);
       flex: 0 0 calc(25% - 18px);
 
+      @media (max-width: 1200px) {
+        width: calc(50% - 12px);
+        flex: 0 0 calc(50% - 12px);
+      }
+
+      @media (max-width: 767px) {
+        width: 100%;
+        flex: 1 1 100%;
+      }
+
       &-img {
+        flex: 0 0 auto;
         padding: 24px;
+        height: 306px;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+          object-position: center;
+        }
       }
 
       &-content {
@@ -103,6 +145,11 @@
           font-style: normal;
           font-weight: 400;
           line-height: 14px;
+          white-space: nowrap;
+
+          @media (max-width: 767px) {
+            padding: 0 8px;
+          }
 
           &:not(:first-child) {
             margin: 0 0 0 12px;
@@ -139,10 +186,10 @@
         line-height: 22px;
       }
       &-btn {
-        margin: 20px 0 0;
+        margin: 20px 0;
       }
       &-params {
-        margin: 20px 0 0;
+        margin: 0;
         padding: 20px 0 0;
         overflow: hidden;
         display: flex;
@@ -234,14 +281,30 @@
     align-items: center;
     justify-content: center;
 
+    @media (max-width: 767px) {
+      margin: 40px 0 0;
+    }
+
     &__arrow {
+      cursor: pointer;
+      flex: 0 0 auto;
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 46px;
-      height: 46px;
+      width: 44px;
+      height: 44px;
       border-radius: 50%;
       background-color: #ffffff;
+
+      @media (max-width: 767px) {
+        width: 36px;
+        height: 36px;
+
+        svg {
+          width: 15px;
+          height: 15px;
+        }
+      }
 
       &:last-child {
         svg {
@@ -253,7 +316,16 @@
     &__nums {
       margin: 0 25px;
 
-      span {
+      @media (max-width: 767px) {
+        margin: 0 14px;
+        width: 100%;
+        max-width: 210px;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      span,
+      a {
         display: inline-flex;
         justify-content: center;
         align-items: center;
@@ -268,8 +340,18 @@
         min-width: 32px;
         height: 32px;
 
+        @media (max-width: 767px) {
+          &._desctop-only {
+            display: none;
+          }
+        }
+
         &:not(:first-child) {
           margin: 0 0 0 14px;
+
+          @media (max-width: 767px) {
+            margin: 0;
+          }
         }
 
         &._active {
