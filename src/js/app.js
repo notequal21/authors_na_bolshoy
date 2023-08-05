@@ -8,6 +8,7 @@ functions.AOSanim();
 functions.preloader();
 functions.filterSliders();
 functions.otherFilters();
+functions.tabs();
 
 sliders.parkingSlider();
 sliders.yardsSlider();
