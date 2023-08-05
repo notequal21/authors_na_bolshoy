@@ -36,6 +36,8 @@
 @import 'pages/parameters/_info.scss';
 @import 'pages/parameters/_filters.scss';
 @import 'pages/parameters/_content.scss';
+@import 'pages/parameters-item/_top.scss';
+@import 'pages/parameters-item/_content.scss';
 
 @import 'components/_aos.scss';
 
@@ -68,6 +70,16 @@ body {
   overflow: hidden;
   display: flex;
   flex-direction: column;
+
+  padding: 82px 0 0;
+
+  @media (max-width: 1300px) {
+    padding: 72px 0 0;
+  }
+
+  @media (max-width: 720px) {
+    padding: 64px 0 0;
+  }
 }
 
 .content {
