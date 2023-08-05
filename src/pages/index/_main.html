@@ -1,6 +1,6 @@
 <div class="main">
   <div class="main-slider">
-    <img-comparison-slider>
+    <img-comparison-slider value="50">
       <div slot="handle" class="main-slider__handler">
         <svg width="38" height="16" viewBox="0 0 38 16" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M29.2703 0.999977L36.3984 8.01353L29.3273 15.0846" stroke="#F6F6F6" />
@@ -40,29 +40,43 @@
         <div class="container">
           <div class="main-slider__img-street">
             <span>Ул. Большая 76</span>
+            <span>Ул. Большая 76</span>
           </div>
           <div class="main-slider__img-content">
-            <div class="main-slider__img-title">
-              <span>Адмиралтейская <br> слобода</span>
-              <span class="_small">
-                в историческом центре у воды
-              </span>
+            <div class="main-slider__img-title title">
+              Два лаунж-дома <br>
+              в историческом <br> центре у реки
             </div>
           </div>
         </div>
         <!-- <img src="./img/main/img1.jpg" />
         <img src="./img/main/img1-mobile.jpg" /> -->
-        <img src="./img/main/img1.jpg" />
-        <img src="./img/main/old/img1.jpg" />
+        <img src="./img/main/img1.jpg" srcset="./img/main/img1.jpg 1x, ./img/main/img1@2x.jpg 2x" />
+        <img src="./img/main/img1-mobile.jpg"
+          srcset="./img/main/img1-mobile.jpg 1x, ./img/main/img1-mobile@2x.jpg 2x" />
       </div>
-      <div class="main-slider__img" slot="second">
-        <!-- <div class="container">
+      <div class="main-slider__img _second" slot="second">
+        <div class="container">
           <div class="main-slider__img-street">
-            <span>Ул. Большая 76</span>
+            <span>Ул. Большая 62</span>
             <span>Ул. Большая 62</span>
           </div>
           <div class="main-slider__img-content">
-            <div class="main-slider__img-title">
+            <div class="main-slider__img-content-wrapper">
+              <div class="main-slider__img-advantage">
+                <span>45</span>
+                Резидеций
+              </div>
+              <div class="main-slider__img-advantage">
+                <span>6</span>
+                Пентхаусов
+              </div>
+              <div class="main-slider__img-text">
+                В самой амбициозной локации
+              </div>
+
+            </div>
+            <!-- <div class="main-slider__img-title">
               <span>Два <br> лаунж-дома</span>
               <span>
                 в историческом <br> центре у реки
@@ -82,10 +96,10 @@
               <div class="main-slider__img-text">
                 В самой амбициозной локации
               </div>
-            </div>
+            </div> -->
           </div>
-        </div> -->
-        <div class="container">
+        </div>
+        <!-- <div class="container">
           <div class="main-slider__img-street">
             <span></span>
             <span>Ул. Большая 62</span>
@@ -99,11 +113,14 @@
               <span class="_small">в историческом центре у воды</span>
             </div>
           </div>
-        </div>
+        </div> -->
         <!-- <img src="./img/main/img2.jpg" />
         <img src="./img/main/img2-mobile.jpg" /> -->
-        <img src="./img/main/img2.jpg" />
-        <img src="./img/main/old/img2.jpg" />
+        <!-- <img src="./img/main/img2.jpg" />
+        <img src="./img/main/old/img2.jpg" /> -->
+        <img src="./img/main/img2.jpg" srcset="./img/main/img2.jpg 1x, ./img/main/img2@2x.jpg 2x" />
+        <img src="./img/main/img2-mobile.jpg"
+          srcset="./img/main/img2-mobile.jpg 1x, ./img/main/img2-mobile@2x.jpg 2x" />
       </div>
 
     </img-comparison-slider>

@@ -95,6 +95,13 @@
     font-weight: 700;
     line-height: 22px;
     text-transform: uppercase;
+
+    transition: all 0.3s ease;
+
+    &:hover {
+      background: #131411;
+      color: #fff;
+    }
   }
 }
 

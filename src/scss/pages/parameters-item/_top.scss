@@ -13,6 +13,18 @@
   &__back {
     flex: 0 0 640px;
 
+    a {
+      svg {
+        transition: all 0.3s ease;
+      }
+
+      &:hover {
+        svg {
+          transform: translate(-5px, 0);
+        }
+      }
+    }
+
     @media (max-width: 1200px) {
       flex: 1 1 auto;
     }

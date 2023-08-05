@@ -296,6 +296,24 @@
       border-radius: 50%;
       background-color: #ffffff;
 
+      transition: all 0.3s ease;
+
+      svg {
+        path {
+          transition: all 0.3s ease;
+        }
+      }
+
+      &:hover {
+        background-color: #131411;
+
+        svg {
+          path {
+            stroke: #ffffff;
+          }
+        }
+      }
+
       @media (max-width: 767px) {
         width: 36px;
         height: 36px;

@@ -1,6 +1,9 @@
 import AOS from 'aos';
 import { gsap } from 'gsap/dist/gsap.js';
 import noUiSlider from 'nouislider';
+import { ScrollTrigger } from 'gsap/ScrollTrigger.js';
+
+gsap.registerPlugin(ScrollTrigger);
 
 export function isWebp() {
   function testWebP(callback) {
@@ -209,7 +212,7 @@ export const buildingTooltip = () => {
     const tooltipArr = document.querySelectorAll('.building-tooltip');
 
     tooltipArr.forEach((item) =>
-      item.addEventListener('click', (event) => {
+      item.addEventListener('mouseover', (event) => {
         const { target } = event;
 
         if (
@@ -232,6 +235,8 @@ export const buildingTooltip = () => {
 export const AOSanim = () => {
   AOS.init({
     once: true,
+    duration: 600,
+    delay: 50,
   });
 };
 
@@ -422,6 +427,30 @@ export const otherFilters = () => {
         otherFilters.classList.add('_open');
         content.style.height = `${content.scrollHeight}px`;
       }
+    });
+  }
+};
+
+export const videoAnimation = () => {
+  if (document.querySelector('#layout-video-con')) {
+    let isVideoPlayed = false;
+    const video = document.querySelector('#layout-video-item');
+
+    const tween = gsap.to('#layout-video-con', {
+      ease: 'none',
+      scrollTrigger: {
+        trigger: '#layout-video-con',
+        pin: false,
+        start: '-=350',
+        markers: false,
+
+        onEnter: () => {
+          if (!isVideoPlayed) {
+            video.play();
+            isVideoPlayed = true;
+          }
+        },
+      },
     });
   }
 };

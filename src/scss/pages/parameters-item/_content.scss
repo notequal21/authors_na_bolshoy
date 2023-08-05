@@ -114,6 +114,14 @@
         &.active {
           color: #131411;
           background-color: transparent;
+
+          &:hover {
+            background-color: transparent;
+          }
+        }
+
+        &:hover {
+          background-color: #3b3b3b;
         }
 
         &:not(:first-child) {

@@ -18,11 +18,11 @@ export const lobbyScrollAnim = () => {
           start: 'top top',
           scrub: 1,
           markers: false,
-          snap: {
-            snapTo: 1 / (panels.length - 1),
-            inertia: false,
-            duration: { min: 0.1, max: 0.1 },
-          },
+          // snap: {
+          //   snapTo: 1 / (panels.length - 1),
+          //   inertia: false,
+          //   duration: { min: 0.1, max: 0.1 },
+          // },
           end: () => '+=' + panelsContainer.offsetWidth,
         },
       });
@@ -45,11 +45,11 @@ export const lobbySecondScrollAnim = () => {
           start: 'top top',
           scrub: 1,
           markers: false,
-          snap: {
-            snapTo: 1 / (panels.length - 1),
-            inertia: false,
-            duration: { min: 0.1, max: 0.1 },
-          },
+          // snap: {
+          //   snapTo: 1 / (panels.length - 1),
+          //   inertia: false,
+          //   duration: { min: 0.1, max: 0.1 },
+          // },
           end: () => '+=' + panelsContainer.offsetWidth,
         },
       });

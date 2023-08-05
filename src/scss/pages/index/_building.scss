@@ -88,6 +88,27 @@
       }
     }
 
+    &:hover {
+      .building-tooltip {
+        &__btn {
+          background-color: #131411;
+
+          svg {
+            transform: rotate(45deg);
+            path {
+              fill: #ffffff;
+            }
+          }
+        }
+        &__content {
+          pointer-events: unset;
+          visibility: visible;
+          opacity: 1;
+          transform: translate(0) scale(1);
+        }
+      }
+    }
+
     &__btn {
       cursor: pointer;
       display: flex;
