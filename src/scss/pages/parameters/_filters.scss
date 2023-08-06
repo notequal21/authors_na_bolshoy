@@ -16,8 +16,15 @@
 
     &__select {
       width: 196px;
+      margin: 0 0 8px;
+
+      @media (max-width: 1200px) {
+        margin: 48px 0 0;
+        order: 3;
+      }
 
       @media (max-width: 767px) {
+        margin: 40px 0 0;
         width: 100%;
       }
 
@@ -37,9 +44,61 @@
         background: transparent;
       }
     }
+
+    &__title {
+      flex: 0 0 100%;
+      margin: 0 0 32px;
+
+      br {
+        display: none;
+      }
+
+      @media (max-width: 1200px) {
+        margin: 0;
+      }
+      @media (max-width: 767px) {
+        br {
+          display: block;
+        }
+      }
+    }
+
+    &__text {
+      margin: 0 0 0 64px;
+      color: #565656;
+      font-family: TT Norms;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 28px;
+
+      @media (max-width: 1200px) {
+        flex: 0 0 100%;
+        margin: 20px 0 0;
+        order: 2;
+      }
+
+      @media (max-width: 767px) {
+        font-size: 16px;
+        line-height: 22px;
+
+        br {
+          display: none;
+        }
+      }
+    }
   }
   &-row {
     display: flex;
+
+    &:nth-child(1) {
+      flex-wrap: wrap;
+      align-items: flex-end;
+
+      @media (max-width: 1200px) {
+        gap: 0;
+      }
+    }
 
     &:not(:first-child) {
       margin: 50px 0 0;

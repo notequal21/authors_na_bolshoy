@@ -327,8 +327,8 @@ export const filterSliders = () => {
     noUiSlider.create(sliderComfort, {
       start: 1,
       range: {
-        min: 30,
-        max: 300,
+        min: 35,
+        max: 115,
       },
       connect: 'lower',
       step: 1,
