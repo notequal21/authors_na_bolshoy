@@ -108,3 +108,27 @@ export const accentScrollAnim = () => {
     }
   }
 };
+
+export const videoAnimation = () => {
+  if (document.querySelector('#layout-video-con')) {
+    let isVideoPlayed = false;
+    const video = document.querySelector('#layout-video-item');
+
+    const tween = gsap.to('#layout-video-con', {
+      ease: 'none',
+      scrollTrigger: {
+        trigger: '#layout-video-con',
+        pin: false,
+        start: '-=350',
+        markers: false,
+
+        onEnter: () => {
+          if (!isVideoPlayed) {
+            video.play();
+            isVideoPlayed = true;
+          }
+        },
+      },
+    });
+  }
+};

@@ -196,6 +196,12 @@
       display: flex;
       margin: 0 0 14px;
 
+      &._square {
+        span {
+          margin: 0 12px;
+        }
+      }
+
       &-col {
         flex: 0 0 50%;
         display: flex;

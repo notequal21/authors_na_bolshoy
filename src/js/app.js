@@ -19,5 +19,5 @@ sliders.viewSlider();
 scrollAnimations.lobbyScrollAnim();
 scrollAnimations.lobbySecondScrollAnim();
 scrollAnimations.accentScrollAnim();
-functions.videoAnimation();
+scrollAnimations.videoAnimation();
 scrollAnimations.progressScrollAnim();

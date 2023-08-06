@@ -1,9 +1,9 @@
 import AOS from 'aos';
 import { gsap } from 'gsap/dist/gsap.js';
 import noUiSlider from 'nouislider';
-import { ScrollTrigger } from 'gsap/ScrollTrigger.js';
+// import { ScrollTrigger } from 'gsap/ScrollTrigger.js';
 
-gsap.registerPlugin(ScrollTrigger);
+// gsap.registerPlugin(ScrollTrigger);
 
 export function isWebp() {
   function testWebP(callback) {
@@ -293,7 +293,11 @@ export const filterSliders = () => {
     let sliderBedrooms = document.getElementById('filter-slider-bedrooms');
     let sliderComfort = document.getElementById('filter-slider-comfort');
     let sliderFloor = document.getElementById('filter-slider-floor');
-    var inputNumberComfort = document.getElementById('inputNumberComfort');
+    // var inputNumberComfort = document.getElementById('inputNumberComfort');
+    var inputNumberComfortFrom = document.getElementById(
+      'spanNumberSquareFrom'
+    );
+    var inputNumberComfortTo = document.getElementById('spanNumberSquareTo');
     var inputNumberCost = document.getElementById('inputNumberCost');
     var sliderCost = document.getElementById('filter-slider-cost');
     const floorFromNum = document.querySelector('#spanNumberFloorFrom');
@@ -325,12 +329,12 @@ export const filterSliders = () => {
       pips: { mode: 'steps', format: format },
     });
     noUiSlider.create(sliderComfort, {
-      start: 1,
+      start: [35, 50],
       range: {
         min: 35,
         max: 115,
       },
-      connect: 'lower',
+      connect: true,
       step: 1,
       tooltips: false,
     });
@@ -357,16 +361,26 @@ export const filterSliders = () => {
 
     sliderComfort.noUiSlider.on('update', function (values, handle) {
       var value = values[handle];
-      inputNumberComfort.value = Math.floor(value);
+      // inputNumberComfort.value = Math.floor(value);
 
-      for (var i = 0; input.length > i; i++) {
-        buffer[i] = document.createElement('div');
-        buffer[i].className = 'buffer';
-        input[i].parentNode.insertBefore(buffer[i], input[i].nextSibling);
-
-        input[i].nextElementSibling.innerHTML = input[i].value;
-        input[i].style.width = input[i].nextElementSibling.clientWidth + 'px';
+      if (handle) {
+        // floorToNum.innerHTML = Math.floor(value);
+        // inputNumberComfortTo.value = Math.floor(value);
+        inputNumberComfortTo.innerHTML = Math.floor(value);
+      } else {
+        // floorFromNum.innerHTML = Math.floor(value);
+        // inputNumberComfortFrom.value = Math.floor(value);
+        inputNumberComfortFrom.innerHTML = Math.floor(value);
       }
+
+      // for (var i = 0; input.length > i; i++) {
+      //   buffer[i] = document.createElement('div');
+      //   buffer[i].className = 'buffer';
+      //   input[i].parentNode.insertBefore(buffer[i], input[i].nextSibling);
+
+      //   input[i].nextElementSibling.innerHTML = input[i].value;
+      //   input[i].style.width = input[i].nextElementSibling.clientWidth + 'px';
+      // }
     });
     sliderCost.noUiSlider.on('update', function (values, handle) {
       var value = values[handle];
@@ -427,30 +441,6 @@ export const otherFilters = () => {
         otherFilters.classList.add('_open');
         content.style.height = `${content.scrollHeight}px`;
       }
-    });
-  }
-};
-
-export const videoAnimation = () => {
-  if (document.querySelector('#layout-video-con')) {
-    let isVideoPlayed = false;
-    const video = document.querySelector('#layout-video-item');
-
-    const tween = gsap.to('#layout-video-con', {
-      ease: 'none',
-      scrollTrigger: {
-        trigger: '#layout-video-con',
-        pin: false,
-        start: '-=350',
-        markers: false,
-
-        onEnter: () => {
-          if (!isVideoPlayed) {
-            video.play();
-            isVideoPlayed = true;
-          }
-        },
-      },
     });
   }
 };
