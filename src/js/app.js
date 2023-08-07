@@ -16,6 +16,7 @@ sliders.accentSlider();
 sliders.progressSlider();
 sliders.viewSlider();
 
+scrollAnimations.twoImageAnimation();
 scrollAnimations.lobbyScrollAnim();
 scrollAnimations.lobbySecondScrollAnim();
 scrollAnimations.accentScrollAnim();

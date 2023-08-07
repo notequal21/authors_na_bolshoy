@@ -132,3 +132,24 @@ export const videoAnimation = () => {
     });
   }
 };
+
+export const twoImageAnimation = () => {
+  if (document.querySelector('#two-block-anim')) {
+    const imgArr = document.querySelectorAll(
+      '#two-block-anim .two-body__img-item-wrapper'
+    );
+
+    const isTablet = window.innerWidth < 1200;
+
+    ScrollTrigger.create({
+      trigger: '#two-block-anim',
+      start: isTablet ? '-=0' : '-=450',
+      end: 'bottom',
+      markers: false,
+      onEnter: (self) => {
+        console.log('entered');
+        imgArr.forEach((item) => (item.style.width = `${item.scrollWidth}px`));
+      },
+    });
+  }
+};
