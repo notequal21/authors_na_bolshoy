@@ -1,5 +1,6 @@
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger.js';
+import Typewriter from 'typewriter-effect/dist/core.js';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -147,8 +148,36 @@ export const twoImageAnimation = () => {
       end: 'bottom',
       markers: false,
       onEnter: (self) => {
-        console.log('entered');
         imgArr.forEach((item) => (item.style.width = `${item.scrollWidth}px`));
+      },
+    });
+  }
+};
+
+export const textWriterAnim = () => {
+  if (document.querySelector('.form_top')) {
+    const formBlock = document.querySelector('.form_top');
+    // const isTablet = window.innerWidth < 1200;
+
+    let writer = new Typewriter('#typewriter', {
+      strings: ['Узнайте о проекте больше'],
+      autoStart: true,
+      loop: false,
+      delay: 100,
+      cursor: '',
+      pauseFor: 999999999999999,
+    });
+
+    writer.stop();
+
+    ScrollTrigger.create({
+      trigger: formBlock,
+      // start: isTablet ? '-=0' : '-=450',
+      start: '-=350',
+      end: 'bottom',
+      markers: false,
+      onEnter: (self) => {
+        writer.start();
       },
     });
   }

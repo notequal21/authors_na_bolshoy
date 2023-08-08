@@ -339,6 +339,21 @@ export const filterSliders = () => {
       },
     };
 
+    // setTimeout(() => {
+    //   let pips = sliderBedrooms.querySelectorAll('.noUi-value');
+    //   function clickOnPip() {
+    //     // var value = sliderBedrooms.getAttribute('data-value');
+    //     var value = Number(this.dataset.value);
+    //     // sliderBedrooms.noUiSlider.set(value);
+    //     sliderBedrooms.noUiSlider.set('A2');
+    //   }
+
+    //   for (var i = 0; i < pips.length; i++) {
+    //     pips[i].style.cursor = 'pointer';
+    //     pips[i].addEventListener('click', clickOnPip);
+    //   }
+    // }, 100);
+
     noUiSlider.create(sliderBedrooms, {
       start: 1,
       range: {
@@ -388,12 +403,12 @@ export const filterSliders = () => {
 
       if (handle) {
         // floorToNum.innerHTML = Math.floor(value);
-        // inputNumberComfortTo.value = Math.floor(value);
-        inputNumberComfortTo.innerHTML = Math.floor(value);
+        inputNumberComfortTo.value = Math.floor(value);
+        // inputNumberComfortTo.innerHTML = Math.floor(value);
       } else {
         // floorFromNum.innerHTML = Math.floor(value);
-        // inputNumberComfortFrom.value = Math.floor(value);
-        inputNumberComfortFrom.innerHTML = Math.floor(value);
+        inputNumberComfortFrom.value = Math.floor(value);
+        // inputNumberComfortFrom.innerHTML = Math.floor(value);
       }
 
       // for (var i = 0; input.length > i; i++) {
@@ -422,14 +437,26 @@ export const filterSliders = () => {
     sliderFloor.noUiSlider.on('update', function (values, handle) {
       var value = values[handle];
       if (handle) {
-        floorToNum.innerHTML = Math.floor(value);
+        floorToNum.value = Math.floor(value);
       } else {
-        floorFromNum.innerHTML = Math.floor(value);
+        floorFromNum.value = Math.floor(value);
       }
     });
 
-    inputNumberComfort.addEventListener('change', function () {
+    inputNumberComfortFrom.addEventListener('change', function () {
       sliderComfort.noUiSlider.set([this.value]);
+    });
+    inputNumberComfortTo.addEventListener('change', function () {
+      sliderComfort.noUiSlider.set([
+        sliderComfort.noUiSlider.get()[0],
+        this.value,
+      ]);
+    });
+    floorFromNum.addEventListener('change', function () {
+      sliderFloor.noUiSlider.set([this.value]);
+    });
+    floorToNum.addEventListener('change', function () {
+      sliderFloor.noUiSlider.set([sliderFloor.noUiSlider.get()[0], this.value]);
     });
     inputNumberCost.addEventListener('change', function () {
       sliderCost.noUiSlider.set([
@@ -465,5 +492,71 @@ export const otherFilters = () => {
         content.style.height = `${content.scrollHeight}px`;
       }
     });
+  }
+};
+
+export const callbackModal = () => {
+  if (document.querySelector('.callback_modal')) {
+    const openBtn = document.querySelectorAll('.callback_modal-open-btn');
+    const modal = document.querySelector('.callback_modal');
+    const modalClose = document.querySelector('.callback_modal-body__close');
+    const body = document.querySelector('body');
+    const content = document.querySelectorAll('.container');
+
+    let toggleModal = (e) => {
+      e.preventDefault();
+
+      let div = document.createElement('div');
+      div.style.overflowY = 'scroll';
+      div.style.width = '50px';
+      div.style.height = '50px';
+      document.body.append(div);
+      let scrollWidth = div.offsetWidth - div.clientWidth;
+
+      div.remove();
+
+      if (modal.classList.contains('active')) {
+        modal.classList.remove('active');
+        body.classList.remove('lock');
+        if (window.innerWidth > 1199) {
+          content.forEach((item) => {
+            item.style.maxWidth = `1368px`;
+            item.style.padding = ` 0 36px`;
+          });
+        }
+        if (window.innerWidth > 991 && window.innerWidth < 1200) {
+          content.forEach((item) => {
+            item.style.maxWidth = `1368px`;
+            item.style.padding = ` 0 28px`;
+          });
+        }
+        if (window.innerWidth <= 767) {
+          item.style.padding = ` 0 20px`;
+        }
+      } else {
+        modal.classList.add('active');
+        body.classList.add('lock');
+        if (window.innerWidth > 1199) {
+          content.forEach((item) => {
+            item.style.maxWidth = `${1368 + scrollWidth}px`;
+            item.style.padding = ` 0 ${scrollWidth + 36}px 0 36px`;
+          });
+        }
+        if (window.innerWidth > 992 && window.innerWidth < 1200) {
+          content.forEach((item) => {
+            item.style.maxWidth = `${1368 + scrollWidth}px`;
+            item.style.padding = ` 0 ${scrollWidth + 36}px 0 36px`;
+          });
+        }
+        if (window.innerWidth <= 767) {
+          item.style.padding = ` 0 ${scrollWidth + 20}px 0 20px`;
+        }
+      }
+    };
+
+    openBtn.forEach((item) => {
+      item.addEventListener('click', toggleModal);
+    });
+    modalClose.addEventListener('click', toggleModal);
   }
 };

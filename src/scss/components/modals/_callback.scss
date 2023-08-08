@@ -1,0 +1,241 @@
+.callback_modal {
+  position: fixed;
+  z-index: 20;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #f6f6f6;
+  height: 100vh;
+  overflow: auto;
+
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(0.7) translate(0, -100%);
+  transition: all 0.4s ease;
+
+  &.active {
+    opacity: 1;
+    pointer-events: unset;
+    transform: scale(1) translate(0);
+  }
+
+  &__a {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 492px;
+
+    &._mobile {
+      display: none;
+    }
+
+    @media (max-width: 1200px) {
+      width: 419px;
+    }
+
+    @media (max-width: 767px) {
+      display: none;
+      width: 300px;
+
+      &._mobile {
+        display: block;
+      }
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &-body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 120px 0;
+    position: relative;
+
+    &__close {
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 40px;
+      right: 40px;
+      width: 48px;
+      height: 48px;
+      border: 1px solid #d8d8d8;
+      border-radius: 50%;
+
+      @media (max-width: 1200px) {
+        top: 28px;
+        right: 0;
+      }
+      @media (max-width: 767px) {
+        top: 16px;
+        right: 1px;
+        width: 40px;
+        height: 40px;
+
+        svg {
+          width: 16px;
+          height: 16px;
+        }
+      }
+    }
+
+    &__title {
+      text-align: center;
+    }
+
+    &__subtitle {
+      margin: 40px 0 0;
+
+      font-family: 'TT Norms';
+      font-size: 22px;
+      line-height: 32px;
+      text-align: center;
+      color: #131411;
+
+      @media (max-width: 1200px) {
+        margin: 30px 0 0;
+        font-size: 20px;
+        line-height: 28px;
+      }
+
+      @media (max-width: 767px) {
+        margin: 28px 0 0;
+        font-size: 16px;
+        line-height: 22px;
+
+        br {
+          display: none;
+        }
+      }
+    }
+
+    &__form {
+      width: 100%;
+      max-width: 914px;
+      display: flex;
+      margin: 60px auto 0;
+
+      @media (max-width: 767px) {
+        width: 100%;
+        margin: 48px 0 0;
+        flex-direction: column;
+        padding: 0 12px;
+      }
+
+      label {
+        width: 100%;
+        &:not(:first-child) {
+          margin: 0 0 0 24px;
+
+          @media (max-width: 767px) {
+            margin: 28px 0 0;
+          }
+        }
+
+        &:nth-child(1) {
+          flex: 0 0 auto;
+          width: 220px;
+          @media (max-width: 991px) {
+            width: 100%;
+          }
+        }
+
+        span {
+          font-family: 'TT Norms';
+          font-size: 16px;
+          line-height: 22px;
+          font-feature-settings: 'calt' off;
+          color: #888888;
+        }
+
+        input {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          margin: 12px 0 0;
+          padding: 0 16px;
+          height: 54px;
+          background: transparent;
+          border-bottom: 2px solid #d8d8d8;
+
+          font-family: 'TT Norms';
+          font-size: 18px;
+          line-height: 24px;
+          letter-spacing: 0.02em;
+          color: #131411;
+
+          @media (max-width: 1200px) {
+            font-size: 16px;
+            line-height: 22px;
+          }
+          @media (max-width: 767px) {
+            margin: 4px 0 0;
+          }
+        }
+      }
+
+      &-btn {
+        cursor: pointer;
+        align-self: flex-end;
+        display: flex;
+        align-items: center;
+        margin: 0 0 0 24px;
+
+        font-family: 'TT Norms';
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 32px;
+        text-transform: uppercase;
+        color: #131411;
+
+        @media (max-width: 767px) {
+          margin: 48px 0 0;
+          align-self: flex-start;
+          font-size: 20px;
+          line-height: 24px;
+        }
+
+        span {
+          margin: 0 0 0 24px;
+          display: block;
+          width: 48px;
+          height: 48px;
+          position: relative;
+          border: 1px solid #d8d8d8;
+          border-radius: 50%;
+
+          svg {
+            position: absolute;
+            top: 50%;
+            left: -6px;
+            transform: translate(0, -50%);
+          }
+        }
+      }
+    }
+
+    &__policy {
+      margin: 40px 0 0;
+
+      font-family: 'TT Norms';
+      font-size: 14px;
+      line-height: 20px;
+      text-align: center;
+      color: #888888;
+
+      a {
+        color: #888888;
+        text-decoration: underline;
+      }
+    }
+  }
+}

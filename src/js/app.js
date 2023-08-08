@@ -9,6 +9,7 @@ functions.preloader();
 functions.filterSliders();
 functions.otherFilters();
 functions.tabs();
+functions.callbackModal();
 
 // sliders.parkingSlider();
 sliders.yardsSlider();
@@ -17,6 +18,7 @@ sliders.progressSlider();
 sliders.viewSlider();
 
 scrollAnimations.twoImageAnimation();
+scrollAnimations.textWriterAnim();
 scrollAnimations.lobbyScrollAnim();
 scrollAnimations.lobbySecondScrollAnim();
 scrollAnimations.accentScrollAnim();
