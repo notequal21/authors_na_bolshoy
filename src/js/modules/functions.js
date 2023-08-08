@@ -46,17 +46,36 @@ export const burger = () => {
     const closeBtn = document.querySelector('.menu__close');
     const menu = document.querySelector('.menu');
     const body = document.querySelector('body');
+    const btnBack = document.querySelector('._submenu-back');
+    const submenuBtns = menu.querySelectorAll('._submenu__link');
+    const menuLinks = menu.querySelectorAll('.menu-body__links');
+
+    const submenuOpen = (index) => {
+      menuLinks.forEach((item) => {
+        item.classList.add('submenu-open');
+        item.style.transform = `translate(-${menuLinks[0].scrollWidth}px, 0)`;
+      });
+    };
+
+    const submenuClose = (index) => {
+      menuLinks.forEach((item) => {
+        item.classList.remove('submenu-open');
+        item.style.transform = `translate(0)`;
+      });
+    };
 
     let toggleBurger = (type) => {
       if (type === 'close') {
         openBtn.classList.remove('active');
         menu.classList.remove('active');
         body.classList.remove('lock');
+        submenuClose();
       } else {
         if (openBtn.classList.contains('active')) {
           openBtn.classList.remove('active');
           menu.classList.remove('active');
           body.classList.remove('lock');
+          submenuClose();
         } else {
           openBtn.classList.add('active');
           menu.classList.add('active');
@@ -67,6 +86,10 @@ export const burger = () => {
 
     openBtn.addEventListener('click', toggleBurger);
     closeBtn.addEventListener('click', () => toggleBurger('close'));
+    submenuBtns.forEach((item, index) =>
+      item.addEventListener('click', () => submenuOpen(index))
+    );
+    btnBack.addEventListener('click', submenuClose);
   }
 };
 
