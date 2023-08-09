@@ -25,6 +25,8 @@ export function isWebp() {
 
 export const anchors = () => {
   const anchors = document.querySelectorAll('a[href*="#"]');
+  const body = document.querySelector('body');
+  const menu = document.querySelector('.menu');
 
   for (let anchor of anchors) {
     anchor.addEventListener('click', function (e) {
@@ -32,10 +34,15 @@ export const anchors = () => {
 
       const blockID = anchor.getAttribute('href').substr(1);
 
-      document.getElementById(blockID).scrollIntoView({
-        behavior: 'smooth',
-        block: 'start',
-      });
+      if (blockID.length > 0) {
+        body.classList.remove('lock');
+        menu.classList.remove('active');
+
+        document.getElementById(blockID).scrollIntoView({
+          behavior: 'smooth',
+          block: 'start',
+        });
+      }
     });
   }
 };
@@ -231,18 +238,14 @@ export const upBtn = () => {
 };
 
 export const buildingTooltip = () => {
-  if (document.querySelector('.building-tooltip')) {
+  if (document.querySelector('.building-tooltip') && innerWidth <= 991) {
     const tooltipArr = document.querySelectorAll('.building-tooltip');
 
     tooltipArr.forEach((item) =>
-      item.addEventListener('mouseover', (event) => {
+      item.addEventListener('click', (event) => {
         const { target } = event;
 
-        if (
-          target
-            .closest('.building-tooltip__btn')
-            .classList.contains('building-tooltip__btn')
-        ) {
+        if (target.closest('.building-tooltip__btn')) {
           if (item.classList.contains('_active')) {
             item.classList.remove('_active');
           } else {
@@ -570,6 +573,12 @@ export const mainHandlerAnim = () => {
       sliderHandler.classList.add('_active');
     });
     sliderItem.addEventListener('mouseup', () => {
+      sliderHandler.classList.remove('_active');
+    });
+    sliderItem.addEventListener('touchstart', () => {
+      sliderHandler.classList.add('_active');
+    });
+    sliderItem.addEventListener('touchend', () => {
       sliderHandler.classList.remove('_active');
     });
   }

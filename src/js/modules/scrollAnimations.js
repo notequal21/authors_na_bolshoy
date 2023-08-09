@@ -163,7 +163,7 @@ export const textWriterAnim = () => {
       strings: ['Узнайте о проекте больше'],
       autoStart: true,
       loop: false,
-      delay: 50,
+      delay: 25,
       cursor: '',
       pauseFor: 999999999999999,
     });

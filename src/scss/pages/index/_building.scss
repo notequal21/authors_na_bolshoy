@@ -1,5 +1,6 @@
 .building {
   margin: 50px 0 120px;
+  scroll-margin-top: 100px;
 
   .container {
     @media (max-width: 1368px) {
@@ -25,8 +26,8 @@
     z-index: 1;
 
     &:nth-child(1) {
-      top: 67px;
-      left: 22px;
+      top: 120px;
+      left: 82px;
     }
     &:nth-child(2) {
       top: 298px;
@@ -48,6 +49,11 @@
       top: 538px;
       left: 1014px;
 
+      @media (max-width: 767px) {
+        top: 420px;
+        left: 964px;
+      }
+
       .building-tooltip__content {
         left: auto;
         right: 22px;
@@ -59,6 +65,11 @@
     &:nth-child(7) {
       top: 432px;
       left: 1080px;
+
+      @media (max-width: 767px) {
+        top: 352px;
+        left: 980px;
+      }
 
       .building-tooltip__content {
         left: auto;
@@ -88,28 +99,32 @@
       }
     }
 
-    &:hover {
-      .building-tooltip {
-        &__btn {
-          background-color: #131411;
+    @media (min-width: 991px) {
+      &:hover {
+        .building-tooltip {
+          &__btn {
+            background-color: #131411;
 
-          svg {
-            transform: rotate(45deg);
-            path {
-              fill: #ffffff;
+            svg {
+              transform: rotate(45deg);
+              path {
+                fill: #ffffff;
+              }
             }
           }
-        }
-        &__content {
-          pointer-events: unset;
-          visibility: visible;
-          opacity: 1;
-          transform: translate(0) scale(1);
+          &__content {
+            pointer-events: unset;
+            visibility: visible;
+            opacity: 1;
+            transform: translate(0) scale(1);
+          }
         }
       }
     }
 
     &__btn {
+      position: relative;
+      z-index: 1;
       cursor: pointer;
       display: flex;
       justify-content: center;
@@ -131,6 +146,7 @@
       }
 
       svg {
+        pointer-events: none;
         transition: all 0.4s ease;
 
         path {

@@ -3,7 +3,8 @@ import * as sliders from './modules/sliders.js';
 import * as scrollAnimations from './modules/scrollAnimations.js';
 
 functions.burger();
-// functions.buildingTooltip();
+functions.anchors();
+functions.buildingTooltip();
 functions.AOSanim();
 functions.preloader();
 functions.filterSliders();

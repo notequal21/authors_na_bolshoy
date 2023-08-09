@@ -1,5 +1,6 @@
 .position {
   position: relative;
+  scroll-margin-top: 100px;
 
   @media (max-width: 1200px) {
     display: flex;
