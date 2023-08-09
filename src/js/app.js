@@ -10,6 +10,7 @@ functions.filterSliders();
 functions.otherFilters();
 functions.tabs();
 functions.callbackModal();
+functions.mainHandlerAnim();
 
 // sliders.parkingSlider();
 sliders.yardsSlider();

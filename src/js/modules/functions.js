@@ -560,3 +560,17 @@ export const callbackModal = () => {
     modalClose.addEventListener('click', toggleModal);
   }
 };
+
+export const mainHandlerAnim = () => {
+  if (document.querySelector('img-comparison-slider')) {
+    const sliderItem = document.querySelector('img-comparison-slider');
+    const sliderHandler = sliderItem.querySelector('.main-slider__handler');
+
+    sliderItem.addEventListener('mousedown', () => {
+      sliderHandler.classList.add('_active');
+    });
+    sliderItem.addEventListener('mouseup', () => {
+      sliderHandler.classList.remove('_active');
+    });
+  }
+};
