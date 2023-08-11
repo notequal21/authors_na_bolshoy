@@ -122,4 +122,28 @@
       }
     }
   }
+
+  &_future {
+    .callback-body {
+      border-bottom: none;
+      padding-bottom: 0;
+
+      @media (max-width: 991px) {
+        br {
+          display: block;
+        }
+      }
+    }
+
+    .callback-body__btn {
+      @media (max-width: 500px) {
+        flex-direction: column;
+        align-items: flex-start;
+
+        ._arrow {
+          margin: 18px 0 0 14px;
+        }
+      }
+    }
+  }
 }

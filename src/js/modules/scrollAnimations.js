@@ -103,9 +103,33 @@ export const accentScrollAnim = () => {
           },
         })
         .to('#accent-item-1', { opacity: 0, y: -100 }, 0.1)
-        .fromTo('#accent-item-2', { opacity: 0, y: 100 }, { opacity: 1, y: 0 })
-        .to('#accent-item-2', { opacity: 0, y: -100 })
-        .fromTo('#accent-item-3', { opacity: 0, y: 100 }, { opacity: 1, y: 0 });
+        .fromTo(
+          '#accent-item-2',
+          { opacity: 0, y: 100 },
+          { opacity: 1, y: 0 },
+          0.4
+        )
+        .to('#accent-item-2', { opacity: 0, y: -100 }, 0.9)
+        .fromTo(
+          '#accent-item-3',
+          { opacity: 0, y: 100 },
+          { opacity: 1, y: 0 },
+          1.2
+        )
+        .to('#accent-img-1', { opacity: 0.6, x: '-100%', duration: 0.7 }, 0.1)
+        .fromTo(
+          '#accent-img-2',
+          { opacity: 0.6, x: '100%', duration: 0.7 },
+          { opacity: 1, x: 0, duration: 0.7 },
+          0.1
+        )
+        .to('#accent-img-2', { opacity: 0.6, x: '-100%', duration: 0.7 }, 0.9)
+        .fromTo(
+          '#accent-img-3',
+          { opacity: 0.6, x: '100%', duration: 0.7 },
+          { opacity: 1, x: 0, duration: 0.7 },
+          0.9
+        );
     }
   }
 };

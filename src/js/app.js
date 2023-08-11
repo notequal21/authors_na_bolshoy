@@ -18,6 +18,7 @@ sliders.yardsSlider();
 sliders.accentSlider();
 sliders.progressSlider();
 sliders.viewSlider();
+sliders.futureMoreSlider();
 
 scrollAnimations.twoImageAnimation();
 scrollAnimations.textWriterAnim();

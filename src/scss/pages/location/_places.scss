@@ -3,13 +3,29 @@
   margin: 70px 0 0;
 
   &__a {
+    pointer-events: none;
     position: absolute;
     z-index: -1;
-    display: none;
+
+    width: 1650px;
+    top: 75px;
+    right: -510px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
   }
 
   @media (max-width: 1200px) {
     margin: 80px 0 0;
+
+    &__a {
+      width: 1500px;
+      top: 260px;
+      right: -540px;
+    }
   }
 
   @media (max-width: 767px) {
@@ -20,12 +36,6 @@
       width: 1100px;
       top: 0;
       right: -400px;
-
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-      }
     }
   }
 

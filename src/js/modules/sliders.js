@@ -41,7 +41,7 @@ export const accentSlider = () => {
   if (document.querySelector('.accent-content')) {
     if (window.innerWidth <= 1200) {
       const swiper = new Swiper('.accent-content', {
-        modules: [Navigation],
+        modules: [Navigation, Controller],
 
         spaceBetween: 300,
 
@@ -50,6 +50,11 @@ export const accentSlider = () => {
           nextEl: '#accent-btn-next',
         },
       });
+      const swiperImg = new Swiper('.accent__img', {
+        modules: [Controller],
+      });
+      swiperImg.controller.control = swiper;
+      swiper.controller.control = swiperImg;
     }
   }
 };
@@ -91,6 +96,21 @@ export const viewSlider = () => {
 
       pagination: {
         el: '.view-slider__pagination',
+      },
+    });
+  }
+};
+
+export const futureMoreSlider = () => {
+  if (document.querySelector('.location_future-more-body__slider')) {
+    const swiper = new Swiper('.location_future-more-body__slider', {
+      modules: [Navigation],
+      spaceBetween: 20,
+      slidesPerView: 1,
+
+      navigation: {
+        prevEl: '#location-future-more-prev',
+        nextEl: '#location-future-more-next',
       },
     });
   }
