@@ -583,3 +583,19 @@ export const mainHandlerAnim = () => {
     });
   }
 };
+
+export const checkUserAgentVideoAutoplay = async () => {
+  const video = document.querySelector('#video-bg');
+
+  try {
+    await video.play();
+
+    video.setAttribute('autoplay', true);
+
+    console.log('video started playing successfully');
+  } catch (err) {
+    console.log(err, 'video play error');
+    // do stuff in case your video is unavailable to play/autoplay
+    // show user that video autoplay was aborted
+  }
+};

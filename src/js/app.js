@@ -12,6 +12,7 @@ functions.otherFilters();
 functions.tabs();
 functions.callbackModal();
 functions.mainHandlerAnim();
+functions.checkUserAgentVideoAutoplay();
 
 // sliders.parkingSlider();
 sliders.yardsSlider();
