@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zxx">
+@@include('components/_head.html', {
+'title':'Авторы',
+})
+
+<body>
+  <div class="wrapper">
+    <div class="content">
+      @@include('components/header.html')
+      <!-- @@include('components/_preloader.html') -->
+      @@include('components/modals/_callback.html')
+
+      <div class="callback callback_future">
+        <div class="container">
+          <div class="callback-body">
+            <a href="" class="callback-body__btn callback_modal-open-btn btn_arrow">
+              выберите вашу <br> резиденцию
+
+              <span class="_arrow">
+                <svg width="47" height="14" viewBox="0 0 47 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0.75 6.948H45.625" stroke="#131411" stroke-width="1.125" />
+                  <path d="M39.976 1.375L45.7499 7L39.976 12.625" stroke="#131411" stroke-width="1.125" />
+                </svg>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    @@include('components/footer.html')
+  </div>
+
+  @@include('components/_js.html')
+
+</body>
+
+</html>
