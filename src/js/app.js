@@ -13,6 +13,8 @@ functions.tabs();
 functions.callbackModal();
 functions.mainHandlerAnim();
 functions.checkUserAgentVideoAutoplay();
+functions.faqAccordion();
+// functions.galleryLightBox();
 
 // sliders.parkingSlider();
 sliders.yardsSlider();
@@ -20,6 +22,8 @@ sliders.accentSlider();
 sliders.progressSlider();
 sliders.viewSlider();
 sliders.futureMoreSlider();
+sliders.gallerySlider1();
+sliders.gallerySlider2();
 
 scrollAnimations.twoImageAnimation();
 scrollAnimations.textWriterAnim();

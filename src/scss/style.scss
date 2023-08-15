@@ -2,6 +2,7 @@
 @import '../../node_modules/swiper/swiper.scss';
 @import '../../node_modules/swiper/modules/pagination.scss';
 @import '../../node_modules/swiper/modules/navigation.scss';
+@import './components/_lightgallery.scss';
 @import './components/_nouislider.scss';
 // @import '../../node_modules/swiper/modules/grid.scss';
 
@@ -46,6 +47,8 @@
 @import 'pages/location/_future-bottom.scss';
 @import 'pages/payment/_main.scss';
 @import 'pages/_report.scss';
+@import 'pages/_policy.scss';
+@import 'pages/_gallery.scss';
 
 @import 'components/_aos.scss';
 @import 'components/modals/callback.scss';

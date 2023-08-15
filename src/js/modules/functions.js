@@ -1,9 +1,7 @@
 import AOS from 'aos';
 import { gsap } from 'gsap/dist/gsap.js';
 import noUiSlider from 'nouislider';
-// import { ScrollTrigger } from 'gsap/ScrollTrigger.js';
-
-// gsap.registerPlugin(ScrollTrigger);
+import lightbox from '../../../node_modules/lightbox2/dist/js/lightbox-plus-jquery.js';
 
 export function isWebp() {
   function testWebP(callback) {
@@ -585,17 +583,55 @@ export const mainHandlerAnim = () => {
 };
 
 export const checkUserAgentVideoAutoplay = async () => {
-  const video = document.querySelector('#video-bg');
+  if (document.querySelector('#video-bg')) {
+    const video = document.querySelector('#video-bg');
 
-  try {
-    await video.play();
+    try {
+      await video.play();
 
-    video.setAttribute('autoplay', true);
+      video.setAttribute('autoplay', true);
 
-    console.log('video started playing successfully');
-  } catch (err) {
-    console.log(err, 'video play error');
-    // do stuff in case your video is unavailable to play/autoplay
-    // show user that video autoplay was aborted
+      console.log('video started playing successfully');
+    } catch (err) {
+      console.log(err, 'video play error');
+      // do stuff in case your video is unavailable to play/autoplay
+      // show user that video autoplay was aborted
+    }
+  }
+};
+
+export const faqAccordion = () => {
+  if (document.querySelector('.policy_content-body__item')) {
+    const accordionList = document.querySelectorAll(
+      '.policy_content-body__item'
+    );
+
+    accordionList.forEach((item) =>
+      item.addEventListener('click', (event) => {
+        const { target } = event;
+        const answerContent = item.querySelector(
+          '.policy_content-body__item-content'
+        );
+
+        if (target.closest('.policy_content-body__item-title')) {
+          if (item.classList.contains('open')) {
+            item.classList.remove('open');
+            answerContent.style.height = '0';
+          } else {
+            item.classList.add('open');
+            answerContent.style.height = `${answerContent.scrollHeight}px`;
+          }
+        }
+      })
+    );
+  }
+};
+
+export const galleryLightBox = () => {
+  if (document.querySelector('.gallery-body__item')) {
+    lightbox.option({
+      resizeDuration: 200,
+      wrapAround: true,
+    });
   }
 };
