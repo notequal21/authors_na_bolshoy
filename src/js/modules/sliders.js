@@ -118,29 +118,16 @@ export const futureMoreSlider = () => {
 
 export const gallerySlider1 = () => {
   if (document.querySelector('#gallery-slider-1')) {
+    const isMobile = window.innerWidth <= 767;
+
     const swiper = new Swiper('#gallery-slider-1', {
-      modules: [Navigation],
-      spaceBetween: 86,
-      slidesPerView: 'auto',
-
-      navigation: {
-        prevEl: '#gallery-item1-prev',
-        nextEl: '#gallery-item1-next',
-      },
-    });
-  }
-};
-
-export const gallerySlider2 = () => {
-  if (document.querySelector('#gallery-slider-2')) {
-    const swiper = new Swiper('#gallery-slider-2', {
       modules: [Navigation],
       spaceBetween: 20,
       slidesPerView: 1,
 
       navigation: {
-        prevEl: '#gallery-item2-prev',
-        nextEl: '#gallery-item2-next',
+        prevEl: isMobile ? '#gallery-item1-mobile-prev' : '#gallery-item1-prev',
+        nextEl: isMobile ? '#gallery-item1-mobile-next' : '#gallery-item1-next',
       },
 
       breakpoints: {
@@ -150,6 +137,35 @@ export const gallerySlider2 = () => {
         },
         1200: {
           spaceBetween: 86,
+          slidesPerView: 'auto',
+        },
+      },
+    });
+  }
+};
+
+export const gallerySlider2 = () => {
+  if (document.querySelector('#gallery-slider-2')) {
+    const isMobile = window.innerWidth <= 767;
+
+    const swiper = new Swiper('#gallery-slider-2', {
+      modules: [Navigation],
+      spaceBetween: 20,
+      slidesPerView: 1,
+
+      navigation: {
+        prevEl: isMobile ? '#gallery-item2-mobile-prev' : '#gallery-item2-prev',
+        nextEl: isMobile ? '#gallery-item2-mobile-next' : '#gallery-item2-next',
+      },
+
+      breakpoints: {
+        768: {
+          spaceBetween: 60,
+          slidesPerView: 'auto',
+        },
+        1200: {
+          spaceBetween: 86,
+          slidesPerView: 'auto',
         },
       },
     });

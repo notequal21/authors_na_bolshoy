@@ -630,11 +630,6 @@ export const faqAccordion = () => {
 
 export const galleryLightBox = () => {
   if (document.querySelector('[data-fancybox]')) {
-    // lightbox.option({
-    //   resizeDuration: 200,
-    //   wrapAround: true,
-    // });
-
     Fancybox.bind('[data-fancybox]', {});
   }
 };
