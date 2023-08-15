@@ -2,6 +2,7 @@ import AOS from 'aos';
 import { gsap } from 'gsap/dist/gsap.js';
 import noUiSlider from 'nouislider';
 import lightbox from '../../../node_modules/lightbox2/dist/js/lightbox-plus-jquery.js';
+import { Fancybox } from '@fancyapps/ui';
 
 export function isWebp() {
   function testWebP(callback) {
@@ -628,10 +629,12 @@ export const faqAccordion = () => {
 };
 
 export const galleryLightBox = () => {
-  if (document.querySelector('.gallery-body__item')) {
-    lightbox.option({
-      resizeDuration: 200,
-      wrapAround: true,
-    });
+  if (document.querySelector('[data-fancybox]')) {
+    // lightbox.option({
+    //   resizeDuration: 200,
+    //   wrapAround: true,
+    // });
+
+    Fancybox.bind('[data-fancybox]', {});
   }
 };

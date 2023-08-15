@@ -14,7 +14,7 @@ functions.callbackModal();
 functions.mainHandlerAnim();
 functions.checkUserAgentVideoAutoplay();
 functions.faqAccordion();
-// functions.galleryLightBox();
+functions.galleryLightBox();
 
 // sliders.parkingSlider();
 sliders.yardsSlider();

@@ -206,6 +206,8 @@
       }
 
       &-content {
+        pointer-events: none;
+
         @media (max-width: 767px) {
           position: absolute;
           top: 20px;
@@ -259,9 +261,17 @@
         }
 
         img {
+          position: relative;
+          z-index: 1;
           width: 100%;
           height: 100%;
           object-fit: cover;
+
+          display: none;
+
+          &:first-child {
+            display: block;
+          }
         }
       }
     }
