@@ -341,21 +341,6 @@ export const filterSliders = () => {
       },
     };
 
-    // setTimeout(() => {
-    //   let pips = sliderBedrooms.querySelectorAll('.noUi-value');
-    //   function clickOnPip() {
-    //     // var value = sliderBedrooms.getAttribute('data-value');
-    //     var value = Number(this.dataset.value);
-    //     // sliderBedrooms.noUiSlider.set(value);
-    //     sliderBedrooms.noUiSlider.set('A2');
-    //   }
-
-    //   for (var i = 0; i < pips.length; i++) {
-    //     pips[i].style.cursor = 'pointer';
-    //     pips[i].addEventListener('click', clickOnPip);
-    //   }
-    // }, 100);
-
     noUiSlider.create(sliderBedrooms, {
       start: 1,
       range: {
@@ -365,7 +350,6 @@ export const filterSliders = () => {
       connect: 'lower',
       step: 1,
       tooltips: false,
-      format: format,
       pips: { mode: 'steps', format: format },
     });
     noUiSlider.create(sliderComfort, {
@@ -401,26 +385,12 @@ export const filterSliders = () => {
 
     sliderComfort.noUiSlider.on('update', function (values, handle) {
       var value = values[handle];
-      // inputNumberComfort.value = Math.floor(value);
 
       if (handle) {
-        // floorToNum.innerHTML = Math.floor(value);
         inputNumberComfortTo.value = Math.floor(value);
-        // inputNumberComfortTo.innerHTML = Math.floor(value);
       } else {
-        // floorFromNum.innerHTML = Math.floor(value);
         inputNumberComfortFrom.value = Math.floor(value);
-        // inputNumberComfortFrom.innerHTML = Math.floor(value);
       }
-
-      // for (var i = 0; input.length > i; i++) {
-      //   buffer[i] = document.createElement('div');
-      //   buffer[i].className = 'buffer';
-      //   input[i].parentNode.insertBefore(buffer[i], input[i].nextSibling);
-
-      //   input[i].nextElementSibling.innerHTML = input[i].value;
-      //   input[i].style.width = input[i].nextElementSibling.clientWidth + 'px';
-      // }
     });
     sliderCost.noUiSlider.on('update', function (values, handle) {
       var value = values[handle];
