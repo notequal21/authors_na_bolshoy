@@ -27,20 +27,30 @@ export const anchors = () => {
   const body = document.querySelector('body');
   const menu = document.querySelector('.menu');
 
+  function setLocation(curLoc) {
+    // window.history.pushState(null, null, curLoc);
+    location.href = curLoc;
+    location.hash = curLoc;
+  }
+
   for (let anchor of anchors) {
     anchor.addEventListener('click', function (e) {
       e.preventDefault();
 
-      const blockID = anchor.getAttribute('href').substr(1);
+      if (anchor.getAttribute('href').slice(0, 1) == '#') {
+        const blockID = anchor.getAttribute('href').substr(1);
 
-      if (blockID.length > 0) {
-        body.classList.remove('lock');
-        menu.classList.remove('active');
+        if (blockID.length > 0) {
+          body.classList.remove('lock');
+          menu.classList.remove('active');
 
-        document.getElementById(blockID).scrollIntoView({
-          behavior: 'smooth',
-          block: 'start',
-        });
+          document.getElementById(blockID).scrollIntoView({
+            behavior: 'smooth',
+            block: 'start',
+          });
+        }
+      } else {
+        setLocation(`${anchor.getAttribute('href')}`);
       }
     });
   }
