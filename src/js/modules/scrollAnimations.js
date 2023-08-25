@@ -24,7 +24,7 @@ export const lobbyScrollAnim = () => {
           //   inertia: false,
           //   duration: { min: 0.1, max: 0.1 },
           // },
-          end: () => '+=' + panelsContainer.offsetWidth,
+          end: () => '+=' + panelsContainer.offsetWidth * 1.6,
         },
       });
     }
@@ -51,7 +51,7 @@ export const lobbySecondScrollAnim = () => {
           //   inertia: false,
           //   duration: { min: 0.1, max: 0.1 },
           // },
-          end: () => '+=' + panelsContainer.offsetWidth,
+          end: () => '+=' + panelsContainer.offsetWidth * 1.6,
         },
       });
     }

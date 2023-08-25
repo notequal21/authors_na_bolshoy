@@ -254,6 +254,7 @@
         }
 
         &.swiper-button-disabled {
+          display: none;
           cursor: unset;
           background-color: #f6f6f6;
         }
@@ -290,6 +291,7 @@
       }
 
       &-circle {
+        display: none;
         position: absolute;
         z-index: 2;
         right: 0;

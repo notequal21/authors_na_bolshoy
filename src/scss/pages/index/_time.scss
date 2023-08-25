@@ -91,6 +91,10 @@
         padding: 7px 0 38px;
         border-top: 1px solid #969696;
 
+        span {
+          font-family: Cormorant Unicase;
+        }
+
         @media (max-width: 1200px) {
           display: none;
         }

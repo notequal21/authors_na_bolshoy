@@ -237,6 +237,7 @@ export const tabs = () => {
     });
   });
 };
+
 export const tabs2 = () => {
   var jsTriggers = document.querySelectorAll('.js-tab-trigger-2'),
     jsContents = document.querySelectorAll('.js-tab-content-2');
@@ -257,6 +258,7 @@ export const tabs2 = () => {
     });
   });
 };
+
 export const tabs3 = () => {
   var jsTriggers = document.querySelectorAll('.js-tab-trigger-3'),
     jsContents = document.querySelectorAll('.js-tab-content-3');
@@ -277,6 +279,7 @@ export const tabs3 = () => {
     });
   });
 };
+
 export const tabs4 = () => {
   if (document.querySelector('.payment_info-btn')) {
     const btnArr = document.querySelectorAll('.payment_info-btn');
