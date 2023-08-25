@@ -10,11 +10,15 @@ functions.preloader();
 functions.filterSliders();
 functions.otherFilters();
 functions.tabs();
+functions.tabs2();
+functions.tabs3();
+functions.tabs4();
 functions.callbackModal();
 functions.mainHandlerAnim();
 functions.checkUserAgentVideoAutoplay();
 functions.faqAccordion();
 functions.galleryLightBox();
+functions.paymentCircles();
 
 // sliders.parkingSlider();
 sliders.yardsSlider();

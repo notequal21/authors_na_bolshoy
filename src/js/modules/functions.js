@@ -37,8 +37,21 @@ export const anchors = () => {
     anchor.addEventListener('click', function (e) {
       e.preventDefault();
 
+      let linkType = 0;
       if (anchor.getAttribute('href').slice(0, 1) == '#') {
-        const blockID = anchor.getAttribute('href').substr(1);
+        linkType = 0;
+      } else if (anchor.getAttribute('href').slice(0, 2) == '/#') {
+        linkType = 1;
+      }
+
+      if (
+        anchor.getAttribute('href').slice(0, 1) == '#' ||
+        anchor.getAttribute('href').slice(0, 2) == '/#'
+      ) {
+        const blockID =
+          linkType == 0
+            ? anchor.getAttribute('href').substr(1)
+            : anchor.getAttribute('href').substr(2);
 
         if (blockID.length > 0) {
           body.classList.remove('lock');
@@ -223,6 +236,59 @@ export const tabs = () => {
       content.classList.add('active'); // 4
     });
   });
+};
+export const tabs2 = () => {
+  var jsTriggers = document.querySelectorAll('.js-tab-trigger-2'),
+    jsContents = document.querySelectorAll('.js-tab-content-2');
+  jsTriggers.forEach(function (trigger) {
+    trigger.addEventListener('click', function () {
+      var id = this.getAttribute('data-tab'),
+        content = document.querySelector(
+          '.js-tab-content-2[data-tab="' + id + '"]'
+        ),
+        activeTrigger = document.querySelector('.js-tab-trigger-2.active'),
+        activeContent = document.querySelector('.js-tab-content-2.active');
+
+      activeTrigger.classList.remove('active'); // 1
+      trigger.classList.add('active'); // 2
+
+      activeContent.classList.remove('active'); // 3
+      content.classList.add('active'); // 4
+    });
+  });
+};
+export const tabs3 = () => {
+  var jsTriggers = document.querySelectorAll('.js-tab-trigger-3'),
+    jsContents = document.querySelectorAll('.js-tab-content-3');
+  jsTriggers.forEach(function (trigger) {
+    trigger.addEventListener('click', function () {
+      var id = this.getAttribute('data-tab'),
+        content = document.querySelector(
+          '.js-tab-content-3[data-tab="' + id + '"]'
+        ),
+        activeTrigger = document.querySelector('.js-tab-trigger-3.active'),
+        activeContent = document.querySelector('.js-tab-content-3.active');
+
+      activeTrigger.classList.remove('active'); // 1
+      trigger.classList.add('active'); // 2
+
+      activeContent.classList.remove('active'); // 3
+      content.classList.add('active'); // 4
+    });
+  });
+};
+export const tabs4 = () => {
+  if (document.querySelector('.payment_info-btn')) {
+    const btnArr = document.querySelectorAll('.payment_info-btn');
+    const contentArr = document.querySelectorAll('.payment_info-body');
+
+    btnArr.forEach((item) =>
+      item.addEventListener('click', (event) => {
+        contentArr.forEach((item) => item.classList.remove('active'));
+        contentArr[item.dataset.tab].classList.add('active');
+      })
+    );
+  }
 };
 
 export const upBtn = () => {
@@ -611,5 +677,50 @@ export const faqAccordion = () => {
 export const galleryLightBox = () => {
   if (document.querySelector('[data-fancybox]')) {
     Fancybox.bind('[data-fancybox]', {});
+  }
+};
+
+export const paymentCircles = () => {
+  if (document.querySelector('.payment_circles-body')) {
+    const circlesBody = document.querySelector('.payment_circles-body');
+    const circles = circlesBody.querySelectorAll('.payment_circles-body__item');
+    const content = circlesBody.querySelector('.payment_circles-body__content');
+    const contentItems = content.querySelectorAll(
+      '.payment_circles-body__content-item'
+    );
+    const closeBtn = circlesBody.querySelector(
+      '.payment_circles-body__content-close'
+    );
+
+    const toggleCircle = (index, type) => {
+      if (circlesBody.classList.contains('_active') || type === 'close') {
+        circlesBody.classList.remove('_active');
+        circles.forEach((item) => {
+          item.classList.remove('_active');
+        });
+        contentItems.forEach((item) => {
+          item.classList.remove('_active');
+        });
+      } else {
+        circlesBody.classList.add('_active');
+        circles[index].classList.add('_active');
+        contentItems[index].classList.add('_active');
+      }
+    };
+
+    circlesBody.addEventListener('click', (event) => {
+      const { target } = event;
+      const isCloseBtn =
+        target.closest('.payment_circles-body__content-close') ||
+        target.closest('.payment_circles-body__close');
+      const index = target.closest('.payment_circles-body__item')?.dataset
+        .circleIndex;
+
+      if (index) {
+        toggleCircle(index);
+      } else if (isCloseBtn) {
+        toggleCircle('', 'close');
+      }
+    });
   }
 };
