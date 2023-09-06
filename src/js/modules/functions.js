@@ -24,6 +24,7 @@ export function isWebp() {
 
 export const anchors = () => {
   const anchors = document.querySelectorAll('a[href*="#"]');
+  const openBtn = document.querySelector('.header-body__burger');
   const body = document.querySelector('body');
   const menu = document.querySelector('.menu');
 
@@ -56,6 +57,7 @@ export const anchors = () => {
         if (blockID.length > 0) {
           body.classList.remove('lock');
           menu.classList.remove('active');
+          openBtn.classList.remove('active');
 
           document.getElementById(blockID).scrollIntoView({
             behavior: 'smooth',
@@ -64,6 +66,8 @@ export const anchors = () => {
         }
       } else {
         setLocation(`${anchor.getAttribute('href')}`);
+        body.classList.remove('lock');
+        menu.classList.remove('active');
       }
     });
   }
