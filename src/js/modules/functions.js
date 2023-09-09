@@ -731,3 +731,15 @@ export const paymentCircles = () => {
     });
   }
 };
+
+export const setNumWithSpaces = () => {
+  if (document.querySelector('.num-with-spaces')) {
+    const nums = document.querySelectorAll('.num-with-spaces');
+    nums.forEach(
+      (item) =>
+        (item.innerHTML = `${(+item.innerText.split(
+          '₽'
+        )[0]).toLocaleString()} ₽`)
+    );
+  }
+};

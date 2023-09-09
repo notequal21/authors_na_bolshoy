@@ -19,6 +19,7 @@ functions.checkUserAgentVideoAutoplay();
 functions.faqAccordion();
 functions.galleryLightBox();
 functions.paymentCircles();
+functions.setNumWithSpaces();
 
 // sliders.parkingSlider();
 sliders.yardsSlider();
