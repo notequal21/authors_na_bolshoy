@@ -6,7 +6,12 @@
   }
 
   .container {
-    max-width: 1260px;
+    // max-width: 1260px;
+    border-top: 1px solid #d8d8d8;
+
+    @media (max-width: 1200px) {
+      border: none;
+    }
   }
 
   &_top {
@@ -106,7 +111,6 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    border-top: 1px solid #d8d8d8;
     padding: 120px 0 0;
 
     @media (max-width: 1260px) {

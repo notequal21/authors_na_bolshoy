@@ -171,3 +171,46 @@ export const gallerySlider2 = () => {
     });
   }
 };
+
+export const progressInfoSlider = () => {
+  if (document.querySelector('.progress-body')) {
+    const isMobile = window.innerWidth <= 767;
+
+    const swiper = new Swiper('.progress-body', {
+      modules: [Navigation],
+      spaceBetween: 20,
+      slidesPerView: 1,
+
+      navigation: {
+        prevEl: isMobile ? '#progress-info-mobile-prev' : '#progress-info-prev',
+        nextEl: isMobile ? '#progress-info-mobile-next' : '#progress-info-next',
+      },
+
+      breakpoints: {
+        768: {
+          spaceBetween: 40,
+          slidesPerView: 'auto',
+        },
+        1200: {
+          spaceBetween: 86,
+          slidesPerView: 'auto',
+        },
+      },
+    });
+  }
+};
+
+export const progressItemSlider = () => {
+  if (document.querySelector('.progress_item-body')) {
+    const swiper = new Swiper('.progress_item-body', {
+      modules: [Navigation],
+      spaceBetween: 20,
+      slidesPerView: 1,
+
+      navigation: {
+        prevEl: '.progress_item-body-nav_prev',
+        nextEl: '.progress_item-body-nav_next',
+      },
+    });
+  }
+};

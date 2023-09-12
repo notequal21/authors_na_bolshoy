@@ -29,6 +29,8 @@ sliders.viewSlider();
 sliders.futureMoreSlider();
 sliders.gallerySlider1();
 sliders.gallerySlider2();
+sliders.progressInfoSlider();
+sliders.progressItemSlider();
 
 scrollAnimations.twoImageAnimation();
 scrollAnimations.textWriterAnim();
@@ -36,4 +38,4 @@ scrollAnimations.lobbyScrollAnim();
 scrollAnimations.lobbySecondScrollAnim();
 scrollAnimations.accentScrollAnim();
 scrollAnimations.videoAnimation();
-scrollAnimations.progressScrollAnim();
+// scrollAnimations.progressScrollAnim();
