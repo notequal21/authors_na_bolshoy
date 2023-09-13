@@ -158,6 +158,31 @@ export const videoAnimation = () => {
   }
 };
 
+export const advantagesVideoAnimation = () => {
+  if (document.querySelector('#advantages')) {
+    let isVideoPlayed = false;
+    const video = document.querySelector('#video-block-item');
+
+    const tween = gsap.to('#advantages', {
+      ease: 'none',
+      scrollTrigger: {
+        trigger: '#advantages',
+        pin: false,
+        start: '-=350',
+        markers: true,
+
+        onEnter: () => {
+          console.log(123);
+          if (!isVideoPlayed) {
+            video.play();
+            isVideoPlayed = true;
+          }
+        },
+      },
+    });
+  }
+};
+
 export const twoImageAnimation = () => {
   if (document.querySelector('#two-block-anim')) {
     const imgArr = document.querySelectorAll(

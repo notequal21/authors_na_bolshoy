@@ -38,4 +38,5 @@ scrollAnimations.lobbyScrollAnim();
 scrollAnimations.lobbySecondScrollAnim();
 scrollAnimations.accentScrollAnim();
 scrollAnimations.videoAnimation();
+scrollAnimations.advantagesVideoAnimation();
 // scrollAnimations.progressScrollAnim();

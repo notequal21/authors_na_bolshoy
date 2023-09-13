@@ -357,10 +357,10 @@ export const preloader = () => {
     document.addEventListener('DOMContentLoaded', () => {
       setTimeout(() => {
         body.classList.remove('lock');
-      }, 1500);
+      }, 2000);
       setTimeout(() => {
         preloader.classList.add('hidden');
-      }, 2800);
+      }, 3300);
       function counter(ms, className) {
         let counter = 0;
         let interval = setInterval(() => {
@@ -370,11 +370,11 @@ export const preloader = () => {
       }
       counter(10, '.preloader-body__percents');
 
-      gsap.to('.preloader-body__percents', { color: '#131411', duration: 1.5 });
+      gsap.to('.preloader-body__percents', { color: '#131411', duration: 2 });
       gsap.to('.preloader-body__logo-light', {
         width: '100%',
         opacity: 1,
-        duration: 1.5,
+        duration: 2,
         delay: -1.5,
       });
       gsap.to('.preloader-body__logo-light', {
@@ -384,12 +384,12 @@ export const preloader = () => {
       });
       gsap.to('.preloader', {
         scale: 6,
-        duration: 2.5,
+        duration: 3,
         delay: 1.5,
       });
       gsap.to('.preloader', {
         opacity: 0,
-        duration: 0.8,
+        duration: 1.3,
         delay: 1.5,
       });
     });
