@@ -169,7 +169,7 @@ export const advantagesVideoAnimation = () => {
         trigger: '#advantages',
         pin: false,
         start: '-=350',
-        markers: true,
+        markers: false,
 
         onEnter: () => {
           console.log(123);
