@@ -2,12 +2,14 @@ import * as functions from './modules/functions.js';
 import * as sliders from './modules/sliders.js';
 import * as scrollAnimations from './modules/scrollAnimations.js';
 
+// import * as noBuild from './modules/_nobuild.js';
+// noBuild.filterSliders()
+
 functions.burger();
 functions.anchors();
 functions.buildingTooltip();
 functions.AOSanim();
 functions.preloader();
-functions.filterSliders();
 functions.otherFilters();
 functions.tabs();
 functions.tabs2();
@@ -20,6 +22,7 @@ functions.faqAccordion();
 functions.galleryLightBox();
 functions.paymentCircles();
 functions.setNumWithSpaces();
+functions.customSelect();
 
 // sliders.parkingSlider();
 sliders.yardsSlider();

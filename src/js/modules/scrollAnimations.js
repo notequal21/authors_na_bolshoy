@@ -172,7 +172,6 @@ export const advantagesVideoAnimation = () => {
         markers: false,
 
         onEnter: () => {
-          console.log(123);
           if (!isVideoPlayed) {
             video.play();
             isVideoPlayed = true;
