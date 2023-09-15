@@ -3,7 +3,7 @@ import * as sliders from './modules/sliders.js';
 import * as scrollAnimations from './modules/scrollAnimations.js';
 
 // import * as noBuild from './modules/_nobuild.js';
-// noBuild.filterSliders()
+// noBuild.filterSliders();
 
 functions.burger();
 functions.anchors();

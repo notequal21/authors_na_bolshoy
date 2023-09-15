@@ -1,3 +1,5 @@
+import noUiSlider from 'nouislider';
+
 export const filterSliders = () => {
   if (document.querySelector('.filters-item__slider')) {
     let sliderBedrooms = document.getElementById('filter-slider-bedrooms');

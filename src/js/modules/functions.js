@@ -28,6 +28,7 @@ export const anchors = () => {
   const openBtn = document.querySelector('.header-body__burger');
   const body = document.querySelector('body');
   const menu = document.querySelector('.menu');
+  const isIndexPage = document.querySelector('#is-index-page') ? true : false;
 
   function setLocation(curLoc) {
     // window.history.pushState(null, null, curLoc);
@@ -38,38 +39,69 @@ export const anchors = () => {
   for (let anchor of anchors) {
     anchor.addEventListener('click', function (e) {
       e.preventDefault();
+      let linkType =
+        anchor.getAttribute('href').split('/#').length == 2 ? 'anchor' : 'link';
 
-      let linkType = 0;
-      if (anchor.getAttribute('href').slice(0, 1) == '#') {
-        linkType = 0;
-      } else if (anchor.getAttribute('href').slice(0, 2) == '/#') {
-        linkType = 1;
-      }
+      // console.log(anchor.getAttribute('href').split('/#'));
 
-      if (
-        anchor.getAttribute('href').slice(0, 1) == '#' ||
-        anchor.getAttribute('href').slice(0, 2) == '/#'
-      ) {
-        const blockID =
-          linkType == 0
-            ? anchor.getAttribute('href').substr(1)
-            : anchor.getAttribute('href').substr(2);
+      const blockID = anchor.getAttribute('href').substr(2);
+      if (blockID.length > 1) {
+        if (linkType === 'anchor') {
+          if (isIndexPage) {
+            body.classList.remove('lock');
+            menu.classList.remove('active');
+            openBtn.classList.remove('active');
 
-        if (blockID.length > 0) {
+            document.getElementById(blockID).scrollIntoView({
+              behavior: 'smooth',
+              block: 'start',
+            });
+          } else {
+            body.classList.remove('lock');
+            menu.classList.remove('active');
+            openBtn.classList.remove('active');
+            setLocation(`${anchor.getAttribute('href')}`);
+          }
+        } else {
+          setLocation(`${anchor.getAttribute('href')}`);
           body.classList.remove('lock');
           menu.classList.remove('active');
-          openBtn.classList.remove('active');
-
-          document.getElementById(blockID).scrollIntoView({
-            behavior: 'smooth',
-            block: 'start',
-          });
         }
-      } else {
-        setLocation(`${anchor.getAttribute('href')}`);
-        body.classList.remove('lock');
-        menu.classList.remove('active');
       }
+
+      // let linkType = 0;
+      // console.log(anchor.getAttribute('href').slice(0, 1));
+      // console.log(isIndexPage);
+      // if (anchor.getAttribute('href').slice(0, 1) == '#') {
+      //   linkType = 0;
+      // } else if (anchor.getAttribute('href').slice(0, 2) == '/#') {
+      //   linkType = 1;
+      // }
+
+      // if (
+      //   anchor.getAttribute('href').slice(0, 1) == '#' ||
+      //   anchor.getAttribute('href').slice(0, 2) == '/#'
+      // ) {
+      // const blockID =
+      //   linkType == 0
+      //     ? anchor.getAttribute('href').substr(1)
+      //     : anchor.getAttribute('href').substr(2);
+
+      //   if (blockID.length > 0) {
+      // body.classList.remove('lock');
+      // menu.classList.remove('active');
+      // openBtn.classList.remove('active');
+
+      // document.getElementById(blockID).scrollIntoView({
+      //   behavior: 'smooth',
+      //   block: 'start',
+      // });
+      //   }
+      // } else {
+      // setLocation(`${anchor.getAttribute('href')}`);
+      // body.classList.remove('lock');
+      // menu.classList.remove('active');
+      // }
     });
   }
 };

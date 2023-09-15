@@ -343,16 +343,19 @@
           width: 1250px;
           height: 1250px;
 
-          top: -500px;
+          // top: -500px;
           left: 50%;
           transform: translate(-50%, -0);
           border-radius: 50%;
+
+          top: auto;
+          bottom: -50px;
         }
         @media (max-width: 1100px) {
           width: 1134px;
           height: 1134px;
 
-          top: -400px;
+          // top: -400px;
           left: 50%;
           transform: translate(-50%, -0);
           border-radius: 50%;
@@ -361,7 +364,10 @@
         @media (max-width: 767px) {
           width: 845px;
           height: 845px;
-          top: -290px;
+          // top: -290px;
+
+          top: auto;
+          bottom: -40px;
         }
       }
 
