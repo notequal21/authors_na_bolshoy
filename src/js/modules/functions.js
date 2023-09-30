@@ -4,6 +4,7 @@ import noUiSlider from 'nouislider';
 import lightbox from '../../../node_modules/lightbox2/dist/js/lightbox-plus-jquery.js';
 import { Fancybox } from '@fancyapps/ui';
 import Choices from '../../../node_modules/choices.js/public/assets/scripts/choices.js';
+// import imageMapResize  from './_imagemap.js';
 
 export function isWebp() {
   function testWebP(callback) {
@@ -649,6 +650,144 @@ export const customSelect = () => {
       const choices = new Choices(item, {
         searchEnabled: false,
         itemSelectText: '',
+      });
+    });
+  }
+};
+
+export const imgMap = () => {
+  imageMapResize();
+};
+
+export const genplan = () => {
+  if (document.querySelector('.genplan')) {
+    const genplan = document.querySelector('.genplan');
+    const map = genplan.querySelector('map');
+    const home1 = genplan.querySelector('#home-1');
+    const homeMobile1 = genplan.querySelector('#home-mobile-1');
+    const homeSelect1 = genplan.querySelector('#home-select-1');
+    const homeSelect2 = genplan.querySelector('#home-select-2');
+    const homeSelectMobile1 = genplan.querySelector('#home-select-mobile-1');
+    const homeSelectMobile2 = genplan.querySelector('#home-select-mobile-2');
+    const genplanHome1 = genplan.querySelector('#genplan-home-1');
+    const home2 = genplan.querySelector('#home-2');
+    const homeMobile2 = genplan.querySelector('#home-mobile-2');
+    const genplanHome2 = genplan.querySelector('#genplan-home-2');
+
+    home1.addEventListener('click', (even) => {
+      event.preventDefault();
+    });
+    home2.addEventListener('click', (even) => {
+      event.preventDefault();
+    });
+    homeMobile1.addEventListener('click', (even) => {
+      event.preventDefault();
+    });
+    homeMobile2.addEventListener('click', (even) => {
+      event.preventDefault();
+    });
+
+    home1.addEventListener('mouseenter', () => {
+      genplanHome1.classList.add('_active');
+      homeSelect1.classList.add('_active');
+      homeSelectMobile1.classList.add('_active');
+    });
+    home1.addEventListener('mouseleave', () => {
+      genplanHome1.classList.remove('_active');
+      homeSelect1.classList.remove('_active');
+      homeSelectMobile1.classList.remove('_active');
+    });
+    home2.addEventListener('mouseenter', () => {
+      genplanHome2.classList.add('_active');
+      homeSelect2.classList.add('_active');
+      homeSelectMobile2.classList.add('_active');
+    });
+    home2.addEventListener('mouseleave', () => {
+      genplanHome2.classList.remove('_active');
+      homeSelect2.classList.remove('_active');
+      homeSelectMobile2.classList.remove('_active');
+    });
+    homeMobile1.addEventListener('mouseenter', () => {
+      genplanHome1.classList.add('_active');
+      homeSelect1.classList.add('_active');
+      homeSelectMobile1.classList.add('_active');
+    });
+    homeMobile1.addEventListener('mouseleave', () => {
+      genplanHome1.classList.remove('_active');
+      homeSelect1.classList.remove('_active');
+      homeSelectMobile1.classList.remove('_active');
+    });
+    homeMobile2.addEventListener('mouseenter', () => {
+      genplanHome2.classList.add('_active');
+      homeSelect2.classList.add('_active');
+      homeSelectMobile2.classList.add('_active');
+    });
+    homeMobile2.addEventListener('mouseleave', () => {
+      genplanHome2.classList.remove('_active');
+      homeSelect2.classList.remove('_active');
+      homeSelectMobile2.classList.remove('_active');
+    });
+  }
+};
+
+export const home62 = () => {
+  if (document.querySelector('#home-62')) {
+    const home = document.querySelector('#home-62');
+    const homeBottom = document.querySelector('.home-bottom');
+    const homeCard = document.querySelectorAll('.home-card');
+    const map = home.querySelector('map');
+    const mapAreas = map.querySelectorAll('area');
+    const selectItems = home.querySelectorAll('.home-body__item-select img');
+
+    mapAreas.forEach((item, index) => {
+      item.addEventListener('click', (even) => {
+        event.preventDefault();
+      });
+
+      item.addEventListener('mouseenter', (event) => {
+        homeCard.forEach((item) => {
+          item.classList.add('_active');
+        });
+        homeBottom.classList.add('_lock');
+        selectItems[index].classList.add('_active');
+      });
+      item.addEventListener('mouseleave', (event) => {
+        homeCard.forEach((item) => {
+          item.classList.remove('_active');
+        });
+        homeBottom.classList.remove('_lock');
+        selectItems[index].classList.remove('_active');
+      });
+    });
+  }
+};
+export const home76 = () => {
+  if (document.querySelector('#home-76')) {
+    const home = document.querySelector('#home-76');
+    const homeCard = document.querySelectorAll('.home-card');
+    const homeBottom = document.querySelector('.home-bottom');
+    const map = home.querySelector('map');
+    const mapAreas = map.querySelectorAll('area');
+    const selectItems = home.querySelectorAll('.home-body__item-select img');
+
+    mapAreas.forEach((item, index) => {
+      item.addEventListener('click', (even) => {
+        event.preventDefault();
+      });
+
+      item.addEventListener('mouseenter', (event) => {
+        selectItems[index].classList.add('_active');
+        homeBottom.classList.add('_lock');
+        homeCard.forEach((item) => {
+          item.classList.add('_active');
+        });
+      });
+      item.addEventListener('mouseleave', (event) => {
+        selectItems[index].classList.remove('_active');
+        homeBottom.classList.remove('_lock');
+        homeCard.forEach((item) => {
+          item.classList.remove('_active');
+        });
       });
     });
   }

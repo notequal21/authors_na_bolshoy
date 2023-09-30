@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zxx">
+@@include('components/_head.html', {
+'title':'Авторы',
+})
+
+<body>
+  <div class="wrapper">
+    <div class="content">
+      <div id="is-index-page" style="display: none;"></div>
+
+      @@include('components/header.html')
+      <!-- @@include('components/_preloader.html') -->
+      @@include('components/modals/_callback.html')
+
+      <div class="genplan">
+
+        <div id="genplan-home-1" class="genplan-card">
+          <div class="genplan-card__top">
+            <div class="genplan-card__top-logo">
+              <img src="./img/genplan/logo.svg" alt="">
+            </div>
+            <div class="genplan-card__top-num">
+              <img src="./img/genplan/home-num-1.svg" alt="">
+            </div>
+          </div>
+          <div class="genplan-card__info">
+            <div class="genplan-card__info-item">
+              <div class="genplan-card__info-value">
+                <span>20</span>
+              </div>
+              <div class="genplan-card__info-title">
+                Резиденций
+              </div>
+            </div>
+            <div class="genplan-card__info-item">
+              <div class="genplan-card__info-value">
+                <span>7</span>
+              </div>
+              <div class="genplan-card__info-title">
+                Этажей
+              </div>
+            </div>
+          </div>
+          <div class="genplan-card__btn">
+            Смотреть
+          </div>
+        </div>
+        <div id="genplan-home-2" class="genplan-card">
+          <div class="genplan-card__top">
+            <div class="genplan-card__top-logo">
+              <img src="./img/genplan/logo.svg" alt="">
+            </div>
+            <div class="genplan-card__top-num">
+              <img src="./img/genplan/home-num-2.svg" alt="">
+            </div>
+          </div>
+          <div class="genplan-card__info">
+            <div class="genplan-card__info-item">
+              <div class="genplan-card__info-value">
+                <span>20</span>
+              </div>
+              <div class="genplan-card__info-title">
+                Резиденций
+              </div>
+            </div>
+            <div class="genplan-card__info-item">
+              <div class="genplan-card__info-value">
+                <span>7</span>
+              </div>
+              <div class="genplan-card__info-title">
+                Этажей
+              </div>
+            </div>
+          </div>
+          <div class="genplan-card__btn">
+            Смотреть
+          </div>
+        </div>
+
+        <div class="genplan-select">
+          <img id="home-select-1" src="./img/genplan/select-1.svg" alt="">
+          <img id="home-select-2" src="./img/genplan/select-2.svg" alt="">
+          <img class="_mobile" id="home-select-mobile-1" src="./img/genplan/select-mobile-1.svg" alt="">
+          <img class="_mobile" id="home-select-mobile-2" src="./img/genplan/select-mobile-2.svg" alt="">
+        </div>
+
+        <img src="./img/genplan/img.jpg" srcset="./img/genplan/img.jpg 1x, ./img/genplan/img@2x.jpg 2x"
+          usemap="#genplan-image-map" alt="">
+
+        <map name="genplan-image-map">
+          <area id="home-1" target="" alt="" title="" href=""
+            coords="427,362,450,372,456,369,484,378,510,385,547,366,545,306,542,306,545,306,540,287,501,275,487,282,466,275,448,285,440,282,418,294,422,337"
+            shape="poly">
+          <area id="home-2" target="" alt="" title="" href=""
+            coords="883,504,928,519,936,507,993,522,1010,521,1031,488,1043,411,1005,399,994,405,920,384,905,417,889,436"
+            shape="poly">
+        </map>
+
+        <img class="_mobile" src="./img/genplan/img-mobile.jpg"
+          srcset="./img/genplan/img-mobile.jpg 1x, ./img/genplan/img-mobile@2x.jpg 2x"
+          usemap="#genplan-image-map-mobile" alt="">
+
+        <map name="genplan-image-map-mobile">
+          <area id="home-mobile-1" target="" alt="" title="" href=""
+            coords="95,365,86,294,110,284,115,284,133,274,156,282,169,276,210,287,209,306,214,306,214,364,179,388,141,377"
+            shape="poly">
+          <area id="home-mobile-2" target="" alt="" title="" href=""
+            coords="552,505,557,433,575,413,586,387,608,391,612,385,645,393,645,401,666,405,669,398,705,407,710,423,697,490,679,522,662,522,639,518,605,506,600,517,577,514"
+            shape="poly">
+        </map>
+      </div>
+
+    </div>
+    @@include('components/footer.html')
+  </div>
+
+  @@include('components/_js.html')
+
+</body>
+
+</html>

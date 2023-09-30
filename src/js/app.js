@@ -2,8 +2,11 @@ import * as functions from './modules/functions.js';
 import * as sliders from './modules/sliders.js';
 import * as scrollAnimations from './modules/scrollAnimations.js';
 
-// import * as noBuild from './modules/_nobuild.js';
-// noBuild.filterSliders();
+import './modules/_imagemap.js';
+
+import * as noBuild from './modules/_nobuild.js';
+
+noBuild.filterSliders();
 
 functions.burger();
 functions.anchors();
@@ -23,6 +26,10 @@ functions.galleryLightBox();
 functions.paymentCircles();
 functions.setNumWithSpaces();
 functions.customSelect();
+functions.genplan();
+functions.home62();
+functions.home76();
+// functions.imgMap();
 
 // sliders.parkingSlider();
 sliders.yardsSlider();
