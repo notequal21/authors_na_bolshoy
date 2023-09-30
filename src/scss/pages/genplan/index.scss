@@ -195,6 +195,12 @@
           margin: 5px 0 0;
           text-transform: unset;
           text-align: center;
+
+          span {
+            line-height: 1;
+            display: inline-block;
+            transform: translate(0, -2px);
+          }
         }
       }
     }
