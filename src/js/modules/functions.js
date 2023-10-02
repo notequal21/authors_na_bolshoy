@@ -711,25 +711,45 @@ export const home62 = () => {
     const map = home.querySelector('map');
     const mapAreas = map.querySelectorAll('area');
     const selectItems = home.querySelectorAll('.home-body__item-select img');
+    let isSelected = false;
+
+    homeCard.forEach((item, index) => {
+      item.addEventListener('mouseleave', () => {
+        if (isSelected) {
+          item.classList.remove('_active');
+          homeBottom.classList.remove('_lock');
+          selectItems.forEach((selectItem) => {
+            selectItem.classList.remove('_active');
+          });
+          isSelected = false;
+        }
+      });
+    });
 
     mapAreas.forEach((item, index) => {
       item.addEventListener('click', (even) => {
         event.preventDefault();
       });
 
+      item.addEventListener('click', (event) => {
+        if (!isSelected) {
+          homeCard.forEach((item) => {
+            item.classList.add('_active');
+          });
+          homeBottom.classList.add('_lock');
+          selectItems[index].classList.add('_active');
+          isSelected = true;
+        }
+      });
       item.addEventListener('mouseenter', (event) => {
-        homeCard.forEach((item) => {
-          item.classList.add('_active');
-        });
-        homeBottom.classList.add('_lock');
-        selectItems[index].classList.add('_active');
+        if (!isSelected) {
+          selectItems[index].classList.add('_active');
+        }
       });
       item.addEventListener('mouseleave', (event) => {
-        homeCard.forEach((item) => {
-          item.classList.remove('_active');
-        });
-        homeBottom.classList.remove('_lock');
-        selectItems[index].classList.remove('_active');
+        if (!isSelected) {
+          selectItems[index].classList.remove('_active');
+        }
       });
     });
   }
@@ -743,25 +763,45 @@ export const home76 = () => {
     const map = home.querySelector('map');
     const mapAreas = map.querySelectorAll('area');
     const selectItems = home.querySelectorAll('.home-body__item-select img');
+    let isSelected = false;
+
+    homeCard.forEach((item, index) => {
+      item.addEventListener('mouseleave', () => {
+        if (isSelected) {
+          item.classList.remove('_active');
+          homeBottom.classList.remove('_lock');
+          selectItems.forEach((selectItem) => {
+            selectItem.classList.remove('_active');
+          });
+          isSelected = false;
+        }
+      });
+    });
 
     mapAreas.forEach((item, index) => {
       item.addEventListener('click', (even) => {
         event.preventDefault();
       });
 
+      item.addEventListener('click', (event) => {
+        if (!isSelected) {
+          homeCard.forEach((item) => {
+            item.classList.add('_active');
+          });
+          homeBottom.classList.add('_lock');
+          selectItems[index].classList.add('_active');
+          isSelected = true;
+        }
+      });
       item.addEventListener('mouseenter', (event) => {
-        selectItems[index].classList.add('_active');
-        homeBottom.classList.add('_lock');
-        homeCard.forEach((item) => {
-          item.classList.add('_active');
-        });
+        if (!isSelected) {
+          selectItems[index].classList.add('_active');
+        }
       });
       item.addEventListener('mouseleave', (event) => {
-        selectItems[index].classList.remove('_active');
-        homeBottom.classList.remove('_lock');
-        homeCard.forEach((item) => {
-          item.classList.remove('_active');
-        });
+        if (!isSelected) {
+          selectItems[index].classList.remove('_active');
+        }
       });
     });
   }
