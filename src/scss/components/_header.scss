@@ -229,6 +229,18 @@
 
             span {
               font-weight: 500;
+              position: relative;
+
+              &::after {
+                content: '';
+                position: absolute;
+                bottom: -5px;
+                left: -2px;
+                right: -2px;
+                display: block;
+                height: 0.5px;
+                background-color: #131411;
+              }
             }
           }
 

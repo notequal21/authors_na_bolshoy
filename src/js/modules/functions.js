@@ -69,40 +69,6 @@ export const anchors = () => {
           menu.classList.remove('active');
         }
       }
-
-      // let linkType = 0;
-      // console.log(anchor.getAttribute('href').slice(0, 1));
-      // console.log(isIndexPage);
-      // if (anchor.getAttribute('href').slice(0, 1) == '#') {
-      //   linkType = 0;
-      // } else if (anchor.getAttribute('href').slice(0, 2) == '/#') {
-      //   linkType = 1;
-      // }
-
-      // if (
-      //   anchor.getAttribute('href').slice(0, 1) == '#' ||
-      //   anchor.getAttribute('href').slice(0, 2) == '/#'
-      // ) {
-      // const blockID =
-      //   linkType == 0
-      //     ? anchor.getAttribute('href').substr(1)
-      //     : anchor.getAttribute('href').substr(2);
-
-      //   if (blockID.length > 0) {
-      // body.classList.remove('lock');
-      // menu.classList.remove('active');
-      // openBtn.classList.remove('active');
-
-      // document.getElementById(blockID).scrollIntoView({
-      //   behavior: 'smooth',
-      //   block: 'start',
-      // });
-      //   }
-      // } else {
-      // setLocation(`${anchor.getAttribute('href')}`);
-      // body.classList.remove('lock');
-      // menu.classList.remove('active');
-      // }
     });
   }
 };
@@ -110,6 +76,7 @@ export const anchors = () => {
 export const burger = () => {
   if (document.querySelector('.header-body__burger')) {
     const openBtn = document.querySelector('.header-body__burger');
+    const openAboutBtn = document.querySelector('#header-about-btn');
     const closeBtn = document.querySelector('.menu__close');
     const menu = document.querySelector('.menu');
     const body = document.querySelector('body');
@@ -130,6 +97,12 @@ export const burger = () => {
         item.style.transform = `translate(0)`;
       });
     };
+
+    openAboutBtn.addEventListener('click', (event) => {
+      event.preventDefault();
+      toggleBurger();
+      submenuOpen();
+    });
 
     let toggleBurger = (type) => {
       if (type === 'close') {
@@ -761,6 +734,7 @@ export const home62 = () => {
     });
   }
 };
+
 export const home76 = () => {
   if (document.querySelector('#home-76')) {
     const home = document.querySelector('#home-76');

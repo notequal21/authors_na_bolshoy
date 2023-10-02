@@ -271,7 +271,7 @@
       .noUi-pips {
         display: flex;
         align-items: center;
-        top: -54px;
+        top: -64px;
         height: 32px;
       }
 
@@ -305,11 +305,14 @@
         line-height: 24px;
         letter-spacing: 0.36px;
 
+        cursor: pointer;
+        padding: 10px;
+
         &:nth-child(2) {
-          left: 12px !important;
+          left: 14px !important;
         }
         &:last-child {
-          left: calc(100% - 12px) !important;
+          left: calc(100% - 10px) !important;
         }
       }
 

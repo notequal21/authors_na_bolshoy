@@ -17,7 +17,7 @@ export const filterSliders = () => {
     let input = document.querySelectorAll('.input-content-width'),
       buffer = [];
 
-    var valuesForSlider = ['A1', 'A2', 'A3'];
+    var valuesForSlider = ['Все', 'A1', 'A2', 'A3'];
 
     var format = {
       to: function (value) {
@@ -32,7 +32,7 @@ export const filterSliders = () => {
       start: 1,
       range: {
         min: 0,
-        max: 2,
+        max: valuesForSlider.length - 1,
       },
       connect: 'lower',
       step: 1,
@@ -68,6 +68,13 @@ export const filterSliders = () => {
       connect: 'lower',
       step: 10000,
       tooltips: false,
+    });
+
+    const sliderBedroomsPips = sliderBedrooms.querySelectorAll('.noUi-value');
+    sliderBedroomsPips.forEach((item) => {
+      item.addEventListener('click', () => {
+        sliderBedrooms.noUiSlider.set(item.dataset.value);
+      });
     });
 
     sliderComfort.noUiSlider.on('update', function (values, handle) {
