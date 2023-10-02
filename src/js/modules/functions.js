@@ -739,6 +739,17 @@ export const home62 = () => {
           homeBottom.classList.add('_lock');
           selectItems[index].classList.add('_active');
           isSelected = true;
+        } else {
+          selectItems.forEach((selectItem) => {
+            selectItem.classList.remove('_active');
+          });
+
+          homeCard.forEach((item) => {
+            item.classList.add('_active');
+          });
+          homeBottom.classList.add('_lock');
+          selectItems[index].classList.add('_active');
+          isSelected = true;
         }
       });
       item.addEventListener('mouseenter', (event) => {
@@ -785,6 +796,17 @@ export const home76 = () => {
 
       item.addEventListener('click', (event) => {
         if (!isSelected) {
+          homeCard.forEach((item) => {
+            item.classList.add('_active');
+          });
+          homeBottom.classList.add('_lock');
+          selectItems[index].classList.add('_active');
+          isSelected = true;
+        } else {
+          selectItems.forEach((selectItem) => {
+            selectItem.classList.remove('_active');
+          });
+
           homeCard.forEach((item) => {
             item.classList.add('_active');
           });
