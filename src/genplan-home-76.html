@@ -38,13 +38,27 @@
               alt="">
 
             <map name="home-76-image-map">
-              <area target="" alt="" title="" href=""
+              <area data-floor="6" data-bedroom1="5" data-bedroom2="3" data-bedroom3="0"
+                data-bedroom1-url="https://www.google.com/" data-bedroom2-url="https://www.google.com/"
+                data-bedroom3-url="https://ya.ru/" target="" alt="" title="" href=""
                 coords="142,52,335,53,341,72,474,72,473,52,668,53,667,73,708,73,751,90,751,127,783,128,784,147,705,149,705,140,114,140,114,123,122,122,121,91,135,83,136,75,143,75"
                 shape="poly">
-              <area target="" alt="" title="" href="" coords="105,162,794,162,794,237,106,238" shape="poly">
-              <area target="" alt="" title="" href="" coords="105,240,793,240,795,317,104,315" shape="poly">
-              <area target="" alt="" title="" href="" coords="106,317,794,395" shape="rect">
-              <area target="" alt="" title="" href="" coords="106,399,794,473" shape="rect">
+              <area data-floor="5" data-bedroom1="5" data-bedroom2="3" data-bedroom3="0"
+                data-bedroom1-url="https://www.google.com/" data-bedroom2-url="https://www.google.com/"
+                data-bedroom3-url="https://ya.ru/" target="" alt="" title="" href=""
+                coords="105,162,794,162,794,237,106,238" shape="poly">
+              <area data-floor="4" data-bedroom1="5" data-bedroom2="3" data-bedroom3="0"
+                data-bedroom1-url="https://www.google.com/" data-bedroom2-url="https://www.google.com/"
+                data-bedroom3-url="https://ya.ru/" target="" alt="" title="" href=""
+                coords="105,240,793,240,795,317,104,315" shape="poly">
+              <area data-floor="3" data-bedroom1="0" data-bedroom2="3" data-bedroom3="0"
+                data-bedroom1-url="https://www.google.com/" data-bedroom2-url="https://www.google.com/"
+                data-bedroom3-url="https://ya.ru/" target="" alt="" title="" href="" coords="106,317,794,395"
+                shape="rect">
+              <area data-floor="2" data-bedroom1="5" data-bedroom2="3" data-bedroom3="10"
+                data-bedroom1-url="https://www.google.com/" data-bedroom2-url="https://www.google.com/"
+                data-bedroom3-url="https://ya.ru/" target="" alt="" title="" href="" coords="106,399,794,473"
+                shape="rect">
             </map>
 
             <div class="home-body__item-select">
@@ -64,21 +78,21 @@
                   </span>
                 </div>
                 <div class="home-card__top-floor">
-                  Этаж : 7
+                  Этаж : <span id="floor-num">7</span>
                 </div>
               </div>
               <div class="home-card__remain">
                 Осталось
                 <span>
-                  <span>15</span>
+                  <span id="floor-remain">15</span>
                 </span>
                 РЕЗИДЕНЦИЙ:
               </div>
               <div class="home-card__bedrooms">
-                <div class="home-card__bedrooms-item ">
+                <a href="" id="bedroom-item-1" class="home-card__bedrooms-item ">
                   1 спальня
                   <span>
-                    <span>7</span>
+                    <span class="_remain">7</span>
                   </span>
                   РЕЗИДЕНЦИЙ
                   <span class="_arrow">
@@ -87,11 +101,11 @@
                       <path d="M39.976 1.375L45.7499 7L39.976 12.625" stroke="#131411" stroke-width="1.125" />
                     </svg>
                   </span>
-                </div>
-                <div class="home-card__bedrooms-item ">
+                </a>
+                <a href="" id="bedroom-item-2" class="home-card__bedrooms-item ">
                   2 спальня
                   <span>
-                    <span>5</span>
+                    <span class="_remain">5</span>
                   </span>
                   РЕЗИДЕНЦИЙ
                   <span class="_arrow">
@@ -100,11 +114,11 @@
                       <path d="M39.976 1.375L45.7499 7L39.976 12.625" stroke="#131411" stroke-width="1.125" />
                     </svg>
                   </span>
-                </div>
-                <div class="home-card__bedrooms-item ">
+                </a>
+                <a href="" id="bedroom-item-3" class="home-card__bedrooms-item ">
                   3 спальня
                   <span>
-                    <span>3</span>
+                    <span class="_remain">3</span>
                   </span>
                   РЕЗИДЕНЦИЙ
                   <span class="_arrow">
@@ -113,7 +127,7 @@
                       <path d="M39.976 1.375L45.7499 7L39.976 12.625" stroke="#131411" stroke-width="1.125" />
                     </svg>
                   </span>
-                </div>
+                </a>
               </div>
             </div>
           </div>
@@ -145,21 +159,21 @@
             </span>
           </div>
           <div class="home-card__top-floor">
-            Этаж : 7
+            Этаж : <span id="floor-num">7</span>
           </div>
         </div>
         <div class="home-card__remain">
           Осталось
           <span>
-            <span>15</span>
+            <span id="floor-remain">15</span>
           </span>
           РЕЗИДЕНЦИЙ:
         </div>
         <div class="home-card__bedrooms">
-          <div class="home-card__bedrooms-item ">
+          <a href="" id="bedroom-item-1" class="home-card__bedrooms-item ">
             1 спальня
             <span>
-              <span>7</span>
+              <span class="_remain">7</span>
             </span>
             РЕЗИДЕНЦИЙ
             <span class="_arrow">
@@ -168,11 +182,11 @@
                 <path d="M39.976 1.375L45.7499 7L39.976 12.625" stroke="#131411" stroke-width="1.125" />
               </svg>
             </span>
-          </div>
-          <div class="home-card__bedrooms-item ">
+          </a>
+          <a href="" id="bedroom-item-2" class="home-card__bedrooms-item ">
             2 спальня
             <span>
-              <span>5</span>
+              <span class="_remain">5</span>
             </span>
             РЕЗИДЕНЦИЙ
             <span class="_arrow">
@@ -181,11 +195,11 @@
                 <path d="M39.976 1.375L45.7499 7L39.976 12.625" stroke="#131411" stroke-width="1.125" />
               </svg>
             </span>
-          </div>
-          <div class="home-card__bedrooms-item ">
+          </a>
+          <a href="" id="bedroom-item-3" class="home-card__bedrooms-item ">
             3 спальня
             <span>
-              <span>3</span>
+              <span class="_remain">3</span>
             </span>
             РЕЗИДЕНЦИЙ
             <span class="_arrow">
@@ -194,7 +208,7 @@
                 <path d="M39.976 1.375L45.7499 7L39.976 12.625" stroke="#131411" stroke-width="1.125" />
               </svg>
             </span>
-          </div>
+          </a>
         </div>
       </div>
 

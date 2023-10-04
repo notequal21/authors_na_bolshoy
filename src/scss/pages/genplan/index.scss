@@ -307,6 +307,7 @@
       font-family: Cormorant;
       font-size: 20px;
       text-transform: uppercase;
+      white-space: nowrap;
     }
     &__close {
       position: absolute;
@@ -552,6 +553,10 @@
         rgba(255, 255, 255, 0.04) 5.65%,
         rgba(255, 255, 255, 0.1) 94.35%
       );
+
+      span {
+        margin: 0 0 0 3px;
+      }
     }
   }
 
@@ -611,6 +616,10 @@
       font-family: TT Norms;
       font-size: 16px;
       text-transform: uppercase;
+
+      &._hidden {
+        display: none;
+      }
 
       & > span {
         display: flex;

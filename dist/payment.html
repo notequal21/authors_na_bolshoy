@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1, user-scalable=0">
+  <link rel="stylesheet" href="css/style.min.css?_v=20231004115459">
+  <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+
+  <!-- ios fix -->
+  <meta name="format-detection" content="telephone=no">
+  <meta name="format-detection" content="date=no">
+  <meta name="format-detection" content="address=no">
+  <meta name="format-detection" content="email=no">
+
+  <title>Авторы</title>
+
+
+  <script defer src="https://unpkg.com/img-comparison-slider@7/dist/index.js?_v=20231004115459"></script>
+  <link rel="stylesheet" href="https://unpkg.com/img-comparison-slider@7/dist/styles.css?_v=20231004115459" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="content">
+      <header class="header">
+	<div class="container">
+		<div class="header-body">
+			<div class="header-body__logo">
+				<img src="./img/header/logo.svg" alt="">
+			</div>
+
+			<div class="header-body__burger">
+				<svg width="32" height="17" viewBox="0 0 32 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<line y1="0.5" x2="32" y2="0.5" stroke="#565656" />
+					<line y1="8.5" x2="32" y2="8.5" stroke="#565656" />
+					<line y1="16.5" x2="32" y2="16.5" stroke="#565656" />
+				</svg>
+			</div>
+
+			<nav class="header-menu">
+				<ul>
+					<li class="_dropdown">
+						<span>
+							О проекте
+							<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M4 7L9.5 12L15 7" stroke="#131411" />
+							</svg>
+
+						</span>
+						<div class="_dropdown-list">
+							<a class="" href="/#two-block-anim">Концепция</a>
+							<a class="" href="./index.html#advantages">Преимущества</a>
+							<a class="" href="./index.html#building">Архитектура</a>
+							<a class="" href="./index.html#yards">Дзен-дворы</a>
+							<a class="" href="./index.html#lobby">Лобби</a>
+							<a class="" href="./index.html#parking">Паркинг</a>
+							<a class="" href="./index.html#accent">Умная система</a>
+							<a class="" href="./index.html#about">О застройщике</a>
+						</div>
+					</li>
+					<li>
+						<a href="./index.html#position">
+							Расположение
+						</a>
+					</li>
+					<li>
+						<a href="">
+							ГАЛЛЕРЕЯ
+						</a>
+					</li>
+					<li>
+						<a href="">
+							Покупка
+						</a>
+					</li>
+					<li>
+						<a href="">
+							Контакты
+						</a>
+					</li>
+					<li class="_dropdown _dropdown_bold">
+						<span>
+							Выбрать квартиру
+							<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M4 7L9.5 12L15 7" stroke="#131411" />
+							</svg>
+
+						</span>
+
+						<div class="_dropdown-list">
+							<a class="callback_modal-open-btn" href="">Выбор по параметрам</a>
+							<a class="callback_modal-open-btn" href="">Выбор по генплану</a>
+						</div>
+					</li>
+				</ul>
+			</nav>
+			<a href="+78432448654" class="header-body__call">
+				+7 (843) 244-86-54
+			</a>
+			<!-- <div class="header-body__lang">
+				<a class="_active" href="">
+					Ru
+				</a>
+				<span>|</span>
+				<a class="" href="">
+					EN
+				</a>
+			</div> -->
+		</div>
+	</div>
+</header>
+
+
+<div class="menu">
+	<div class="menu__letter">
+		<svg width="743" height="720" viewBox="0 0 743 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path
+				d="M450.638 715.3L429.517 720H575.323L563.673 715.507C542.21 707.143 532.263 688.134 524.632 670.922C470.125 546.912 342.51 255.968 334.538 238.134C326.566 220.576 318.731 203.295 311.849 187.466L311.236 186.083H228.385L228.044 190.784C248.144 193.894 263.883 212.212 263.883 232.258V234.747C263.883 236.337 264.019 238.203 263.883 239.724C263.27 245.807 262.18 248.917 259.727 254.171C246.849 283.687 233.836 313.41 220.959 342.926C195.817 400.576 169.79 460.092 143.899 518.502L134.837 538.894C124.89 561.429 114.738 583.963 104.654 606.359C101.452 613.687 98.2492 621.429 94.9788 629.032L92.049 636.359C89.4599 642.719 86.6664 649.286 83.4641 655.507L83.1235 656.129C71.8132 680.184 55.1204 706.037 17.7148 715.507L0 720H138.653L138.993 715.3C118.621 712.949 105.267 706.452 99.3394 696.014C94.2974 687.166 94.57 675.484 100.429 661.383L137.971 576.083C139.061 573.456 140.152 570.968 141.378 568.341C142.128 566.751 142.741 565.23 143.354 563.848C144.58 561.636 145.534 559.631 146.556 557.489L146.897 556.728C148.6 552.857 155.959 548.986 160.864 548.502C163.453 548.157 166.383 548.018 169.109 547.88C170.199 547.88 171.425 547.88 172.447 547.742H365.948C371.603 547.742 377.122 547.604 382.777 547.742H385.979C387.069 547.88 388.159 547.88 389.045 547.88H389.386C392.316 548.018 395.041 548.157 397.63 548.502C402.536 548.986 409.894 552.857 411.597 556.728L412.96 559.701C415.413 565.161 417.866 570.553 419.978 576.152C432.855 604.908 446.346 636.636 462.562 675.899C465.628 683.641 469.034 693.595 466.854 700.161C464.742 706.175 457.724 713.779 450.638 715.3ZM396.881 528.042C396.131 529.148 394.7 529.908 393.338 529.908H164.68C163.317 529.908 162.091 529.286 161.341 528.042C160.592 526.797 160.387 525.415 161.001 523.963L275.738 263.848C276.488 262.258 277.919 261.36 279.554 261.36C281.257 261.36 282.62 262.12 283.233 263.71L315.256 336.913C340.534 394.908 373.17 469.286 397.221 524.171C397.63 525.415 397.63 526.797 396.881 528.042Z"
+				fill="#F6F6F6" />
+			<path
+				d="M742.798 474.953C742.798 490.161 730.67 502.603 715.681 502.603C700.691 502.603 688.564 490.161 688.564 474.953C688.564 459.884 700.691 447.442 715.681 447.442C730.739 447.442 742.798 459.815 742.798 474.953Z"
+				fill="#F6F6F6" />
+			<path
+				d="M742.798 692.488C742.798 707.695 730.67 719.999 715.681 719.999C700.691 719.999 688.564 707.695 688.564 692.488C688.564 677.28 700.691 664.976 715.681 664.976C730.739 664.976 742.798 677.28 742.798 692.488Z"
+				fill="#F6F6F6" />
+			<path d="M374.874 0L312.668 143.917H292.773L354.843 0H374.874Z" fill="#F6F6F6" />
+		</svg>
+	</div>
+	<div class="container">
+		<div class="menu__close">
+			<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<line x1="7.64645" y1="31.9602" x2="31.6464" y2="7.9602" stroke="#565656" />
+				<line y1="-0.5" x2="33.9411" y2="-0.5" transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 32 32.3138)"
+					stroke="#565656" />
+			</svg>
+		</div>
+		<div class="menu-top">
+			<a href="+74951234567" class="header-body__call">
+				+7 (495) 123-45-67
+			</a>
+			<!-- <div class="header-body__lang">
+				<a class="_active" href="">
+					Ru
+				</a>
+				<span>|</span>
+				<a class="" href="">
+					EN
+				</a>
+			</div> -->
+		</div>
+		<div class="menu-body">
+			<div class="menu-body__wrapper">
+				<div class="menu-body__links">
+					<a href="" class="menu-body__links-item ">
+						Главная
+					</a>
+					<a href="#" class="menu-body__links-item _submenu__link">
+						О проекте
+					</a>
+					<a href="/gallery/" class="menu-body__links-item">
+						Расположение
+					</a>
+					<a href="" class="menu-body__links-item">
+						Способы покупки и Акции
+					</a>
+					<a href="" class="menu-body__links-item">
+						Выбор квартиры по параметрам
+					</a>
+					<a href="" class="menu-body__links-item">
+						Выбор квартиры по генплану
+					</a>
+					<a href="" class="menu-body__links-item">
+						О застройщике
+					</a>
+					<a href="" class="menu-body__links-item">
+						Ход строительства
+					</a>
+					<a href="" class="menu-body__links-item">
+						Галерея
+					</a>
+					<a href="" class="menu-body__links-item">
+						Контакты
+					</a>
+				</div>
+				<div class="menu-body__links _submenu">
+					<div class="_submenu-back">
+						<svg width="53" height="30" viewBox="0 0 53 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M1 15L53 15" stroke="#131411" />
+							<path d="M5.98604 10.1153L0.972083 15L5.98604 19.8847" stroke="#131411" />
+						</svg>
+
+						Назад
+					</div>
+					<div class="_submenu-name">
+						О проекте:
+					</div>
+					<a href="/#two-block-anim" class="menu-body__links-item">
+						Концепция
+					</a>
+					<a href="./index.html#advantages" class="menu-body__links-item">
+						Преимущества
+					</a>
+					<a href="./index.html#building" class="menu-body__links-item">
+						Архитектура
+					</a>
+					<a href="./index.html#yards" class="menu-body__links-item">
+						Дзен-дворы
+					</a>
+					<a href="./index.html#lobby" class="menu-body__links-item">
+						Лобби
+					</a>
+					<a href="./index.html#parking" class="menu-body__links-item">
+						Паркинг
+					</a>
+					<a href="./index.html#accent" class="menu-body__links-item">
+						Умная система
+					</a>
+					<a href="./index.html#about" class="menu-body__links-item">
+						О застройщике
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+      
+      <div class="callback_modal">
+  <div class="callback_modal__a">
+    <img src="./img/notfound/a.svg" alt="">
+  </div>
+  <div class="container">
+    <div class="callback_modal-body">
+      <div class="callback_modal__a _mobile">
+        <img src="./img/notfound/a.svg" alt="">
+      </div>
+      <div class="callback_modal-body__close">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M20.0002 0.799997L19.2002 0L10.0001 9.20012L0.799997 5.17552e-05L0 0.800049L9.20007 10.0001L0.000265563 19.1999L0.800263 19.9999L10.0001 10.8001L19.1999 20L19.9999 19.2L10.8001 10.0001L20.0002 0.799997Z"
+            fill="#131411" />
+        </svg>
+      </div>
+      <div class="callback_modal-body__title title">
+        Оставьте заявку
+      </div>
+      <div class="callback_modal-body__subtitle">
+        Создаем эстетичную и функциональную среду, которая помогает детям и взрослым <br> фокусироваться на важном,
+        мечтать,
+        планировать и достигать.
+      </div>
+      <form class="callback_modal-body__form">
+        <label>
+          <span>Номер для связи:</span>
+          <input type="text" placeholder="+7 (">
+        </label>
+        <label>
+          <span>Как к вам обращаться?</span>
+          <input type="text" placeholder="Фамилия Имя">
+        </label>
+        <div class="callback_modal-body__form-btn">
+          Отправить
+          <span>
+            <svg width="41" height="12" viewBox="0 0 41 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 5.95383H39.8889" stroke="#131411" />
+              <path d="M34.8677 1L40 6L34.8677 11" stroke="#131411" />
+            </svg>
+          </span>
+        </div>
+      </form>
+      <div class="callback_modal-body__policy">
+        нажимая кнопку «отправить» вы соглашаетесь с нашей <a href="">политикой конфиденциальности</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <div class="payment_main">
+  <div class="container">
+    <div class="payment_main-body">
+      <div class="payment_main-body__a">
+        <img src="./img/payment/a.svg" alt="">
+      </div>
+      <div class="payment_main-body__title title">
+        Варианты <br> приобретения <br> резиденции
+      </div>
+      <div class="payment_main-body__text">
+        <div class="payment_main-body__text-content">
+          ПРОЦЕДУРА ПОКУПКИ <br> МАКСИМАЛЬНО ПРОСТА, <br> ПРОЗРАЧНА И БЕЗОПАСНА.
+        </div>
+        <div class="payment_main-body__text-descr">
+          Менеджеры офиса продаж ответят на все возникшие <br> вопросы, пояснив каждый этап покупки подробно.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="payment_circles">
+  <div class="container">
+    <div class="payment_circles-body">
+      <div data-circle-index="0" class="payment_circles-body__item"><span>
+          <span>100% оплата</span>
+          <span>100% оплата</span>
+        </span></div>
+      <div data-circle-index="1" class="payment_circles-body__item"><span>
+          <span>Ипотека</span>
+          <span>Ипотека</span>
+        </span></div>
+      <div data-circle-index="2" class="payment_circles-body__item"><span>
+          <span>Рассрочка</span>
+          <span>Рассрочка</span>
+        </span></div>
+      <div class="payment_circles-body__close">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+          <line x1="7.64645" y1="31.9602" x2="31.6464" y2="7.96017" stroke="#565656" />
+          <line y1="-0.5" x2="33.9411" y2="-0.5" transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 32 32.3137)"
+            stroke="#565656" />
+        </svg>
+      </div>
+      <div class="payment_circles-body__content">
+        <div class="payment_circles-body__content-close">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+            <line x1="7.64645" y1="31.9602" x2="31.6464" y2="7.96017" stroke="#565656" />
+            <line y1="-0.5" x2="33.9411" y2="-0.5" transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 32 32.3137)"
+              stroke="#565656" />
+          </svg>
+        </div>
+
+        <div data-circle-content-index="0" class="payment_circles-body__content-item">
+          <div class="payment_circles-content__title">Варианты ипотеки</div>
+          <div class="payment_circles-content__btns">
+            <span data-tab="1" class="js-tab-trigger-2 active">4%</span>
+            <span data-tab="2" class="js-tab-trigger-2">0.1%</span>
+            <span data-tab="3" class="js-tab-trigger-2">Транш</span>
+          </div>
+
+          <div data-tab="1" class="payment_circles-content__tabs js-tab-content-2 active">
+            <div class="payment_circles-content__text text">
+              Ипотека на весь срок от 4%
+            </div>
+            <div class="payment_circles-content__btn btn_arrow">
+              Подробнее
+              <span class="_arrow">
+                <svg width="47" height="14" viewBox="0 0 47 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0.75 6.948H45.625" stroke="#131411" stroke-width="1.125" />
+                  <path d="M39.976 1.375L45.7499 7L39.976 12.625" stroke="#131411" stroke-width="1.125" />
+                </svg>
+              </span>
+            </div>
+          </div>
+          <div data-tab="2" class="payment_circles-content__tabs js-tab-content-2">
+            <div class="payment_circles-content__text text">
+              Ипотека от 0.1% на ограниченный срок
+            </div>
+            <div class="payment_circles-content__btn btn_arrow">
+              Подробнее
+              <span class="_arrow">
+                <svg width="47" height="14" viewBox="0 0 47 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0.75 6.948H45.625" stroke="#131411" stroke-width="1.125" />
+                  <path d="M39.976 1.375L45.7499 7L39.976 12.625" stroke="#131411" stroke-width="1.125" />
+                </svg>
+              </span>
+            </div>
+          </div>
+          <div data-tab="3" class="payment_circles-content__tabs js-tab-content-2">
+            <div class="payment_circles-content__text text">
+              Траншевая ипотека - не платите, пока не достроим
+            </div>
+            <div class="payment_circles-content__btn btn_arrow">
+              Подробнее
+              <span class="_arrow">
+                <svg width="47" height="14" viewBox="0 0 47 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0.75 6.948H45.625" stroke="#131411" stroke-width="1.125" />
+                  <path d="M39.976 1.375L45.7499 7L39.976 12.625" stroke="#131411" stroke-width="1.125" />
+                </svg>
+              </span>
+            </div>
+          </div>
+
+        </div>
+        <div data-circle-content-index="1" class="payment_circles-body__content-item">
+          <div class="payment_circles-content__title">Варианты рассрочки</div>
+          <div class="payment_circles-content__btns">
+            <span data-tab="4" class="js-tab-trigger-3 active">30/40/30</span>
+            <span data-tab="5" class="js-tab-trigger-3">50/50</span>
+          </div>
+          <div data-tab="4" class="payment_circles-content__tabs js-tab-content-3 active">
+            <div class="payment_circles-content__stats">
+              <div class="payment_circles-content__stats-item">
+                <span>30%</span>
+                Первоначальный взнос
+              </div>
+              <div class="payment_circles-content__stats-item">
+                <span>40%</span>
+                До 30 июня 2024
+              </div>
+              <div class="payment_circles-content__stats-item">
+                <span>30%</span>
+                До 31 декабря 2024
+              </div>
+            </div>
+          </div>
+          <div data-tab="5" class="payment_circles-content__tabs js-tab-content-3">
+            <div class="payment_circles-content__stats">
+              <div class="payment_circles-content__stats-item">
+                <span>50%</span>
+                Первоначальный взнос
+              </div>
+              <div class="payment_circles-content__stats-item">
+                <span>50%</span>
+                До 30 июня 2024
+              </div>
+            </div>
+          </div>
+        </div>
+        <div data-circle-content-index="2" class="payment_circles-body__content-item _space-top">
+          <div class="payment_circles-content__text text">
+            100% оплата возможна на СБР в Сбербанке или ВТБ или на аккредитивный счет в любом удобном для вас банке.
+            денежные средства поступают на эскроу-счет после регистрации сделки.
+          </div>
+          <div class="payment_circles-content__btn btn_arrow">
+            Подробнее
+            <span class="_arrow">
+              <svg width="47" height="14" viewBox="0 0 47 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.75 6.948H45.625" stroke="#131411" stroke-width="1.125" />
+                <path d="M39.976 1.375L45.7499 7L39.976 12.625" stroke="#131411" stroke-width="1.125" />
+              </svg>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="payment_info">
+  <div class="container">
+    <div data-tab="0" class="payment_info-body active">
+      <div class="payment_info-body__content">
+        <div class="payment_info-body__content-btns">
+          <span data-tab="0" class="payment_info-btn active">Акция</span>
+          <span data-tab="1" class="payment_info-btn">Информация</span>
+        </div>
+        <div class="payment_info-body__content-title">
+          Ежемесячный платеж от 19 675,4 руб.
+          <br>
+          Первоначальный взнос от 199 410 руб.
+        </div>
+        <div class="payment_info-body__content-subtitle">
+          Условия:
+        </div>
+        <ul class="payment_info-body__content-list">
+          <li>- Ставка 5,7% на весь срок кредитования</li>
+          <li>- Первоначальный взнос от 199 410 руб.</li>
+          <li>- Срок кредитования до 30 лет</li>
+          <li>- Первоначальный взнос от Застройщика 398 820 руб.</li>
+        </ul>
+        <a class="payment_info-body__content-btn btn_arrow">
+          Выбрать <br> резиденцию
+          <span class="_arrow">
+            <svg width="47" height="14" viewBox="0 0 47 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.75 6.948H45.625" stroke="#131411" stroke-width="1.125" />
+              <path d="M39.976 1.375L45.7499 7L39.976 12.625" stroke="#131411" stroke-width="1.125" />
+            </svg>
+          </span>
+        </a>
+      </div>
+      <div class="payment_info-body__img">
+        <img src="./img/payment/img.jpg" srcset="./img/payment/img.jpg 1x, ./img/payment/img@2x.jpg 2x" alt="">
+      </div>
+    </div>
+    <div data-tab="1" class="payment_info-body">
+      <div class="payment_info-body__content">
+        <div class="payment_info-body__content-btns">
+          <span data-tab="0" class="payment_info-btn">Акция</span>
+          <span data-tab="1" class="payment_info-btn active">Информация</span>
+        </div>
+        <div class="payment_info-body__content-title">
+          Ежемесячный платеж от 19 675,4 руб.
+          <br>
+          Первоначальный взнос от 199 410 руб.
+        </div>
+        <div class="payment_info-body__content-subtitle">
+          Условия:
+        </div>
+        <div class="payment_info-body__content-text">
+          <p>
+            Расчет произведен из следующего: 1-комнатная квартира, площадью 29,26 кв.м в строящемся жилом доме №6 ЖК
+            «Радужный-2» стоимостью 3 988 200 рублей с учетом удорожания стоимости квартиры, при первоначальном взносе
+            15% и субсидировании за счет Застройщика части первоначального взноса в размере 10% от стоимости квартиры,
+            со ставкой 5,7% годовых, сроком на 30 лет.
+          </p>
+          <p>
+            Ставка 5,7% годовых действует с даты заключения кредитного договора при подаче онлайн-заявки или
+            использовании сервисов электронной регистрации и безопасных расчетов или дистанционной сделки.
+          </p>
+          <p>
+            Заемщики - граждане РФ, имеющие ребенка гражданина РФ, рожденного в период с 01.01.2018 г. по 31.12.2023 г.,
+            либо имеющие двоих и более детей, которые не достигли 18 лет на дату заключения кредитного договора, либо
+            заемщики с ребенком-инвалидом, рожденным не позднее 31.12.2023 г. Сумма кредита – до 6 млн. руб. Первый
+            взнос – от 15%.
+            Валюта кредита – рубли. Срок кредита – от 1 до 30 лет. Условия действительны на 05.06.2023 г.
+          </p>
+          <p>
+            Банк ВТБ (ПАО) оказывает исключительно банковские услуги. Банк вправе отказать в предоставлении кредита без
+            объяснения причин. Банк предоставляет кредит в случае, если заемщик (созаемщик/поручитель, при наличии)
+            соответствует требованиям госпрограммы и Банка и предоставил полный пакет необходимых документов.
+          </p>
+          <p>Банк ВТБ (ПАО). Генеральная лицензия Банка России №1000.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="callback callback_future">
+  <div class="container">
+    <div class="callback-body">
+      <a href="" class="callback-body__btn callback_modal-open-btn btn_arrow">
+        выберите вашу <br> резиденцию
+
+        <span class="_arrow">
+          <svg width="47" height="14" viewBox="0 0 47 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.75 6.948H45.625" stroke="#131411" stroke-width="1.125" />
+            <path d="M39.976 1.375L45.7499 7L39.976 12.625" stroke="#131411" stroke-width="1.125" />
+          </svg>
+        </span>
+      </a>
+    </div>
+  </div>
+</div>
+
+    </div>
+    <footer class="footer">
+  <!-- <div class="footer__watermark">
+    <div class="footer__watermark-text">
+      Разработано студией <br> digital-маркетинга:
+    </div>
+    <div class="footer__watermark-logo">
+      <img src="./img/footer/watermark-logo.svg" alt="">
+    </div>
+  </div> -->
+
+  <div class="container">
+    <div class="footer-body">
+      <div class="footer-col">
+        <div class="footer-body__logo">
+          <img src="./img/header/logo.svg" alt="">
+        </div>
+        <div class="footer-body__links">
+          <a href="">Политика конфиденциальности</a>
+          <a href="">Авторы - сайт застройщика
+          </a>
+        </div>
+        <div class="footer-body__year">2023 © ООО "СЗ "ДЕВЕЛОПЕР №2"</div>
+        <div class="footer-body__cr">
+          Вся предоставленная информация носит ознакомительный характер и ни при каких обстоятельствах не является
+          публичной офертой.
+        </div>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col__title">навигация</div>
+        <div class="footer-col__links">
+          <div class="footer-col__links-col">
+            <a href="">Главная</a>
+            <a id="header-about-btn" href="">О проекте</a>
+            <a href="">Расположение</a>
+            <a href="">Галерея</a>
+            <a href="">Контакты</a>
+          </div>
+          <div class="footer-col__links-col">
+            <a href="">Способы покупки и акции</a>
+            <a href="">Выбор квартиры по параметрам</a>
+            <a href="">Выбор квартиры по генплану</a>
+            <a href="">О застройщике</a>
+            <a href="">Ход строительства</a>
+          </div>
+        </div>
+        <!-- <div class="footer-col__btn btn btn_dark callback_modal-open-btn">
+          предложить участок
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+            <path d="M4 7L9.5 12L15 7" stroke="white" />
+          </svg>
+        </div> -->
+      </div>
+      <div class="footer-col">
+        <div class="footer-col__title">контакты</div>
+        <div class="footer-col__info">
+          <div class="footer-col__info-item">
+            Офис продаж: г. Казань, ул. Островского, д. 27, офис 15 <br>
+            Режим работы: пн-пт 9:00-19:00, сб-вс 10:00-18:00
+          </div>
+          <div class="footer-col__info-item">
+            <span class="_title">Адрес объекта:</span>
+            <span class="">г. Казань, ул. Большая, д.62 и д.76</span>
+          </div>
+          <div class="footer-col__info-item">
+            <span class="_title">Телефон: </span>
+            <a href="tel:+78432448654            " class="_link">+7 (843) 244-86-54 </a>
+          </div>
+          <div class="footer-col__info-item">
+            <span class="_title">E-mail: </span>
+            <a href="mailto:2info@avtor-dev.ru" class="_link">2info@avtor-dev.ru</a>
+          </div>
+          <div class="footer-col__watermark">
+            <div class="footer-col__watermark-text">
+              Разработано студией <br> digital-маркетинга:
+            </div>
+            <div class="footer-col__watermark-logo">
+              <img src="./img/footer/watermark-logo.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+  </div>
+
+  <!-- <script src="https://code.jquery.com/jquery-3.5.1.js?_v=20231004115459" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script> -->
+<script src="js/app.min.js?_v=20231004115459"></script>
+
+</body>
+
+</html>

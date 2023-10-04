@@ -732,6 +732,45 @@ export const home62 = () => {
       });
 
       item.addEventListener('click', (event) => {
+        const data = item.dataset;
+
+        homeCard.forEach((item) => {
+          item.classList.add('_active');
+
+          const floor = item.querySelector('#floor-num');
+          const bedroom1 = item.querySelector('#bedroom-item-1');
+          const bedroom2 = item.querySelector('#bedroom-item-2');
+          const bedroom3 = item.querySelector('#bedroom-item-3');
+          const bedroomRemain1 = bedroom1.querySelector('._remain');
+          const bedroomRemain2 = bedroom2.querySelector('._remain');
+          const bedroomRemain3 = bedroom3.querySelector('._remain');
+          const bedroomRemainAll = item.querySelector('#floor-remain');
+
+          bedroom1.classList.remove('_hidden');
+          bedroom2.classList.remove('_hidden');
+          bedroom3.classList.remove('_hidden');
+
+          floor.innerHTML = data.floor;
+          bedroomRemainAll.innerHTML =
+            +data.bedroom1 + +data.bedroom2 + +data.bedroom3;
+          bedroomRemain1.innerHTML = +data.bedroom1;
+          bedroomRemain2.innerHTML = +data.bedroom2;
+          bedroomRemain3.innerHTML = +data.bedroom3;
+          bedroom1.href = data.bedroom1Url;
+          bedroom2.href = data.bedroom2Url;
+          bedroom3.href = data.bedroom3Url;
+
+          if (+data.bedroom1 <= 0) {
+            bedroom1.classList.add('_hidden');
+          }
+          if (+data.bedroom2 <= 0) {
+            bedroom2.classList.add('_hidden');
+          }
+          if (+data.bedroom3 <= 0) {
+            bedroom3.classList.add('_hidden');
+          }
+        });
+
         if (!isSelected) {
           homeCard.forEach((item) => {
             item.classList.add('_active');
@@ -795,6 +834,45 @@ export const home76 = () => {
       });
 
       item.addEventListener('click', (event) => {
+        const data = item.dataset;
+
+        homeCard.forEach((item) => {
+          item.classList.add('_active');
+
+          const floor = item.querySelector('#floor-num');
+          const bedroom1 = item.querySelector('#bedroom-item-1');
+          const bedroom2 = item.querySelector('#bedroom-item-2');
+          const bedroom3 = item.querySelector('#bedroom-item-3');
+          const bedroomRemain1 = bedroom1.querySelector('._remain');
+          const bedroomRemain2 = bedroom2.querySelector('._remain');
+          const bedroomRemain3 = bedroom3.querySelector('._remain');
+          const bedroomRemainAll = item.querySelector('#floor-remain');
+
+          bedroom1.classList.remove('_hidden');
+          bedroom2.classList.remove('_hidden');
+          bedroom3.classList.remove('_hidden');
+
+          floor.innerHTML = data.floor;
+          bedroomRemainAll.innerHTML =
+            +data.bedroom1 + +data.bedroom2 + +data.bedroom3;
+          bedroomRemain1.innerHTML = +data.bedroom1;
+          bedroomRemain2.innerHTML = +data.bedroom2;
+          bedroomRemain3.innerHTML = +data.bedroom3;
+          bedroom1.href = data.bedroom1Url;
+          bedroom2.href = data.bedroom2Url;
+          bedroom3.href = data.bedroom3Url;
+
+          if (+data.bedroom1 <= 0) {
+            bedroom1.classList.add('_hidden');
+          }
+          if (+data.bedroom2 <= 0) {
+            bedroom2.classList.add('_hidden');
+          }
+          if (+data.bedroom3 <= 0) {
+            bedroom3.classList.add('_hidden');
+          }
+        });
+
         if (!isSelected) {
           homeCard.forEach((item) => {
             item.classList.add('_active');

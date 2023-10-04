@@ -1,0 +1,1829 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1, user-scalable=0">
+  <link rel="stylesheet" href="css/style.min.css?_v=20231004115459">
+  <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+
+  <!-- ios fix -->
+  <meta name="format-detection" content="telephone=no">
+  <meta name="format-detection" content="date=no">
+  <meta name="format-detection" content="address=no">
+  <meta name="format-detection" content="email=no">
+
+  <title>Авторы</title>
+
+
+  <script defer src="https://unpkg.com/img-comparison-slider@7/dist/index.js?_v=20231004115459"></script>
+  <link rel="stylesheet" href="https://unpkg.com/img-comparison-slider@7/dist/styles.css?_v=20231004115459" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="content">
+      <div id="is-index-page" style="display: none;"></div>
+
+      <header class="header">
+	<div class="container">
+		<div class="header-body">
+			<div class="header-body__logo">
+				<img src="./img/header/logo.svg" alt="">
+			</div>
+
+			<div class="header-body__burger">
+				<svg width="32" height="17" viewBox="0 0 32 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<line y1="0.5" x2="32" y2="0.5" stroke="#565656" />
+					<line y1="8.5" x2="32" y2="8.5" stroke="#565656" />
+					<line y1="16.5" x2="32" y2="16.5" stroke="#565656" />
+				</svg>
+			</div>
+
+			<nav class="header-menu">
+				<ul>
+					<li class="_dropdown">
+						<span>
+							О проекте
+							<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M4 7L9.5 12L15 7" stroke="#131411" />
+							</svg>
+
+						</span>
+						<div class="_dropdown-list">
+							<a class="" href="/#two-block-anim">Концепция</a>
+							<a class="" href="./index.html#advantages">Преимущества</a>
+							<a class="" href="./index.html#building">Архитектура</a>
+							<a class="" href="./index.html#yards">Дзен-дворы</a>
+							<a class="" href="./index.html#lobby">Лобби</a>
+							<a class="" href="./index.html#parking">Паркинг</a>
+							<a class="" href="./index.html#accent">Умная система</a>
+							<a class="" href="./index.html#about">О застройщике</a>
+						</div>
+					</li>
+					<li>
+						<a href="./index.html#position">
+							Расположение
+						</a>
+					</li>
+					<li>
+						<a href="">
+							ГАЛЛЕРЕЯ
+						</a>
+					</li>
+					<li>
+						<a href="">
+							Покупка
+						</a>
+					</li>
+					<li>
+						<a href="">
+							Контакты
+						</a>
+					</li>
+					<li class="_dropdown _dropdown_bold">
+						<span>
+							Выбрать квартиру
+							<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M4 7L9.5 12L15 7" stroke="#131411" />
+							</svg>
+
+						</span>
+
+						<div class="_dropdown-list">
+							<a class="callback_modal-open-btn" href="">Выбор по параметрам</a>
+							<a class="callback_modal-open-btn" href="">Выбор по генплану</a>
+						</div>
+					</li>
+				</ul>
+			</nav>
+			<a href="+78432448654" class="header-body__call">
+				+7 (843) 244-86-54
+			</a>
+			<!-- <div class="header-body__lang">
+				<a class="_active" href="">
+					Ru
+				</a>
+				<span>|</span>
+				<a class="" href="">
+					EN
+				</a>
+			</div> -->
+		</div>
+	</div>
+</header>
+
+
+<div class="menu">
+	<div class="menu__letter">
+		<svg width="743" height="720" viewBox="0 0 743 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path
+				d="M450.638 715.3L429.517 720H575.323L563.673 715.507C542.21 707.143 532.263 688.134 524.632 670.922C470.125 546.912 342.51 255.968 334.538 238.134C326.566 220.576 318.731 203.295 311.849 187.466L311.236 186.083H228.385L228.044 190.784C248.144 193.894 263.883 212.212 263.883 232.258V234.747C263.883 236.337 264.019 238.203 263.883 239.724C263.27 245.807 262.18 248.917 259.727 254.171C246.849 283.687 233.836 313.41 220.959 342.926C195.817 400.576 169.79 460.092 143.899 518.502L134.837 538.894C124.89 561.429 114.738 583.963 104.654 606.359C101.452 613.687 98.2492 621.429 94.9788 629.032L92.049 636.359C89.4599 642.719 86.6664 649.286 83.4641 655.507L83.1235 656.129C71.8132 680.184 55.1204 706.037 17.7148 715.507L0 720H138.653L138.993 715.3C118.621 712.949 105.267 706.452 99.3394 696.014C94.2974 687.166 94.57 675.484 100.429 661.383L137.971 576.083C139.061 573.456 140.152 570.968 141.378 568.341C142.128 566.751 142.741 565.23 143.354 563.848C144.58 561.636 145.534 559.631 146.556 557.489L146.897 556.728C148.6 552.857 155.959 548.986 160.864 548.502C163.453 548.157 166.383 548.018 169.109 547.88C170.199 547.88 171.425 547.88 172.447 547.742H365.948C371.603 547.742 377.122 547.604 382.777 547.742H385.979C387.069 547.88 388.159 547.88 389.045 547.88H389.386C392.316 548.018 395.041 548.157 397.63 548.502C402.536 548.986 409.894 552.857 411.597 556.728L412.96 559.701C415.413 565.161 417.866 570.553 419.978 576.152C432.855 604.908 446.346 636.636 462.562 675.899C465.628 683.641 469.034 693.595 466.854 700.161C464.742 706.175 457.724 713.779 450.638 715.3ZM396.881 528.042C396.131 529.148 394.7 529.908 393.338 529.908H164.68C163.317 529.908 162.091 529.286 161.341 528.042C160.592 526.797 160.387 525.415 161.001 523.963L275.738 263.848C276.488 262.258 277.919 261.36 279.554 261.36C281.257 261.36 282.62 262.12 283.233 263.71L315.256 336.913C340.534 394.908 373.17 469.286 397.221 524.171C397.63 525.415 397.63 526.797 396.881 528.042Z"
+				fill="#F6F6F6" />
+			<path
+				d="M742.798 474.953C742.798 490.161 730.67 502.603 715.681 502.603C700.691 502.603 688.564 490.161 688.564 474.953C688.564 459.884 700.691 447.442 715.681 447.442C730.739 447.442 742.798 459.815 742.798 474.953Z"
+				fill="#F6F6F6" />
+			<path
+				d="M742.798 692.488C742.798 707.695 730.67 719.999 715.681 719.999C700.691 719.999 688.564 707.695 688.564 692.488C688.564 677.28 700.691 664.976 715.681 664.976C730.739 664.976 742.798 677.28 742.798 692.488Z"
+				fill="#F6F6F6" />
+			<path d="M374.874 0L312.668 143.917H292.773L354.843 0H374.874Z" fill="#F6F6F6" />
+		</svg>
+	</div>
+	<div class="container">
+		<div class="menu__close">
+			<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<line x1="7.64645" y1="31.9602" x2="31.6464" y2="7.9602" stroke="#565656" />
+				<line y1="-0.5" x2="33.9411" y2="-0.5" transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 32 32.3138)"
+					stroke="#565656" />
+			</svg>
+		</div>
+		<div class="menu-top">
+			<a href="+74951234567" class="header-body__call">
+				+7 (495) 123-45-67
+			</a>
+			<!-- <div class="header-body__lang">
+				<a class="_active" href="">
+					Ru
+				</a>
+				<span>|</span>
+				<a class="" href="">
+					EN
+				</a>
+			</div> -->
+		</div>
+		<div class="menu-body">
+			<div class="menu-body__wrapper">
+				<div class="menu-body__links">
+					<a href="" class="menu-body__links-item ">
+						Главная
+					</a>
+					<a href="#" class="menu-body__links-item _submenu__link">
+						О проекте
+					</a>
+					<a href="/gallery/" class="menu-body__links-item">
+						Расположение
+					</a>
+					<a href="" class="menu-body__links-item">
+						Способы покупки и Акции
+					</a>
+					<a href="" class="menu-body__links-item">
+						Выбор квартиры по параметрам
+					</a>
+					<a href="" class="menu-body__links-item">
+						Выбор квартиры по генплану
+					</a>
+					<a href="" class="menu-body__links-item">
+						О застройщике
+					</a>
+					<a href="" class="menu-body__links-item">
+						Ход строительства
+					</a>
+					<a href="" class="menu-body__links-item">
+						Галерея
+					</a>
+					<a href="" class="menu-body__links-item">
+						Контакты
+					</a>
+				</div>
+				<div class="menu-body__links _submenu">
+					<div class="_submenu-back">
+						<svg width="53" height="30" viewBox="0 0 53 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M1 15L53 15" stroke="#131411" />
+							<path d="M5.98604 10.1153L0.972083 15L5.98604 19.8847" stroke="#131411" />
+						</svg>
+
+						Назад
+					</div>
+					<div class="_submenu-name">
+						О проекте:
+					</div>
+					<a href="/#two-block-anim" class="menu-body__links-item">
+						Концепция
+					</a>
+					<a href="./index.html#advantages" class="menu-body__links-item">
+						Преимущества
+					</a>
+					<a href="./index.html#building" class="menu-body__links-item">
+						Архитектура
+					</a>
+					<a href="./index.html#yards" class="menu-body__links-item">
+						Дзен-дворы
+					</a>
+					<a href="./index.html#lobby" class="menu-body__links-item">
+						Лобби
+					</a>
+					<a href="./index.html#parking" class="menu-body__links-item">
+						Паркинг
+					</a>
+					<a href="./index.html#accent" class="menu-body__links-item">
+						Умная система
+					</a>
+					<a href="./index.html#about" class="menu-body__links-item">
+						О застройщике
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+      <div class="preloader">
+  <div class="container">
+    <div class="preloader-body">
+      <div class="preloader-body__logo">
+        <div class="preloader-body__logo-dark">
+          <img src="./img/preloader/dark.svg" alt="">
+        </div>
+        <div class="preloader-body__logo-light">
+          <img src="./img/preloader/light.svg" alt="">
+        </div>
+      </div>
+      <div class="preloader-body__percents">
+        0%
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="callback_modal">
+  <div class="callback_modal__a">
+    <img src="./img/notfound/a.svg" alt="">
+  </div>
+  <div class="container">
+    <div class="callback_modal-body">
+      <div class="callback_modal__a _mobile">
+        <img src="./img/notfound/a.svg" alt="">
+      </div>
+      <div class="callback_modal-body__close">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M20.0002 0.799997L19.2002 0L10.0001 9.20012L0.799997 5.17552e-05L0 0.800049L9.20007 10.0001L0.000265563 19.1999L0.800263 19.9999L10.0001 10.8001L19.1999 20L19.9999 19.2L10.8001 10.0001L20.0002 0.799997Z"
+            fill="#131411" />
+        </svg>
+      </div>
+      <div class="callback_modal-body__title title">
+        Оставьте заявку
+      </div>
+      <div class="callback_modal-body__subtitle">
+        Создаем эстетичную и функциональную среду, которая помогает детям и взрослым <br> фокусироваться на важном,
+        мечтать,
+        планировать и достигать.
+      </div>
+      <form class="callback_modal-body__form">
+        <label>
+          <span>Номер для связи:</span>
+          <input type="text" placeholder="+7 (">
+        </label>
+        <label>
+          <span>Как к вам обращаться?</span>
+          <input type="text" placeholder="Фамилия Имя">
+        </label>
+        <div class="callback_modal-body__form-btn">
+          Отправить
+          <span>
+            <svg width="41" height="12" viewBox="0 0 41 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 5.95383H39.8889" stroke="#131411" />
+              <path d="M34.8677 1L40 6L34.8677 11" stroke="#131411" />
+            </svg>
+          </span>
+        </div>
+      </form>
+      <div class="callback_modal-body__policy">
+        нажимая кнопку «отправить» вы соглашаетесь с нашей <a href="">политикой конфиденциальности</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <div class="main">
+  <div class="main-slider">
+    <img-comparison-slider value="50">
+      <div slot="handle" class="main-slider__handler">
+        <svg width="38" height="16" viewBox="0 0 38 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M29.2703 0.999977L36.3984 8.01353L29.3273 15.0846" stroke="#F6F6F6" />
+          <path d="M8.12815 0.999977L1.00003 8.01353L8.0711 15.0846" stroke="#F6F6F6" />
+        </svg>
+      </div>
+      <div class="main-slider__img" slot="first">
+        <!-- <div class="container">
+          <div class="main-slider__img-street">
+            <span>Ул. Большая 76</span>
+            <span>Ул. Большая 62</span>
+          </div>
+          <div class="main-slider__img-content">
+            <div class="main-slider__img-title">
+              <span>Два <br> лаунж-дома</span>
+              <span>
+                в историческом <br> центре у реки
+              </span>
+            </div>
+            <div class="main-slider__img-advantages">
+              <div class="main-slider__img-list">
+                <div class="main-slider__img-item">
+                  <span>45</span>
+                  Резидеций
+                </div>
+                <div class="main-slider__img-item">
+                  <span>6</span>
+                  Пентхаусов
+                </div>
+              </div>
+              <div class="main-slider__img-text">
+                В самой амбициозной локации
+              </div>
+            </div>
+          </div>
+        </div> -->
+        <!-- <div class="container">
+          <div class="main-slider__img-street">
+            <span>Ул. Большая 76</span>
+            <span>Ул. Большая 76</span>
+          </div>
+          <div class="main-slider__img-content">
+            <div class="main-slider__img-title title">
+              Два лаунж-дома <br>
+              в историческом <br> центре у реки
+            </div>
+            <div class="main-slider__img-content-wrapper">
+              <div class="main-slider__img-advantage">
+                <span>45</span>
+                Резидеций
+              </div>
+              <div class="main-slider__img-advantage">
+                <span>6</span>
+                Пентхаусов
+              </div>
+              <div class="main-slider__img-text">
+                В самой амбициозной локации
+              </div>
+
+            </div>
+          </div>
+        </div> -->
+        <!-- <img src="./img/main/img1.jpg" />
+        <img src="./img/main/img1-mobile.jpg" /> -->
+        <img src="./img/main/img1.jpg" srcset="./img/main/img1.jpg 1x, ./img/main/img1@2x.jpg 2x" />
+        <img src="./img/main/img1-tablet.jpg"
+          srcset="./img/main/img1-tablet.jpg 1x, ./img/main/img1-tablet@2x.jpg 2x" />
+        <img src="./img/main/img1-mobile.jpg"
+          srcset="./img/main/img1-mobile.jpg 1x, ./img/main/img1-mobile@2x.jpg 2x" />
+      </div>
+      <div class="main-slider__img _second" slot="second">
+        <!-- <div class="container">
+          <div class="main-slider__img-street">
+            <span>Ул. Большая 62</span>
+            <span>Ул. Большая 62</span>
+          </div>
+          <div class="main-slider__img-content">
+            <div class="main-slider__img-title title">
+              Два лаунж-дома <br>
+              в историческом <br> центре у реки
+            </div>
+            <div class="main-slider__img-content-wrapper">
+              <div class="main-slider__img-advantage">
+                <span>45</span>
+                Резидеций
+              </div>
+              <div class="main-slider__img-advantage">
+                <span>6</span>
+                Пентхаусов
+              </div>
+              <div class="main-slider__img-text">
+                В самой амбициозной локации
+              </div>
+
+            </div>
+          </div>
+        </div> -->
+        <!-- <div class="container">
+          <div class="main-slider__img-street">
+            <span></span>
+            <span>Ул. Большая 62</span>
+          </div>
+          <div class="main-slider__img-content">
+            <div class="main-slider__img-title">
+              <span>
+                45 резиденций <br>
+                6 пентхаусов
+              </span>
+              <span class="_small">в историческом центре у воды</span>
+            </div>
+          </div>
+        </div> -->
+        <!-- <img src="./img/main/img2.jpg" />
+        <img src="./img/main/img2-mobile.jpg" /> -->
+        <!-- <img src="./img/main/img2.jpg" />
+        <img src="./img/main/old/img2.jpg" /> -->
+        <img src="./img/main/img2.jpg" srcset="./img/main/img2.jpg 1x, ./img/main/img2@2x.jpg 2x" />
+        <img src="./img/main/img2-tablet.jpg"
+          srcset="./img/main/img2-tablet.jpg 1x, ./img/main/img2-tablet@2x.jpg 2x" />
+        <img src="./img/main/img2-mobile.jpg"
+          srcset="./img/main/img2-mobile.jpg 1x, ./img/main/img2-mobile@2x.jpg 2x" />
+      </div>
+
+    </img-comparison-slider>
+  </div>
+  <div class="container">
+    <div class="main-body">
+
+    </div>
+  </div>
+</div>
+
+<style type="text/css">
+  img-comparison-slider {
+    --divider-color: #EDF0F2;
+  }
+</style>
+      <div id="two-block-anim" class="two">
+  <div class="container">
+    <div class="two-body">
+      <div class="two-body__text">
+        <div data-aos="fade-up" class="two-body__text-title title">
+          ДВА ДОМА БИЗНЕС КЛАССА С ВИДОВЫМИ РЕЗИДЕНЦИЯМИ
+        </div>
+        <div data-aos="fade-up" class="two-body__text-descr text">
+          «Авторы на Большой» - лаунж-дома на ул. Большой с привязкой к истории Адмиралтейства и авторской архитектурой,
+          с детальной проработкой нюансов для удовлетворения самого взыскательного и тонкого вкуса
+        </div>
+        <div data-aos="fade-up" class="two-body__text-date">
+          СРОК СДАЧИ:
+          <br>
+          III кв. 2025г.
+        </div>
+      </div>
+      <div class="two-body__img">
+        <div class="two-body__img-item">
+          <div class="two-body__img-item-wrapper">
+            <img src="./img/two/img-1.jpg" alt="">
+          </div>
+        </div>
+        <div class="two-body__img-item">
+          <div class="two-body__img-item-wrapper">
+            <img src="./img/two/img-2.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+      <div class="form form_top">
+  <div class="container">
+    <form class="form-body">
+      <div class="form-body__a">
+        <svg xmlns="http://www.w3.org/2000/svg" width="468" height="576" viewBox="0 0 468 576" fill="none">
+          <g opacity="0.03">
+            <path d="M252.88 115.636L303.273 0H286.981L236.727 115.636H252.88Z" fill="#131411" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M365.687 572.355L348.85 576H468L458.568 572.415C451.119 568.919 444.455 563.967 438.974 557.853C433.492 551.74 429.306 544.592 426.665 536.835C406.015 490.704 372.455 415.858 341.811 347.515C306.587 268.959 275.215 198.993 271.729 191.102C268.738 184.332 265.776 177.969 262.91 171.812C259.53 164.549 256.283 157.574 253.28 150.558V149.454H185.73V153.178C193.713 154.489 200.988 158.524 206.304 164.589C211.619 170.655 214.644 178.371 214.858 186.413V188.344C214.928 189.677 214.928 191.012 214.858 192.344C214.559 196.347 213.425 200.245 211.529 203.79L179.904 274.674C159.514 320.735 138.292 368.313 117.069 415.063L109.718 431.198C104.001 444.036 98.1437 456.804 92.2957 469.553C89.9145 474.744 87.5347 479.932 85.1665 485.119C82.5333 490.907 79.9003 497.107 77.267 503.307L77.2603 503.323L74.9023 509.116C72.8217 514.218 70.6024 519.458 67.9669 524.423C63.5107 535.965 56.3562 546.286 47.0945 554.535C37.8329 562.784 26.7301 568.724 14.7032 571.863L0 575.586H113.047V571.863C106.824 571.96 100.663 570.614 95.0534 567.933C89.4438 565.253 84.5392 561.31 80.728 556.417C78.6748 552.079 77.6802 547.32 77.8248 542.528C77.9694 537.735 79.2492 533.044 81.5602 528.836L114.85 454.367C115.255 453.642 115.565 452.917 115.864 452.22C116.077 451.723 116.284 451.24 116.515 450.781C116.707 450.399 116.982 449.885 117.294 449.302C117.884 448.2 118.606 446.851 119.15 445.678C120.475 443.845 122.171 442.309 124.131 441.169C126.09 440.029 128.268 439.31 130.524 439.059H322.218C324.474 439.31 326.652 440.029 328.611 441.169C330.571 442.309 332.267 443.845 333.592 445.678L334.702 448.023C336.783 452.436 338.724 456.711 340.528 461.124C350.931 484.154 361.889 509.529 375.204 540.834C378.341 546.808 379.551 553.597 378.672 560.279C377.536 563.157 375.76 565.743 373.479 567.844C371.246 569.9 368.585 571.44 365.687 572.355ZM320.53 423.893C321.036 423.63 321.472 423.25 321.802 422.786L322.496 421.545C322.739 421.076 322.866 420.555 322.866 420.027C322.866 419.5 322.739 418.98 322.496 418.511C316.447 404.948 309.722 389.895 302.71 374.199C287.049 339.145 269.957 300.888 255.777 268.882L229.977 211.651C229.72 211.073 229.287 210.59 228.74 210.268C228.193 209.947 227.559 209.803 226.926 209.858C226.28 209.835 225.643 210.007 225.098 210.351C224.553 210.696 224.127 211.197 223.874 211.788L130.247 419.614C130.002 420.107 129.875 420.65 129.875 421.2C129.875 421.75 130.002 422.293 130.247 422.786C130.525 423.267 130.931 423.663 131.42 423.93C131.91 424.198 132.463 424.326 133.021 424.303H318.889C319.461 424.297 320.023 424.157 320.53 423.893Z"
+              fill="#131411" />
+          </g>
+        </svg>
+      </div>
+      <div id="typewriter" class="form__title title">
+
+      </div>
+      <div class="form-body__item form-body__item_phone">
+        <div class="form-body__item-name">
+          Номер для связи:
+        </div>
+        <div class="form-body__item-input">
+          <input type="text" placeholder="+7 (">
+        </div>
+      </div>
+      <div class="form-body__item form-body__item_name">
+        <div class="form-body__item-name">
+          Как к вам обращаться?
+        </div>
+        <div class="form-body__item-input">
+          <input type="text" placeholder="Ваше имя">
+        </div>
+      </div>
+      <div class="form-body__item form-body__item_select">
+        <div class="form-body__item-name">
+          В какое время?
+        </div>
+        <div class="form-body__item-select custom-select_styles">
+          <select class="custom-select">
+            <option value="1">c 10:00</option>
+            <option value="1">c 10:00</option>
+            <option value="1">c 10:00</option>
+          </select>
+        </div>
+        <div class="form-body__item-select custom-select_styles">
+          <select class="custom-select">
+            <option value="1">до 22:00</option>
+            <option value="1">до 22:00</option>
+            <option value="1">до 22:00</option>
+          </select>
+        </div>
+      </div>
+      <!-- <div class="form-body__item form-body__item_text">
+        <div class="form-body__item-text">
+          нажимая кнопку «отправить» вы соглашаетесь с нашей политикой конфиденциальности
+        </div>
+      </div> -->
+      <div class="form-body__item form-body__item_btn">
+        <button type="submit" class="form-body__item-btn btn_arrow">
+          Отправить
+          <span class="_arrow">
+            <svg width="47" height="14" viewBox="0 0 47 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.75 6.948H45.625" stroke="#131411" stroke-width="1.125" />
+              <path d="M39.976 1.375L45.7499 7L39.976 12.625" stroke="#131411" stroke-width="1.125" />
+            </svg>
+          </span>
+        </button>
+      </div>
+      <div class="form-body__text">
+        нажимая кнопку «отправить» вы соглашаетесь с нашей <a href="">политикой конфиденциальности</a>
+      </div>
+    </form>
+  </div>
+</div>
+      <div id="advantages" class="video">
+  <div class="container">
+    <div class="video-body">
+      <div class="video-body__text">
+        <div data-aos="fade-up" class="video-body__text-title title">
+          Дома, <br> вдохновленные историей
+        </div>
+        <div data-aos="fade-up" data-aos-delay="100" class="video-body__text-item">
+          Мы создаём камерное и комфортное пространство <br> для ценителей эстетики и умиротворения
+        </div>
+        <div data-aos="fade-up" data-aos-delay="150" class="video-body__text-time">
+          Видео о проекте <span>1</span> мин
+        </div>
+      </div>
+      <div data-aos="fade-left" data-aos-delay="300" class="video-body__item">
+        <video id="video-block-item" controls muted loop playsinline webkit-playsinline
+          src="./files/video-block.mp4"></video>
+      </div>
+    </div>
+  </div>
+</div>
+      <div id="building" class="building">
+  <div class="container">
+    <div class="building-body">
+      <div class="building-tooltip">
+        <div class="building-tooltip__btn">
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M7 0H5V5H0V7H5V12H7V7H12V5H7V0Z" fill="#131411" />
+          </svg>
+        </div>
+        <div class="building-tooltip__content">
+          <div class="building-tooltip__content-title">
+            Аристократичная высота потолков
+          </div>
+          <div class="building-tooltip__content-text">
+            2-4 этаж 3 метра <br>
+            5 этаж - 3,3 метра <br>
+            пентхаусы - от 2,8 метров до 4,5 метров
+
+          </div>
+        </div>
+      </div>
+      <div class="building-tooltip">
+        <div class="building-tooltip__btn">
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M7 0H5V5H0V7H5V12H7V7H12V5H7V0Z" fill="#131411" />
+          </svg>
+        </div>
+        <div class="building-tooltip__content">
+          <div class="building-tooltip__content-title">
+            Террасы с изящными видами на Волгу до 65 м²
+          </div>
+        </div>
+      </div>
+      <div class="building-tooltip">
+        <div class="building-tooltip__btn">
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M7 0H5V5H0V7H5V12H7V7H12V5H7V0Z" fill="#131411" />
+          </svg>
+        </div>
+        <div class="building-tooltip__content">
+          <div class="building-tooltip__content-title">
+            Подземный паркинг со смарт-воротами и износостойким топпинг-покрытием
+          </div>
+        </div>
+      </div>
+      <div class="building-tooltip">
+        <div class="building-tooltip__btn">
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M7 0H5V5H0V7H5V12H7V7H12V5H7V0Z" fill="#131411" />
+          </svg>
+        </div>
+        <div class="building-tooltip__content">
+          <div class="building-tooltip__content-title">
+            Приватные террасы до 14 м² с пейзажем Кремля и Волги
+          </div>
+        </div>
+      </div>
+      <div class="building-tooltip">
+        <div class="building-tooltip__btn">
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M7 0H5V5H0V7H5V12H7V7H12V5H7V0Z" fill="#131411" />
+          </svg>
+        </div>
+        <div class="building-tooltip__content">
+          <div class="building-tooltip__content-title">
+            Аристократичная 3-хметровая высота потолков резеденций
+          </div>
+        </div>
+      </div>
+      <div class="building-tooltip">
+        <div class="building-tooltip__btn">
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M7 0H5V5H0V7H5V12H7V7H12V5H7V0Z" fill="#131411" />
+          </svg>
+        </div>
+        <div class="building-tooltip__content">
+          <div class="building-tooltip__content-title">
+            Дзен-двор с тактильной зеленью
+          </div>
+        </div>
+      </div>
+      <div class="building-tooltip">
+        <div class="building-tooltip__btn">
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M7 0H5V5H0V7H5V12H7V7H12V5H7V0Z" fill="#131411" />
+          </svg>
+        </div>
+        <div class="building-tooltip__content">
+          <div class="building-tooltip__content-title">
+            Панорамные окна в каждой резиденции
+          </div>
+        </div>
+      </div>
+
+      <div class="building-body__img">
+        <img src="./img/building/img.png" srcset="./img/building/img.png 1x, ./img/building/img@2x.png 2x" alt="">
+      </div>
+      <div class="building-body__info building-body__info_first">
+        <div class="building-body__info-item btn_arrow callback_modal-open-btn">
+          <div class="building-body__info-value">20</div>
+          <div class="building-body__info-text">Резиденций</div>
+          <span class="_arrow">
+            <svg width="47" height="14" viewBox="0 0 47 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.75 6.948H45.625" stroke="#131411" stroke-width="1.125" />
+              <path d="M39.976 1.375L45.7499 7L39.976 12.625" stroke="#131411" stroke-width="1.125" />
+            </svg>
+          </span>
+        </div>
+        <div class="building-body__info-item btn_arrow callback_modal-open-btn">
+          <div class="building-body__info-value">4</div>
+          <div class="building-body__info-text">Пентхауса</div>
+          <span class="_arrow">
+            <svg width="47" height="14" viewBox="0 0 47 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.75 6.948H45.625" stroke="#131411" stroke-width="1.125" />
+              <path d="M39.976 1.375L45.7499 7L39.976 12.625" stroke="#131411" stroke-width="1.125" />
+            </svg>
+          </span>
+        </div>
+      </div>
+      <div class="building-body__info building-body__info_second">
+        <div class="building-body__info-item btn_arrow callback_modal-open-btn">
+          <div class="building-body__info-value">25</div>
+          <div class="building-body__info-text">Резиденций</div>
+          <span class="_arrow">
+            <svg width="47" height="14" viewBox="0 0 47 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.75 6.948H45.625" stroke="#131411" stroke-width="1.125" />
+              <path d="M39.976 1.375L45.7499 7L39.976 12.625" stroke="#131411" stroke-width="1.125" />
+            </svg>
+          </span>
+        </div>
+        <div class="building-body__info-item btn_arrow callback_modal-open-btn">
+          <div class="building-body__info-value">2</div>
+          <div class="building-body__info-text">Пентхауса</div>
+          <span class="_arrow">
+            <svg width="47" height="14" viewBox="0 0 47 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.75 6.948H45.625" stroke="#131411" stroke-width="1.125" />
+              <path d="M39.976 1.375L45.7499 7L39.976 12.625" stroke="#131411" stroke-width="1.125" />
+            </svg>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div id="position" class="position">
+  <div data-aos="fade" data-aos-duration="2000" class="position__map">
+    <div class="position__map-compass">
+      <img src="./img/position/icon-compass.svg" alt="">
+    </div>
+    <img src="./img/position/img-map.png" srcset="./img/position/img-map.png 1x, ./img/position/img-map@2x.png 2x"
+      alt="">
+    <img src="./img/position/img-map-tablet.png"
+      srcset="./img/position/img-map-tablet.png 1x, ./img/position/img-map-tablet@2x.png 2x" alt="">
+    <img src="./img/position/img-map-mobile.png"
+      srcset="./img/position/img-map-mobile.png 1x, ./img/position/img-map-mobile@2x.png 2x" alt="">
+  </div>
+  <div class="container">
+    <div class="position-body">
+      <div data-aos="fade-up" class="position-body__title title">
+        Историческая <br> и амбициозная <br> локация
+      </div>
+      <div data-aos="fade-up" class="position-body__subtitle">
+        Расположение: Адмиралтейская слобода, <br>
+        ул. Большая, 62 и 76
+      </div>
+      <div data-aos="fade-up" class="position-body__text text">
+        Причал у реки, теннисные корты Академии тенниса создают атмосферу загородного клуба всего в семи минутах от
+        центра Казани с его достопримечательностями, театрами, музеями, парками, ресторанами и кафе
+      </div>
+      <div data-aos="fade-up" class="position-body__new">
+        Новая Соборная Мечеть в 450 метрах от лаунж-домов
+      </div>
+      <div data-aos="fade-up" class="position-body__btn btn_arrow">
+        <span class="_text">История <br> и будущее <br> локации</span>
+        <span class="_arrow">
+          <svg width="47" height="14" viewBox="0 0 47 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.75 6.948H45.625" stroke="#131411" stroke-width="1.125" />
+            <path d="M39.976 1.375L45.7499 7L39.976 12.625" stroke="#131411" stroke-width="1.125" />
+          </svg>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="balance">
+  <div class="container">
+    <div class="balance-body">
+      <div data-aos="fade-up" class="balance-body__title title">
+        Баланс между эстетикой, удобной локацией и редкими лотами
+      </div>
+      <div data-aos="fade-up" class="balance-body__btn callback_modal-open-btn btn_arrow">
+        Получить <br> консультацию
+        <span class="_arrow">
+          <svg width="47" height="14" viewBox="0 0 47 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.75 6.948H45.625" stroke="#131411" stroke-width="1.125" />
+            <path d="M39.976 1.375L45.7499 7L39.976 12.625" stroke="#131411" stroke-width="1.125" />
+          </svg>
+        </span>
+      </div>
+      <div data-aos="fade-up" class="balance-body__btn callback_modal-open-btn btn_arrow">
+        выбрать <br> резиденцию
+        <span class="_arrow">
+          <svg width="47" height="14" viewBox="0 0 47 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.75 6.948H45.625" stroke="#131411" stroke-width="1.125" />
+            <path d="M39.976 1.375L45.7499 7L39.976 12.625" stroke="#131411" stroke-width="1.125" />
+          </svg>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="architecture">
+  <div class="architecture__divider">
+    <img src="./img/architecture/divider-1.svg" alt="">
+  </div>
+  <div class="container">
+    <div class="architecture-body">
+      <div data-aos="fade-left" data-aos-delay="600" class="architecture-body__num">
+        <img src="./img/architecture/nums.svg" alt="">
+      </div>
+      <div data-aos="fade-up" class="architecture-body__title title">
+        Архитектура <br> лаунж-дома
+      </div>
+      <div class="architecture-body__content">
+        <div data-aos="fade-up" data-aos-delay="200" class="architecture-body__info">
+          Лейтмотив фасада дома — дань истории Адмиралтейства
+          с вниманием к деталям
+        </div>
+        <div data-aos="fade-up" data-aos-delay="300" class="architecture-body__text">
+          Отделка фасада из натуральных материалов обеспечит дому долгую жизнь и позволит ему «красиво стареть»
+        </div>
+        <div data-aos="fade-up" data-aos-delay="400" class="architecture-body__subtext">
+          Архитекторы составили цветовую гамму, объединяющую всю коллекцию тонов искусства кораблестроения:
+          терракотовые, бежевые и светло-серые
+        </div>
+      </div>
+      <div class="architecture-body__img">
+        <div data-aos="zoom-in" data-aos-delay="200" class="architecture-body__img-circle">
+          <img src="./img/architecture/img-circle-1.png" alt="">
+        </div>
+        <div data-aos="fade-up" data-aos-delay="600" class="architecture-body__img-item">
+          <img src="./img/architecture/img1.png" alt="">
+          <img src="./img/architecture/img1-mobile.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="architecture architecture_second">
+  <div class="architecture__divider">
+    <img src="./img/architecture/divider-2.svg" alt="">
+  </div>
+  <div class="container">
+    <div class="architecture-body">
+      <div data-aos="fade-right" data-aos-delay="600" class="architecture-body__num">
+        <img src="./img/architecture/nums-2.svg" alt="">
+      </div>
+      <div data-aos="fade-up" data-aos-delay="100" class="architecture-body__title title">
+        Архитектура <br> лаунж-дома
+      </div>
+      <div class="architecture-body__content">
+        <div data-aos="fade-up" data-aos-delay="200" class="architecture-body__info">
+          Скатная кровля формой отсылает к традиционным деревянным домам поселения Бишбалта
+        </div>
+        <div data-aos="fade-up" data-aos-delay="300" class="architecture-body__text">
+          Дорогая скромность лаунж-дома подчёркивается фактурами светлого кирпича, оттенками медных листов
+          и контрастными тёмными рамами окон в пол
+        </div>
+        <div data-aos="fade-up" data-aos-delay="400" class="architecture-body__subtext">
+          Вместе лаунж-дома составляют архитектурный ансамбль, который символизирует две эпохи судостроения
+        </div>
+      </div>
+      <div class="architecture-body__img">
+        <div data-aos="zoom-in" data-aos-delay="200" class="architecture-body__img-circle">
+          <img src="./img/architecture/img-circle-2.png" alt="">
+        </div>
+        <div data-aos="fade-up" data-aos-delay="600" class="architecture-body__img-item">
+          <img src="./img/architecture/img2.png" alt="">
+          <img src="./img/architecture/img2-mobile.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div id="#yards" class="yards">
+  <div class="container">
+    <div data-aos="fade-up" class="yards__title title">
+      Дзен-дворы <br class="_mobile"> с концепцией <br> «life-work-chill»
+    </div>
+    <div class="yards-top">
+      <div data-aos="fade-up" class="yards-top__item">
+        <div class="yards-top__item-num">
+          01
+        </div>
+        <div class="yards-top__item-text">
+          Днём это место для расслабления и работы в природной атмосфере, вечером — лаунж-зона встреч, вечеринок
+          и откровенных разговоров под звездами
+        </div>
+      </div>
+      <div data-aos="fade-up" class="yards-top__item">
+        <div class="yards-top__item-num">
+          02
+        </div>
+        <div class="yards-top__item-text">
+          Дзен-двор - это оазис тактильного озеленения с растениями «дикой» природы для особого ощущения приватности и
+          созерцания
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="yards-slider">
+    <div class="yards-slider__img">
+      <div class="yards-slider__img-nav yards-slider__img-nav_prev">
+        <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0.489955 0.519395L8.87765 9.10115L0.387694 17.5818" stroke="#131411" />
+        </svg>
+      </div>
+      <div class="yards-slider__img-nav yards-slider__img-nav_next">
+        <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0.489955 0.519395L8.87765 9.10115L0.387694 17.5818" stroke="#131411" />
+        </svg>
+      </div>
+
+      <div class="yards-slider__img-circle">
+        <img src="./img/yards/circle.svg" alt="">
+      </div>
+
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="./img/yards/img.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/yards/img2.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/yards/img3.jpg" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div class="yards-slider__text">
+      <div class="container">
+        <div class="yards-slider__text-content">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="yards-slider__text-title">
+                <p>Дзен-двор</p>
+                <p>продолжение резиденции</p>
+              </div>
+              <div class="yards-slider__text-text text">
+                Основной центр притяжения — гостиная под открытым небом. Диваны под навесами, торшеры-фонари, барная
+                стойка, укладка брусчатки под паркет формируют образ капитанского салона на океанском лайнере.
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="yards-slider__text-title">
+                <p>Дзен-двор</p>
+                <p>продолжение истории</p>
+              </div>
+              <div class="yards-slider__text-text text">
+                Мотив кораблестроения подчеркнут материалы отделки двора – натуральный камень, сибирская лиственница,
+                брусчатка подходящих по концепции оттенков
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="yards-slider__text-title">
+                <p>Дзен-двор</p>
+                <p>поддержание жизни</p>
+              </div>
+              <div class="yards-slider__text-text text">
+                Для тех, кто стремится к балансу активности в жизни, во дворе предусмотрены открытые многофункциональные
+                площадки для йоги, самостоятельных и групповых тренировок
+              </div>
+            </div>
+          </div>
+          <div class="yards-slider__text-pagination"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div id="lobby" class="eq-gsap-row">
+  <div class="lobby panel">
+    <div class="lobby-content">
+      <div class="container">
+        <div class="lobby-body">
+          <div class="lobby-body__num">
+            <img src="./img/lobby/nums.svg" alt="">
+          </div>
+          <div data-aos="fade-up" class="lobby-body__title title">
+            лобби <br> лаунж-дома
+          </div>
+          <div data-aos="fade-up" class="lobby-body__text text">
+            <span>Авторы на Большой 62</span> — это отказ от чопорной тяжеловесной роскоши в лобби в пользу современной
+            и
+            аккуратной
+            харизмы, которая проявляется в светлой цветовой гамме, прозрачном остеклении и многоуровневой мягкой
+            подсветке
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="lobby__img">
+      <img src="./img/lobby/img.jpg" alt="">
+      <div class="lobby__img-circle">
+        <img src="./img/lobby/circle.svg" alt="">
+      </div>
+    </div>
+  </div>
+
+  <div class="feel panel">
+    <div class="container">
+      <div class="feel-body">
+        <div class="feel-body__a">
+          <img src="./img/lobby/a.svg" alt="">
+        </div>
+        <div class="feel-text">
+          <div class="feel-text__title title">
+            особенные <br> ощущения <br>
+            от материалов <br> лобби
+          </div>
+          <div class="feel-text__item text">
+            Интерьеры лобби поддерживают связь с историей судостроения через текстуры дерева и камня, коллекционного
+            Керамогранита Millennium, детально воссоздающий эффект обработанного вручную бетона и акцентные
+            металлические
+            элементы
+          </div>
+        </div>
+        <div class="feel-content">
+          <div class="feel-col">
+            <div class="feel-col__lamp">
+              <img src="./img/lobby/feel/lamp.png"
+                srcset="./img/lobby/feel/lamp.png 1x, ./img/lobby/feel/lamp@2x.png 2x" alt="">
+              <div class="feel-col__lamp-text">
+                строгие элегантные <br> светильники by lee broom
+              </div>
+            </div>
+            <div class="feel-col__texture">
+              <img src="./img/lobby/feel/texture.png"
+                srcset="./img/lobby/feel/texture.png 1x, ./img/lobby/feel/texture@2x.png 2x" alt="">
+
+              <div class="feel-col__texture-text">
+                полированные <br> текстуры дерева <br> на стенах
+              </div>
+            </div>
+          </div>
+          <div class="feel-col">
+            <div class="feel-col__textures">
+              <div class="feel-col__textures-title">
+                коллекция керамогранит <br>
+                mellenium, Детально <br> воссоздающий эффект <br> обработанного вручную бетона
+              </div>
+              <div class="feel-col__textures-list">
+                <div class="feel-col__textures-item">
+                  <img src="./img/lobby/feel/texture-1.png"
+                    srcset="./img/lobby/feel/texture-1.png 1x, ./img/lobby/feel/texture-1@2x.png 2x" alt="">
+                  <span>
+                    BIANCO
+                    <br>
+                    Calce
+                  </span>
+                </div>
+                <div class="feel-col__textures-item">
+                  <img src="./img/lobby/feel/texture-2.png"
+                    srcset="./img/lobby/feel/texture-2.png 1x, ./img/lobby/feel/texture-2@2x.png 2x" alt="">
+                  <span>
+                    оттенок
+                    <br>
+                    IRON
+                  </span>
+                </div>
+                <div class="feel-col__textures-item">
+                  <img src="./img/lobby/feel/texture-3.png"
+                    srcset="./img/lobby/feel/texture-3.png 1x, ./img/lobby/feel/texture-3@2x.png 2x" alt="">
+                  <span>
+                    оттенок
+                    <br>
+                    PURE
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="feel-col__fish">
+              <img src="./img/lobby/feel/fish.png"
+                srcset="./img/lobby/feel/fish.png 1x, ./img/lobby/feel/fish@2x.png 2x" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="eq-gsap-row-2">
+  <div class="lobby lobby_second panel2">
+    <div class="lobby__img">
+      <img src="./img/lobby/img2.jpg" alt="">
+      <div class="lobby__img-circle">
+        <img src="./img/lobby/circle-2.svg" alt="">
+      </div>
+    </div>
+    <div class="lobby-content">
+      <div class="container">
+        <div class="lobby-body">
+          <div class="lobby-body__num">
+            <img src="./img/lobby/nums-2.svg" alt="">
+          </div>
+          <div data-aos="fade-up" class="lobby-body__title title">
+            лобби <br> лаунж-дома
+          </div>
+          <div data-aos="fade-up" class="lobby-body__text text">
+            <p>
+              Привычные предметы интерьера лобби выглядят как арт-объекты
+            </p>
+            <p>
+              Ассоциации с салоном океанского лайнера: плавные стены и акцентная люстра на потолке с мерцающими каплями
+              воды отсылают к речной тематике, а медные оттенки металла и деревянные текстуры — к ремеслу судостроителей
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="materials panel2">
+    <div class="materials__wood">
+      <img src="./img/lobby/materials/img-wood.png"
+        srcset="./img/lobby/materials/img-wood.png 1x, ./img/lobby/materials/img-wood@2x.png 2x" alt="">
+    </div>
+    <div class="container">
+      <div class="materials-body">
+        <div class="materials-body__a">
+          <img src="./img/lobby/a.svg" alt="">
+        </div>
+        <div class="materials-text">
+          <div class="materials-text__title title">
+            особенные <br> ощущения <br class="_mobile">
+            от материалов <br> лобби
+          </div>
+          <div class="materials-text__item text">
+            Полированный металл гармонично сочетается с фактурами камня
+            в белых прожилках на полу, а скамья
+            для ожидания из грубого речного камня — с тёплым деревом
+            на стенах и мягкой обивкой мебели.
+          </div>
+        </div>
+        <div class="materials-body__wrapper">
+          <div class="materials-body__content">
+            <div class="materials-body__content-a">
+              <img src="./img/lobby/a.svg" alt="">
+            </div>
+            <div class="materials__wood">
+              <img src="./img/lobby/materials/img-wood.png"
+                srcset="./img/lobby/materials/img-wood.png 1x, ./img/lobby/materials/img-wood@2x.png 2x" alt="">
+              <img src="./img/lobby/materials/wood-mobile.png"
+                srcset="./img/lobby/materials/wood-mobile.png 1x, ./img/lobby/materials/wood-mobile@2x.png 2x" alt="">
+            </div>
+            <div class="materials-luster">
+              <div class="materials-luster__text">
+                Струящаяся <br> мерцающая словно <br> капли воды
+                люстра
+              </div>
+              <img src="./img/lobby/materials/luster.png" alt="">
+              <img src="./img/lobby/materials/luster-mob.png" alt="">
+            </div>
+            <div class="materials-materials">
+              <div class="materials-materials__item">
+                <span>
+                  бронзированное <br> стекло
+                </span>
+                <img src="./img/lobby/materials/items/01.png" alt="">
+              </div>
+              <div class="materials-materials__item">
+                <span>
+                  тёмное дерево и <br> теплая подсветка <br> создают портал <br>
+                  в резиденцию
+                </span>
+                <img src="./img/lobby/materials/items/02.png" alt="">
+              </div>
+              <div class="materials-materials__item">
+                <span>
+                  МЕТАЛЛИЧЕСКАЯ <br> ВОЛНА - плавная <br> стена
+                </span>
+                <img src="./img/lobby/materials/items/03.png" alt="">
+              </div>
+              <div class="materials-materials__item">
+                <span>
+                  Дерево - природный мотив <br> и материал
+                  из которого <br>
+                  изготавливались
+                  корабли
+                </span>
+                <img src="./img/lobby/materials/items/04.png" alt="">
+              </div>
+              <div class="materials-materials__item">
+                <span>
+                  Керамогранит
+                  <br>
+                  с фактурами <br> камня
+                </span>
+                <img src="./img/lobby/materials/items/05.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div id="parking" class="parking">
+  <div class="container">
+    <div class="parking-body">
+      <div data-aos="fade-right" data-aos-duration="1200" data-aos-delay="100" class="parking-body__img">
+        <span>плавная <br> рампа</span>
+
+        <img src="./img/parking/img.jpg" srcset="./img/parking/img.jpg 1x, ./img/parking/img@2x.jpg 2x" alt="">
+      </div>
+      <div data-aos="fade-right" data-aos-duration="1200" data-aos-delay="200" class="parking-body__img">
+        <span>ВИД НА <br> ПАРКОВОЧНЫЕ <br> МЕСТА </span>
+
+        <img src="./img/parking/img2.jpg" srcset="./img/parking/img2.jpg 1x, ./img/parking/img2@2x.jpg 2x" alt="">
+      </div>
+      <div data-aos="fade-right" data-aos-duration="1200" data-aos-delay="300" class="parking-body__slider">
+        <div class="parking-body__slider-item">
+          <div class="parking-body__slider-title title">
+            Паркинг
+          </div>
+          <div class="parking-body__slider-text text">
+            <p>Премиальное топпинг-покрытие бетона</p>
+            <p>Плавная рампа - любой автомобиль, будь то легендарный суперкар или роскошный GT, будет встречен
+              ласковым прикосновением</p>
+          </div>
+        </div>
+        <!-- <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="parking-body__slider-item">
+              <div class="parking-body__slider-title title">
+                Паркинг
+              </div>
+              <div class="parking-body__slider-text text">
+                <p>Премиальное топпинг-покрытие бетона</p>
+                <p>Плавная рампа - любой автомобиль, будь то легендарный суперкар или роскошный GT, будет встречен
+                  ласковым прикосновением</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="parking-body__slider-item">
+              <div class="parking-body__slider-title title">
+                Паркинг
+              </div>
+              <div class="parking-body__slider-text text">
+                <p>Премиальное топпинг-покрытие бетона</p>
+                <p>Плавная рампа - любой автомобиль, будь то легендарный суперкар или роскошный GT, будет встречен
+                  ласковым прикосновением</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="parking-body__slider-item">
+              <div class="parking-body__slider-title title">
+                Паркинг
+              </div>
+              <div class="parking-body__slider-text text">
+                <p>Премиальное топпинг-покрытие бетона</p>
+                <p>Плавная рампа - любой автомобиль, будь то легендарный суперкар или роскошный GT, будет встречен
+                  ласковым прикосновением</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="parking-body__slider-pagination"></div> -->
+      </div>
+    </div>
+  </div>
+</div>
+      <div id="accent" class="accent">
+  <div class="accent__img">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div id="accent-img-1" class="accent__img-item">
+          <img src="./img/accent/img.jpg" srcset="./img/accent/img.jpg 1x, ./img/accent/img@2x.jpg 2x" alt="">
+          <img src="./img/accent/img-tablet.jpg"
+            srcset="./img/accent/img-tablet.jpg 1x, ./img/accent/img-tablet@2x.jpg 2x" alt="">
+
+
+          <div class="accent-icon">
+            <div class="accent-icon__item">
+              <img src="./img/accent/icon01.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div id="accent-img-2" class="accent__img-item">
+          <img src="./img/accent/img2.jpg" srcset="./img/accent/img2.jpg 1x, ./img/accent/img2@2x.jpg 2x" alt="">
+          <img src="./img/accent/img2-tablet.jpg"
+            srcset="./img/accent/img2-tablet.jpg 1x, ./img/accent/img2-tablet@2x.jpg 2x" alt="">
+
+          <div class="accent-icon">
+            <div class="accent-icon__item">
+              <img src="./img/accent/icon02.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div id="accent-img-3" class="accent__img-item">
+          <img src="./img/accent/img.jpg" srcset="./img/accent/img.jpg 1x, ./img/accent/img@2x.jpg 2x" alt="">
+          <img src="./img/accent/img-tablet.jpg"
+            srcset="./img/accent/img-tablet.jpg 1x, ./img/accent/img-tablet@2x.jpg 2x" alt="">
+
+          <div class="accent-icon">
+            <div class="accent-icon__item">
+              <img src="./img/accent/icon03.svg" alt="">
+            </div>
+            <div class="accent-icon__item _sub">
+              <img src="./img/accent/icon03-01.svg" alt="">
+            </div>
+            <div class="accent-icon__item _sub">
+              <img src="./img/accent/icon03-02.svg" alt="">
+            </div>
+            <div class="accent-icon__item _sub">
+              <img src="./img/accent/icon03-03.svg" alt="">
+            </div>
+            <div class="accent-icon__item _sub">
+              <img src="./img/accent/icon03-04.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="accent-body">
+      <div class="accent-body__info">
+        <div data-aos="fade-up" class="accent-body__info-title title">
+          Акцент на <br> детали жизни
+        </div>
+        <div class="accent-content">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div id="accent-item-1" class="accent-content__item">
+                <div class="accent-content__item-num">
+                  <img src="./img/accent/num.svg" alt="">
+                </div>
+                <div class="accent-content__item-name">
+                  система «Умный дом»
+                </div>
+                <div class="accent-content__item-descr">
+                  Контроль въезда и выезда автомобилей с помощью системы распознавания государственных номеров машины
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div id="accent-item-2" class="accent-content__item">
+                <div class="accent-content__item-num">
+                  <img src="./img/accent/num-2.svg" alt="">
+                </div>
+                <div class="accent-content__item-name">
+                  Система видеонаблюдения
+                </div>
+                <div class="accent-content__item-descr">
+
+                  Видеонаблюдение, как ядро безопасности, - по всему периметру лаунж-домов
+                  Безопасность двора обеспечивают замок с технологией FaceID, BLE и смарт-ключ
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div id="accent-item-3" class="accent-content__item">
+                <div class="accent-content__item-num">
+                  <img src="./img/accent/num-3.svg" alt="">
+                </div>
+                <div class="accent-content__item-name">
+                  Умная резиденция
+                </div>
+                <div class="accent-content__item-descr">
+
+                  Система защиты от протечек в мокрых зонах, мультисенсор со встроенными датчиками движения, света и
+                  шума
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accent-content__nav">
+          <span id="accent-btn-prev">
+            <svg width="11" height="19" viewBox="0 0 11 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9.81581 0.835623L1.27962 9.26969L9.62006 17.897" stroke="#131411" />
+            </svg>
+          </span>
+          <span id="accent-btn-next">
+            <svg width="11" height="19" viewBox="0 0 11 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9.81581 0.835623L1.27962 9.26969L9.62006 17.897" stroke="#131411" />
+            </svg>
+          </span>
+        </div>
+      </div>
+      <div class="accent-body__img">
+        <span>
+        </span>
+        <span>
+        </span>
+        <span>
+        </span>
+        <img src="./img/accent/policy.svg" alt="">
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="residences">
+  <div class="container">
+    <!-- <div class="residences__img">
+      <img src="./img/residences/img.jpg" srcset="./img/residences/img.jpg 1x, ./img/residences/img@2x.jpg 2x" alt="">
+    </div> -->
+    <div class="residences-body">
+      <div class="residences-body__info">
+        <span data-aos="fade-up">
+          Выход из гостиной на террасу будто продолжает личную чилаут-зону и на вечер переносит ее под открытое небо
+        </span>
+      </div>
+
+      <div data-aos="fade-up" class="residences-body__title title">
+        Резиденции <br> и пентхаусы <br> с террасами
+      </div>
+      <div data-aos="fade-up" class="residences-body__text text">
+        Редкие лоты в локации с изящными <br> видами на Волгу
+      </div>
+      <div data-aos="fade-up" class="residences-body__btn callback_modal-open-btn btn_arrow">
+        смотреть резиденцию
+        <span class="_arrow">
+          <svg width="47" height="14" viewBox="0 0 47 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.75 6.948H45.625" stroke="#131411" stroke-width="1.125" />
+            <path d="M39.976 1.375L45.7499 7L39.976 12.625" stroke="#131411" stroke-width="1.125" />
+          </svg>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+      <div id="layout-video-con" class="layout">
+  <div class="container">
+    <div class="layout-body">
+      <div class="layout-body__content">
+        <div data-aos="fade-up" class="layout-body__title title">
+          со свободной <br>
+          планировкой
+        </div>
+        <div data-aos="fade-up" class="layout-body__text text">
+          Каждая резиденция самодостаточна, но дизайнерские предпочтения и жизненные ценности разнятся, поэтому не
+          ограничиваем вас в фантазии и сдаем резиденции в свободной планировке
+        </div>
+        <div data-aos="fade-up" class="layout-body__tobe">
+          СТАНЬТЕ АВТОРАМИ <br> СВОЕЙ ЖИЗНИ
+        </div>
+      </div>
+      <div class="layout-body__img">
+        <video id="layout-video-item" muted loop playsinline webkit-playsinline src="./files/flat-anim.mp4"></video>
+        <!-- <img src="./img/layout/img.svg" alt="">
+        <img src="./img/layout/img-mobile.svg" alt=""> -->
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="layouts">
+  <div class="container">
+    <div class="layouts-content">
+      <div data-aos="fade-up" class="layouts-text text">
+        Мы разработали свою собственную систему <br class="_mobile"> классификации планировочных решений, <br> исходя из
+        <br class="_mobile">
+        того, что самое
+        ценное
+        в
+        квартире - место для сна.
+
+        <span>Мы считаем не количеством комнат, а спальнями.</span>
+      </div>
+      <div data-aos="fade-up" class="layouts-body">
+        <div class="layouts-body__item">
+          <img src="./img/layouts/a1.svg" alt="">
+          <!-- <img src="./img/layouts/l1.png" alt=""> -->
+        </div>
+        <div class="layouts-body__item">
+          <img src="./img/layouts/a2.svg" alt="">
+          <!-- <img src="./img/layouts/l2.png" alt=""> -->
+        </div>
+        <div class="layouts-body__item">
+          <img src="./img/layouts/a3.svg" alt="">
+          <!-- <img src="./img/layouts/l3.png" alt=""> -->
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+      <div class="view">
+  <div class="container">
+    <div class="view-body">
+      <div class="view-slider">
+        <div class="view-slider__nav view-slider__nav-prev">
+          <svg width="11" height="19" viewBox="0 0 11 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9.81532 0.835623L1.27913 9.26969L9.61957 17.897" stroke="#131411" />
+          </svg>
+        </div>
+        <div class="view-slider__nav view-slider__nav-next">
+          <svg width="11" height="19" viewBox="0 0 11 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9.81532 0.835623L1.27913 9.26969L9.61957 17.897" stroke="#131411" />
+          </svg>
+        </div>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./img/view/img.png" srcset="./img/view/img.png 1x, ./img/view/img@2x.png 2x" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/view/img.png" srcset="./img/view/img.png 1x, ./img/view/img@2x.png 2x" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/view/img.png" srcset="./img/view/img.png 1x, ./img/view/img@2x.png 2x" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/view/img.png" srcset="./img/view/img.png 1x, ./img/view/img@2x.png 2x" alt="">
+          </div>
+        </div>
+
+        <div class="view-slider__pagination">
+
+        </div>
+      </div>
+      <div class="view-text">
+        <div data-aos="fade-up" class="view-text__title title">
+          Резиденции <br> с видом на волгу
+        </div>
+        <div data-aos="fade-up" class="view-text__text text">
+          Выбирайте тонкие настройки вашего комфорта в резиденциях:
+        </div>
+        <div data-aos="fade-up" class="view-text__advantages">
+          <div class="view-text__advantages-item">
+            <div class="view-text__advantages-num">
+              01
+            </div>
+            <div class="view-text__advantages-text">
+              Тайные гардеробные
+            </div>
+          </div>
+          <div class="view-text__advantages-item">
+            <div class="view-text__advantages-num">
+              02
+            </div>
+            <div class="view-text__advantages-text">
+              Постирочные
+            </div>
+          </div>
+          <div class="view-text__advantages-item">
+            <div class="view-text__advantages-num">
+              03
+            </div>
+            <div class="view-text__advantages-text">
+              Мастер-спальни
+            </div>
+          </div>
+          <div class="view-text__advantages-item">
+            <div class="view-text__advantages-num">
+              04
+            </div>
+            <div class="view-text__advantages-text">
+              Террасы
+            </div>
+          </div>
+        </div>
+        <div data-aos="fade-up" class="view-text__btn callback_modal-open-btn btn_arrow">
+          Смотреть все <br> резиденции
+          <span class="_arrow">
+            <svg width="47" height="14" viewBox="0 0 47 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.75 6.948H45.625" stroke="#131411" stroke-width="1.125" />
+              <path d="M39.976 1.375L45.7499 7L39.976 12.625" stroke="#131411" stroke-width="1.125" />
+            </svg>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+      <div id="about" class="about">
+  <div class="container">
+    <div class="about-body">
+      <div class="about-body__a">
+        <img src="./img/about/a.svg" alt="">
+      </div>
+      <div data-aos="fade-up" class="about-body__title title">
+        О застройщике
+      </div>
+      <div data-aos="fade-up" class="about-body__text text">
+        Авторы – новая девелоперская компания на <br> рынке Казани, объединяющая команду профессионалов с огромным
+        опытом
+        в девелопменте. Каждый объект недвижимости - это произведение, а не просто сооружение
+      </div>
+      <a data-aos="fade-up" href="" class="about-body__btn callback_modal-open-btn btn_arrow">
+        Подробнее
+        <span class="_arrow">
+          <svg width="47" height="14" viewBox="0 0 47 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.75 6.948H45.625" stroke="#131411" stroke-width="1.125" />
+            <path d="M39.976 1.375L45.7499 7L39.976 12.625" stroke="#131411" stroke-width="1.125" />
+          </svg>
+        </span>
+      </a>
+    </div>
+  </div>
+</div>
+      <div class="progress">
+  <div class="progress__text">
+    <img src="./img/progress/text.svg" alt="">
+  </div>
+
+  <div class="container">
+    <div class="progress-top">
+      <div class="progress-top__title">
+        Ход строительства
+      </div>
+      <div class="progress-top__nav">
+        <span id="progress-info-prev">
+          <svg width="11" height="19" viewBox="0 0 11 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9.81581 0.835623L1.27962 9.26969L9.62006 17.897" stroke="#131411"></path>
+          </svg>
+        </span>
+        <span id="progress-info-next">
+          <svg width="11" height="19" viewBox="0 0 11 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9.81581 0.835623L1.27962 9.26969L9.62006 17.897" stroke="#131411"></path>
+          </svg>
+        </span>
+      </div>
+    </div>
+    <div class="progress-body">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <a href="./roadmap-item.html" class="progress-body__item">
+            <div class="progress-body__item-top">
+              <div class="progress-item__info">
+                <div class="progress-item__info-title">
+                  Отчет №1
+                </div>
+                <div class="progress-item__info-date">
+                  от 26.08.23
+                </div>
+              </div>
+              <div class="progress-item__info-arrow">
+                <svg width="47" height="14" viewBox="0 0 47 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0.25 6.94824H45.125" stroke="white" stroke-width="1.125" />
+                  <path d="M39.476 1.375L45.2499 7L39.476 12.625" stroke="white" stroke-width="1.125" />
+                </svg>
+              </div>
+            </div>
+            <div class="progress-body__item-img">
+              <img src="./img/progress/img1.jpg" alt="">
+            </div>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <div class="progress-body__item _soon">
+            <div class="progress-item__info">
+              <div class="progress-item__info-title">
+                Отчет №2
+              </div>
+              <div class="progress-item__info-date">
+                Будет доступен <br> 22.09.23
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="progress-body__item _soon">
+            <div class="progress-item__info">
+              <div class="progress-item__info-title">
+                Отчет №2
+              </div>
+              <div class="progress-item__info-date">
+                Будет доступен <br> 22.09.23
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="progress-body__item _soon">
+            <div class="progress-item__info">
+              <div class="progress-item__info-title">
+                Отчет №2
+              </div>
+              <div class="progress-item__info-date">
+                Будет доступен <br> 22.09.23
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="progress__nav progress-top__nav">
+      <span id="progress-info-mobile-prev">
+        <svg width="11" height="19" viewBox="0 0 11 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M9.81581 0.835623L1.27962 9.26969L9.62006 17.897" stroke="#131411"></path>
+        </svg>
+      </span>
+      <span id="progress-info-mobile-next">
+        <svg width="11" height="19" viewBox="0 0 11 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M9.81581 0.835623L1.27962 9.26969L9.62006 17.897" stroke="#131411"></path>
+        </svg>
+      </span>
+    </div>
+  </div>
+</div>
+      
+      <div class="form">
+  <div class="container">
+    <form class="form-body">
+      <div class="form__title title">
+        Остались еще вопросы?
+      </div>
+      <div class="form-body__item form-body__item_phone">
+        <div class="form-body__item-name">
+          Номер для связи:
+        </div>
+        <div class="form-body__item-input">
+          <input type="text" placeholder="+7 (">
+        </div>
+      </div>
+      <div class="form-body__item form-body__item_name">
+        <div class="form-body__item-name">
+          Как к вам обращаться?
+        </div>
+        <div class="form-body__item-input">
+          <input type="text" placeholder="Ваше имя">
+        </div>
+      </div>
+      <div class="form-body__item form-body__item_select">
+        <div class="form-body__item-name">
+          В какое время?
+        </div>
+        <div class="form-body__item-select custom-select_styles">
+          <select class="custom-select">
+            <option value="1">c 9:00</option>
+            <option value="1">c 10:00</option>
+            <option value="1">c 11:00</option>
+          </select>
+        </div>
+        <div class="form-body__item-select custom-select_styles">
+          <select class="custom-select">
+            <option value="1">до 21:00</option>
+            <option value="1">до 22:00</option>
+            <option value="1">до 23:00</option>
+          </select>
+        </div>
+      </div>
+      <!-- <div class="form-body__item form-body__item_text">
+        <div class="form-body__item-text">
+          нажимая кнопку «отправить» вы соглашаетесь с нашей политикой конфиденциальности
+        </div>
+      </div> -->
+      <div class="form-body__item form-body__item_btn">
+        <button type="submit" class="form-body__item-btn btn_arrow">
+          Отправить
+          <span class="_arrow">
+            <svg width="47" height="14" viewBox="0 0 47 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.75 6.948H45.625" stroke="#131411" stroke-width="1.125" />
+              <path d="M39.976 1.375L45.7499 7L39.976 12.625" stroke="#131411" stroke-width="1.125" />
+            </svg>
+          </span>
+        </button>
+      </div>
+      <div class="form-body__text">
+        нажимая кнопку «отправить» вы соглашаетесь с нашей <a href="">политикой конфиденциальности</a>
+      </div>
+    </form>
+  </div>
+</div>
+
+    </div>
+    <footer class="footer">
+  <!-- <div class="footer__watermark">
+    <div class="footer__watermark-text">
+      Разработано студией <br> digital-маркетинга:
+    </div>
+    <div class="footer__watermark-logo">
+      <img src="./img/footer/watermark-logo.svg" alt="">
+    </div>
+  </div> -->
+
+  <div class="container">
+    <div class="footer-body">
+      <div class="footer-col">
+        <div class="footer-body__logo">
+          <img src="./img/header/logo.svg" alt="">
+        </div>
+        <div class="footer-body__links">
+          <a href="">Политика конфиденциальности</a>
+          <a href="">Авторы - сайт застройщика
+          </a>
+        </div>
+        <div class="footer-body__year">2023 © ООО "СЗ "ДЕВЕЛОПЕР №2"</div>
+        <div class="footer-body__cr">
+          Вся предоставленная информация носит ознакомительный характер и ни при каких обстоятельствах не является
+          публичной офертой.
+        </div>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col__title">навигация</div>
+        <div class="footer-col__links">
+          <div class="footer-col__links-col">
+            <a href="">Главная</a>
+            <a id="header-about-btn" href="">О проекте</a>
+            <a href="">Расположение</a>
+            <a href="">Галерея</a>
+            <a href="">Контакты</a>
+          </div>
+          <div class="footer-col__links-col">
+            <a href="">Способы покупки и акции</a>
+            <a href="">Выбор квартиры по параметрам</a>
+            <a href="">Выбор квартиры по генплану</a>
+            <a href="">О застройщике</a>
+            <a href="">Ход строительства</a>
+          </div>
+        </div>
+        <!-- <div class="footer-col__btn btn btn_dark callback_modal-open-btn">
+          предложить участок
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+            <path d="M4 7L9.5 12L15 7" stroke="white" />
+          </svg>
+        </div> -->
+      </div>
+      <div class="footer-col">
+        <div class="footer-col__title">контакты</div>
+        <div class="footer-col__info">
+          <div class="footer-col__info-item">
+            Офис продаж: г. Казань, ул. Островского, д. 27, офис 15 <br>
+            Режим работы: пн-пт 9:00-19:00, сб-вс 10:00-18:00
+          </div>
+          <div class="footer-col__info-item">
+            <span class="_title">Адрес объекта:</span>
+            <span class="">г. Казань, ул. Большая, д.62 и д.76</span>
+          </div>
+          <div class="footer-col__info-item">
+            <span class="_title">Телефон: </span>
+            <a href="tel:+78432448654            " class="_link">+7 (843) 244-86-54 </a>
+          </div>
+          <div class="footer-col__info-item">
+            <span class="_title">E-mail: </span>
+            <a href="mailto:2info@avtor-dev.ru" class="_link">2info@avtor-dev.ru</a>
+          </div>
+          <div class="footer-col__watermark">
+            <div class="footer-col__watermark-text">
+              Разработано студией <br> digital-маркетинга:
+            </div>
+            <div class="footer-col__watermark-logo">
+              <img src="./img/footer/watermark-logo.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+  </div>
+
+  <!-- <script src="https://code.jquery.com/jquery-3.5.1.js?_v=20231004115459" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script> -->
+<script src="js/app.min.js?_v=20231004115459"></script>
+
+</body>
+
+</html>
