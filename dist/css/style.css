@@ -7357,9 +7357,16 @@ select {
   height: 32px;
 }
 
+.filters-item__slider .noUi-base {
+  cursor: pointer;
+  height: 10px;
+  transform: translate(0, -50%);
+}
+
 .filters-item__slider .noUi-handle {
+  cursor: pointer;
   right: -8px;
-  top: -8px;
+  top: -4px;
   width: 16px;
   height: 16px;
   border-radius: 50%;
@@ -7401,7 +7408,7 @@ select {
 
 .filters-item__slider .noUi-connects {
   height: 2px;
-  top: -1px;
+  top: 4px;
 }
 
 .filters-item__slider .noUi-connect {
@@ -9759,7 +9766,7 @@ select {
   display: none;
 }
 
-.home-card__bedrooms-item > span {
+.home-card__bedrooms-item > span:not(._text) {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9775,7 +9782,7 @@ select {
   margin: 0 12px;
 }
 
-.home-card__bedrooms-item > span span {
+.home-card__bedrooms-item > span:not(._text) span {
   transform: translate(0, -3px);
 }
 
@@ -9783,7 +9790,7 @@ select {
   position: relative;
   width: 30px;
   height: 30px;
-  margin: 0 0 0 14px;
+  margin: 0 0 0 14px !important;
 }
 
 .home-card__bedrooms-item ._arrow svg {

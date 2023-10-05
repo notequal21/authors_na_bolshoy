@@ -713,6 +713,8 @@ export const home62 = () => {
     const selectItems = home.querySelectorAll('.home-body__item-select img');
     let isSelected = false;
 
+    const textList = ['РЕЗИДЕНЦИЯ', 'РЕЗИДЕНЦИИ', 'РЕЗИДЕНЦИЙ'];
+
     homeCard.forEach((item, index) => {
       item.addEventListener('mouseleave', () => {
         if (isSelected) {
@@ -744,6 +746,9 @@ export const home62 = () => {
           const bedroomRemain1 = bedroom1.querySelector('._remain');
           const bedroomRemain2 = bedroom2.querySelector('._remain');
           const bedroomRemain3 = bedroom3.querySelector('._remain');
+          const bedroomText1 = bedroom1.querySelector('._text');
+          const bedroomText2 = bedroom2.querySelector('._text');
+          const bedroomText3 = bedroom3.querySelector('._text');
           const bedroomRemainAll = item.querySelector('#floor-remain');
 
           bedroom1.classList.remove('_hidden');
@@ -768,6 +773,28 @@ export const home62 = () => {
           }
           if (+data.bedroom3 <= 0) {
             bedroom3.classList.add('_hidden');
+          }
+
+          if (+data.bedroom1 == 1) {
+            bedroomText1.innerHTML = textList[0];
+          } else if (+data.bedroom1 > 1 && +data.bedroom1 <= 4) {
+            bedroomText1.innerHTML = textList[1];
+          } else {
+            bedroomText1.innerHTML = textList[2];
+          }
+          if (+data.bedroom2 == 1) {
+            bedroomText2.innerHTML = textList[0];
+          } else if (+data.bedroom2 > 1 && +data.bedroom2 <= 4) {
+            bedroomText2.innerHTML = textList[1];
+          } else {
+            bedroomText2.innerHTML = textList[2];
+          }
+          if (+data.bedroom3 == 1) {
+            bedroomText3.innerHTML = textList[0];
+          } else if (+data.bedroom3 > 1 && +data.bedroom3 <= 4) {
+            bedroomText3.innerHTML = textList[1];
+          } else {
+            bedroomText3.innerHTML = textList[2];
           }
         });
 
@@ -814,6 +841,7 @@ export const home76 = () => {
     const mapAreas = map.querySelectorAll('area');
     const selectItems = home.querySelectorAll('.home-body__item-select img');
     let isSelected = false;
+    const textList = ['РЕЗИДЕНЦИЯ', 'РЕЗИДЕНЦИИ', 'РЕЗИДЕНЦИЙ'];
 
     homeCard.forEach((item, index) => {
       item.addEventListener('mouseleave', () => {
@@ -846,6 +874,9 @@ export const home76 = () => {
           const bedroomRemain1 = bedroom1.querySelector('._remain');
           const bedroomRemain2 = bedroom2.querySelector('._remain');
           const bedroomRemain3 = bedroom3.querySelector('._remain');
+          const bedroomText1 = bedroom1.querySelector('._text');
+          const bedroomText2 = bedroom2.querySelector('._text');
+          const bedroomText3 = bedroom3.querySelector('._text');
           const bedroomRemainAll = item.querySelector('#floor-remain');
 
           bedroom1.classList.remove('_hidden');
@@ -870,6 +901,28 @@ export const home76 = () => {
           }
           if (+data.bedroom3 <= 0) {
             bedroom3.classList.add('_hidden');
+          }
+
+          if (+data.bedroom1 == 1) {
+            bedroomText1.innerHTML = textList[0];
+          } else if (+data.bedroom1 > 1 && +data.bedroom1 <= 4) {
+            bedroomText1.innerHTML = textList[1];
+          } else {
+            bedroomText1.innerHTML = textList[2];
+          }
+          if (+data.bedroom2 == 1) {
+            bedroomText2.innerHTML = textList[0];
+          } else if (+data.bedroom2 > 1 && +data.bedroom2 <= 4) {
+            bedroomText2.innerHTML = textList[1];
+          } else {
+            bedroomText2.innerHTML = textList[2];
+          }
+          if (+data.bedroom3 == 1) {
+            bedroomText3.innerHTML = textList[0];
+          } else if (+data.bedroom3 > 1 && +data.bedroom3 <= 4) {
+            bedroomText3.innerHTML = textList[1];
+          } else {
+            bedroomText3.innerHTML = textList[2];
           }
         });
 

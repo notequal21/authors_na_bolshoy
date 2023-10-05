@@ -275,9 +275,16 @@
         height: 32px;
       }
 
+      .noUi-base {
+        cursor: pointer;
+        height: 10px;
+        transform: translate(0, -50%);
+      }
+
       .noUi-handle {
+        cursor: pointer;
         right: -8px;
-        top: -8px;
+        top: -4px;
         width: 16px;
         height: 16px;
         border-radius: 50%;
@@ -318,7 +325,7 @@
 
       .noUi-connects {
         height: 2px;
-        top: -1px;
+        top: 4px;
       }
       .noUi-connect {
         background-color: #131411;

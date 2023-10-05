@@ -621,23 +621,28 @@
         display: none;
       }
 
-      & > span {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex: 0 0 auto;
-        width: 40px;
-        height: 40px;
-        border: 1px solid #d8d8d8;
-        border-radius: 50%;
-        color: #131411;
-        text-align: center;
-        font-family: Cormorant;
-        font-size: 22px;
-        margin: 0 12px;
+      ._text {
+      }
 
-        span {
-          transform: translate(0, -3px);
+      & > span {
+        &:not(._text) {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex: 0 0 auto;
+          width: 40px;
+          height: 40px;
+          border: 1px solid #d8d8d8;
+          border-radius: 50%;
+          color: #131411;
+          text-align: center;
+          font-family: Cormorant;
+          font-size: 22px;
+          margin: 0 12px;
+
+          span {
+            transform: translate(0, -3px);
+          }
         }
       }
 
@@ -645,7 +650,7 @@
         position: relative;
         width: 30px;
         height: 30px;
-        margin: 0 0 0 14px;
+        margin: 0 0 0 14px !important;
 
         svg {
           position: absolute;
