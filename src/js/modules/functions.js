@@ -750,14 +750,18 @@ export const home62 = () => {
           const bedroomText2 = bedroom2.querySelector('._text');
           const bedroomText3 = bedroom3.querySelector('._text');
           const bedroomRemainAll = item.querySelector('#floor-remain');
+          const bedroomRemainAllCount =
+            +data.bedroom1 + +data.bedroom2 + +data.bedroom3;
+          const bedroomRemainAllText = item
+            .querySelector('.home-card__remain')
+            .querySelector('._text');
 
           bedroom1.classList.remove('_hidden');
           bedroom2.classList.remove('_hidden');
           bedroom3.classList.remove('_hidden');
 
           floor.innerHTML = data.floor;
-          bedroomRemainAll.innerHTML =
-            +data.bedroom1 + +data.bedroom2 + +data.bedroom3;
+          bedroomRemainAll.innerHTML = bedroomRemainAllCount;
           bedroomRemain1.innerHTML = +data.bedroom1;
           bedroomRemain2.innerHTML = +data.bedroom2;
           bedroomRemain3.innerHTML = +data.bedroom3;
@@ -773,6 +777,14 @@ export const home62 = () => {
           }
           if (+data.bedroom3 <= 0) {
             bedroom3.classList.add('_hidden');
+          }
+
+          if (bedroomRemainAllCount == 1) {
+            bedroomRemainAllText.innerHTML = textList[0];
+          } else if (bedroomRemainAllCount > 1 && bedroomRemainAllCount <= 4) {
+            bedroomRemainAllText.innerHTML = textList[1];
+          } else {
+            bedroomRemainAllText.innerHTML = textList[2];
           }
 
           if (+data.bedroom1 == 1) {
@@ -878,14 +890,18 @@ export const home76 = () => {
           const bedroomText2 = bedroom2.querySelector('._text');
           const bedroomText3 = bedroom3.querySelector('._text');
           const bedroomRemainAll = item.querySelector('#floor-remain');
+          const bedroomRemainAllCount =
+            +data.bedroom1 + +data.bedroom2 + +data.bedroom3;
+          const bedroomRemainAllText = item
+            .querySelector('.home-card__remain')
+            .querySelector('._text');
 
           bedroom1.classList.remove('_hidden');
           bedroom2.classList.remove('_hidden');
           bedroom3.classList.remove('_hidden');
 
           floor.innerHTML = data.floor;
-          bedroomRemainAll.innerHTML =
-            +data.bedroom1 + +data.bedroom2 + +data.bedroom3;
+          bedroomRemainAll.innerHTML = bedroomRemainAllCount;
           bedroomRemain1.innerHTML = +data.bedroom1;
           bedroomRemain2.innerHTML = +data.bedroom2;
           bedroomRemain3.innerHTML = +data.bedroom3;
@@ -901,6 +917,14 @@ export const home76 = () => {
           }
           if (+data.bedroom3 <= 0) {
             bedroom3.classList.add('_hidden');
+          }
+
+          if (bedroomRemainAllCount == 1) {
+            bedroomRemainAllText.innerHTML = textList[0];
+          } else if (bedroomRemainAllCount > 1 && bedroomRemainAllCount <= 4) {
+            bedroomRemainAllText.innerHTML = textList[1];
+          } else {
+            bedroomRemainAllText.innerHTML = textList[2];
           }
 
           if (+data.bedroom1 == 1) {

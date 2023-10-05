@@ -9728,7 +9728,7 @@ select {
   text-transform: uppercase;
 }
 
-.home-card__remain > span {
+.home-card__remain > span:not(._text) {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9744,7 +9744,7 @@ select {
   margin: 0 12px;
 }
 
-.home-card__remain > span span {
+.home-card__remain > span:not(._text) span {
   transform: translate(0, -3px);
 }
 
