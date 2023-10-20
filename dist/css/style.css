@@ -8871,7 +8871,7 @@ select {
 }
 
 .payment_info-body__img {
-  flex: 0 1 660px;
+  flex: 0 0 660px;
   margin: 0 0 0 60px;
 }
 
