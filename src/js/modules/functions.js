@@ -305,6 +305,24 @@ export const tabs4 = () => {
   }
 };
 
+export const tabsMulti = () => {
+  if (document.querySelector('.payment_info')) {
+    const blockArr = document.querySelectorAll('.payment_info');
+
+    blockArr.forEach((item) => {
+      const btnArr = item.querySelectorAll('.payment_info-btn');
+      const contentArr = item.querySelectorAll('.payment_info-body');
+
+      btnArr.forEach((btn) =>
+        btn.addEventListener('click', (event) => {
+          contentArr.forEach((btn) => btn.classList.remove('active'));
+          contentArr[btn.dataset.tab].classList.add('active');
+        })
+      );
+    });
+  }
+};
+
 export const upBtn = () => {
   document.addEventListener('DOMContentLoaded', function () {
     let btn = document.querySelector('#toTop');

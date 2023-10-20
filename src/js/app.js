@@ -17,7 +17,7 @@ functions.otherFilters();
 functions.tabs();
 functions.tabs2();
 functions.tabs3();
-functions.tabs4();
+functions.tabsMulti();
 functions.callbackModal();
 functions.mainHandlerAnim();
 functions.checkUserAgentVideoAutoplay();
