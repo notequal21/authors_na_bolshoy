@@ -280,6 +280,10 @@
       @media (max-width: 1200px) {
         margin: 16px 0 0;
       }
+      @media (max-width: 991px) {
+        gap: 16px;
+        flex-wrap: wrap;
+      }
       @media (max-width: 767px) {
         justify-content: center;
       }
@@ -293,6 +297,7 @@
         align-items: center;
         border-radius: 32px;
         border: 1px solid #969696;
+        white-space: nowrap;
 
         color: #969696;
         text-align: center;
@@ -315,6 +320,9 @@
 
           @media (max-width: 1200px) {
             margin: 0 0 0 16px;
+          }
+          @media (max-width: 991px) {
+            margin: 0;
           }
         }
 

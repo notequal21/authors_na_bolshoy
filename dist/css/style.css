@@ -8789,6 +8789,7 @@ select {
   align-items: center;
   border-radius: 32px;
   border: 1px solid #969696;
+  white-space: nowrap;
   color: #969696;
   text-align: center;
   font-family: TT Norms;
@@ -13260,6 +13261,15 @@ body.lock {
 
   .view-slider__pagination span {
     max-width: 86px;
+  }
+
+  .payment_circles-content__btns {
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  .payment_circles-content__btns span:not(:first-child) {
+    margin: 0;
   }
 
   .genplan > img {
