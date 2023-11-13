@@ -13824,23 +13824,23 @@ body.lock {
   }
 
   .footer-col:nth-child(1) .footer-body__cr {
-    order: 2;
-  }
-
-  .footer-col:nth-child(1) .footer-body__links {
     order: 3;
   }
 
-  .footer-col:nth-child(1) .footer-body__links:nth-child(4) {
-    order: 5;
-  }
-
-  .footer-col:nth-child(1) .footer-body__year {
+  .footer-col:nth-child(1) .footer-body__links {
     order: 4;
   }
 
-  .footer-col:nth-child(1) .footer-col__social {
+  .footer-col:nth-child(1) .footer-body__links:nth-child(4) {
     order: 6;
+  }
+
+  .footer-col:nth-child(1) .footer-body__year {
+    order: 5;
+  }
+
+  .footer-col:nth-child(1) .footer-col__social {
+    order: 2;
   }
 
   .footer-col:nth-child(1) .footer-col__bottom-logo {
